@@ -1,0 +1,28 @@
+# 依赖
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 构建 / 缓存
+dist/
+.cache/
+.tmp/
+*.log
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# 本地私密文件（凭证一律不要进仓库）
+.env
+.env.*
+*.local
+
+# 扫描时的临时产物（缓存与缺失清单，不进仓库）
+.scan-misses.txt
+_ghcache/

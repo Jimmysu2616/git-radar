@@ -1,0 +1,18 @@
+[
+  {
+    "date": "2026-11-11",
+    "topScore": 81,
+    "avgScore": 81,
+    "picked": 8,
+    "rejected": 365,
+    "topName": "Jakeschincariol/day-trader-skill"
+  },
+  {
+    "date": "2026-11-10",
+    "topScore": 84,
+    "avgScore": 70,
+    "picked": 7,
+    "rejected": 16,
+    "topName": "xaboy/form-create"
+  }
+]

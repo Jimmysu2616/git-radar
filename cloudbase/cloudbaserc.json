@@ -1,0 +1,16 @@
+{
+  "envId": "your-cloudbase-env-id",
+  "region": "ap-shanghai",
+  "functionRootPath": "./functions",
+  "functions": [
+    {
+      "name": "gitradar",
+      "timeout": 300,
+      "memorySize": 256,
+      "runtime": "Nodejs18.15",
+      "handler": "index.main",
+      "installDependency": true,
+      "description": "副业雷达：每天扫 GitHub 并重新部署静态站点"
+    }
+  ]
+}

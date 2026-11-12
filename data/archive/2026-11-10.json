@@ -1,0 +1,1185 @@
+{
+  "meta": {
+    "date": "2026-11-10",
+    "runAt": "2026-11-10T07:31:38.201Z",
+    "auth": "anonymous",
+    "apiCalls": 26,
+    "rateLimit": null,
+    "cacheMisses": 1,
+    "readmeFetched": 11,
+    "readmeBudget": 12,
+    "queries": [
+      {
+        "name": "近 30 天新建",
+        "q": "created:>=2026-10-11 stars:>=50",
+        "why": "三十天内新冒头、已经有人注意到的小项目",
+        "count": 2,
+        "added": 2,
+        "total": 0
+      },
+      {
+        "name": "近 90 天新建",
+        "q": "created:>=2026-08-12 stars:>=200",
+        "why": "稍长窗口，补 30 天池子的空",
+        "count": 2,
+        "added": 2,
+        "total": 0
+      },
+      {
+        "name": "近 3 天活跃",
+        "q": "pushed:>=2026-11-07 stars:>=500",
+        "why": "trending 的替代：还在被真实提交的高星项目",
+        "count": 2,
+        "added": 2,
+        "total": 0
+      },
+      {
+        "name": "近 7 天活跃",
+        "q": "pushed:>=2026-11-03 stars:>=150",
+        "why": "活跃但规模小一些，避免只看到巨头",
+        "count": 2,
+        "added": 0,
+        "total": 0
+      },
+      {
+        "name": "主题 · agent",
+        "q": "topic:ai-agents stars:>=100 pushed:>=2026-10-27",
+        "why": "AI 类项目是当前最容易交付的一批",
+        "count": 2,
+        "added": 1,
+        "total": 0
+      },
+      {
+        "name": "主题 · mcp",
+        "q": "topic:mcp stars:>=50 pushed:>=2026-10-27",
+        "why": "MCP 是 2026 年的新交付形态",
+        "count": 2,
+        "added": 1,
+        "total": 0
+      },
+      {
+        "name": "主题 · seo",
+        "q": "topic:seo stars:>=100 pushed:>=2026-10-11",
+        "why": "SEO 是买家愿意直接付费的方向",
+        "count": 2,
+        "added": 2,
+        "total": 0
+      },
+      {
+        "name": "主题 · 效率工具",
+        "q": "topic:productivity stars:>=300 pushed:>=2026-10-27",
+        "why": "小而全的效率工具，最容易包一层界面卖",
+        "count": 2,
+        "added": 1,
+        "total": 0
+      },
+      {
+        "name": "关键词 · 电商",
+        "q": "电商 stars:>=100 pushed:>=2026-10-11",
+        "why": "垂直行业，可接手度 +8",
+        "count": 2,
+        "added": 2,
+        "total": 0
+      },
+      {
+        "name": "关键词 · 命理",
+        "q": "命理 OR 玄学 OR 排盘 stars:>=100",
+        "why": "排盘引擎一类的垂直小工具，需求明确",
+        "count": 0,
+        "added": 0,
+        "total": 0
+      },
+      {
+        "name": "主题 · 自动化",
+        "q": "topic:automation stars:>=200 pushed:>=2026-10-27",
+        "why": "能自动化的事才有交付价值",
+        "count": 2,
+        "added": 2,
+        "total": 0
+      },
+      {
+        "name": "主题 · 浏览器插件",
+        "q": "topic:chrome-extension stars:>=100 pushed:>=2026-10-27",
+        "why": "插件是最好卖的一种形态",
+        "count": 2,
+        "added": 2,
+        "total": 0
+      },
+      {
+        "name": "主题 · 微信生态",
+        "q": "topic:weixin stars:>=50 pushed:>=2026-10-27",
+        "why": "中文买家最集中的场景",
+        "count": 2,
+        "added": 2,
+        "total": 0
+      },
+      {
+        "name": "主题 · SaaS",
+        "q": "topic:saas stars:>=200 pushed:>=2026-10-27",
+        "why": "已经有人付费的形态",
+        "count": 2,
+        "added": 2,
+        "total": 0
+      },
+      {
+        "name": "主题 · 采集",
+        "q": "topic:scraping stars:>=300 pushed:>=2026-10-27",
+        "why": "采集类是最常见的副业需求",
+        "count": 2,
+        "added": 2,
+        "total": 0
+      }
+    ],
+    "counts": {
+      "unique": 23,
+      "redlined": 3,
+      "lowScore": 13,
+      "qualified": 7,
+      "picked": 7
+    },
+    "topScore": 84,
+    "avgScore": 70,
+    "gradeCount": {
+      "A": 1,
+      "B": 6
+    },
+    "relaxLevel": 0,
+    "relaxNote": "正常：只推 7 天内没推过的项目",
+    "revisitCount": 0,
+    "starsDeltaAvailable": 0,
+    "model": {
+      "weights": {
+        "license": 25,
+        "lang": 20,
+        "demand": 20,
+        "zh": 15,
+        "size": 10,
+        "fresh": 10
+      },
+      "adjustRange": [
+        -12,
+        8
+      ],
+      "grades": {
+        "S": 88,
+        "A": 75,
+        "B": 60
+      },
+      "note": "权重、分档、红线为本项目评分模型设定；等级门槛、MPL/LGPL/未声明许可证分值、区间插值为外推值。"
+    }
+  },
+  "picks": [
+    {
+      "fullName": "xaboy/form-create",
+      "name": "form-create",
+      "owner": "xaboy",
+      "ownerType": "User",
+      "url": "https://github.com/xaboy/form-create",
+      "homepage": "https://www.form-create.com/",
+      "description": ":fire::fire::fire: 强大的低代码动态表单组件，通过 JSON 数据驱动表单渲染，适配移动端，支持可视化设计。提高开发者对表单的开发效率。目前在政务系统、OA系统、ERP系统、电商系统、流程管理等系统中已稳定应用。",
+      "language": "JavaScript",
+      "license": "MIT",
+      "stars": 7117,
+      "forks": 1106,
+      "openIssues": 27,
+      "sizeMB": 19.8,
+      "createdAt": "2018-02-11T03:25:40Z",
+      "pushedAt": "2026-11-03T10:31:47Z",
+      "ageDays": 3194,
+      "idleDays": 6,
+      "topics": [
+        "ant-design-vue",
+        "arco-design",
+        "element-plus",
+        "element-ui",
+        "form",
+        "form-designer",
+        "lowcode",
+        "naive-ui",
+        "tiny-vue",
+        "vant",
+        "vue"
+      ],
+      "archived": false,
+      "sources": [
+        "关键词 · 电商"
+      ],
+      "score": 84,
+      "baseScore": 76,
+      "grade": "A",
+      "dims": [
+        {
+          "key": "license",
+          "label": "许可证",
+          "max": 25,
+          "source": "api",
+          "value": "MIT",
+          "score": 25,
+          "basis": "license.spdx_id = MIT（MIT/Apache 这类，改完能闭源卖）"
+        },
+        {
+          "key": "lang",
+          "label": "上手成本",
+          "max": 20,
+          "source": "api+rule",
+          "value": "JavaScript",
+          "score": 20,
+          "basis": "language = JavaScript → 语言分档 20"
+        },
+        {
+          "key": "demand",
+          "label": "需求真实",
+          "max": 20,
+          "source": "api+rule",
+          "value": "27/7117",
+          "score": 6,
+          "basis": "待处理 27 / 星数 7117 = 0.38% < 0.5% → 6（星多但没人提问，多是「点个星就走了」，6 为外推值）；注意 open_issues_count 含 PR"
+        },
+        {
+          "key": "zh",
+          "label": "中文友好",
+          "max": 15,
+          "source": "heuristic",
+          "value": 15,
+          "score": 15,
+          "basis": "描述汉字占比 67% > 15% → +8；README 前 2000 字汉字占比 32% > 8% → +7；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+        },
+        {
+          "key": "size",
+          "label": "交付轻重",
+          "max": 10,
+          "source": "api+rule",
+          "value": "19.8 MB",
+          "score": 9,
+          "basis": "仓库 19.8 MB，在 5–100 MB 之间 → 线性插值 9（插值是本脚本外推）"
+        },
+        {
+          "key": "fresh",
+          "label": "时效红利",
+          "max": 10,
+          "source": "api+rule",
+          "value": "3194 天",
+          "score": 1,
+          "basis": "建于 3194 天前 ≥ 180 天 → 1（半年前的老项目）"
+        }
+      ],
+      "adjust": {
+        "total": 8,
+        "raw": 8,
+        "clamped": false,
+        "items": [
+          {
+            "label": "垂直行业",
+            "delta": 8,
+            "reason": "命中「电商」：能对上具体行业，买家能直接找到"
+          }
+        ],
+        "note": ""
+      },
+      "readmeFetched": true,
+      "readmeHanRatio": 0.3161,
+      "readmeHead": "官网 &nbsp;|&nbsp; 帮助文档 &nbsp;|&nbsp; Agent Skills &nbsp;|&nbsp; 可视化表单设计器 &nbsp;|&nbsp; 移动端表单设计器 FormCreate 是一个可以通过 JSON 生成具有动态渲染、数据收集、验证和提交功能的低代码表单生成组件。支持8个UI框架，适配移动端，并且支持生成任何 Vue 组件。内置20+种常用表单组件和自定义组件，再复杂的表单都可以轻松搞定。 特点 - 使用JSON数据生成表单 - 支持扩展",
+      "starsDelta": null,
+      "revisit": false,
+      "revisitReason": "",
+      "why": "强项是许可证（25/25），MIT。垂直行业 +8。JavaScript 写的，今晚能跑起来。"
+    },
+    {
+      "fullName": "binarywang/WxJava",
+      "name": "WxJava",
+      "owner": "binarywang",
+      "ownerType": "User",
+      "url": "https://github.com/binarywang/WxJava",
+      "homepage": "",
+      "description": "微信开发 Java SDK ，支持包括微信支付，开放平台，小程序，企业微信，视频号，公众号等的后端开发",
+      "language": "Java",
+      "license": "Apache-2.0",
+      "stars": 33195,
+      "forks": 9037,
+      "openIssues": 4,
+      "sizeMB": 20.4,
+      "createdAt": "2016-01-06T08:24:05Z",
+      "pushedAt": "2026-11-08T13:43:25Z",
+      "ageDays": 3960,
+      "idleDays": 1,
+      "topics": [
+        "cp",
+        "hacktoberfest",
+        "java",
+        "miniapp",
+        "miniprogram",
+        "mp",
+        "open",
+        "sdk",
+        "weapp",
+        "wechat",
+        "wechat-sdk",
+        "weixin",
+        "weixin-sdk",
+        "wxjava",
+        "wxpay"
+      ],
+      "archived": false,
+      "sources": [
+        "主题 · 微信生态"
+      ],
+      "score": 74,
+      "baseScore": 72,
+      "grade": "B",
+      "dims": [
+        {
+          "key": "license",
+          "label": "许可证",
+          "max": 25,
+          "source": "api",
+          "value": "Apache-2.0",
+          "score": 25,
+          "basis": "license.spdx_id = Apache-2.0（MIT/Apache 这类，改完能闭源卖）"
+        },
+        {
+          "key": "lang",
+          "label": "上手成本",
+          "max": 20,
+          "source": "api+rule",
+          "value": "Java",
+          "score": 16,
+          "basis": "language = Java → 语言分档 16"
+        },
+        {
+          "key": "demand",
+          "label": "需求真实",
+          "max": 20,
+          "source": "api+rule",
+          "value": "4/33195",
+          "score": 6,
+          "basis": "待处理 4 / 星数 33195 = 0.01% < 0.5% → 6（星多但没人提问，多是「点个星就走了」，6 为外推值）；注意 open_issues_count 含 PR"
+        },
+        {
+          "key": "zh",
+          "label": "中文友好",
+          "max": 15,
+          "source": "heuristic",
+          "value": 15,
+          "score": 15,
+          "basis": "描述汉字占比 73% > 15% → +8；README 前 2000 字汉字占比 66% > 8% → +7；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+        },
+        {
+          "key": "size",
+          "label": "交付轻重",
+          "max": 10,
+          "source": "api+rule",
+          "value": "20.4 MB",
+          "score": 9,
+          "basis": "仓库 20.4 MB，在 5–100 MB 之间 → 线性插值 9（插值是本脚本外推）"
+        },
+        {
+          "key": "fresh",
+          "label": "时效红利",
+          "max": 10,
+          "source": "api+rule",
+          "value": "3960 天",
+          "score": 1,
+          "basis": "建于 3960 天前 ≥ 180 天 → 1（半年前的老项目）"
+        }
+      ],
+      "adjust": {
+        "total": 2,
+        "raw": 2,
+        "clamped": false,
+        "items": [
+          {
+            "label": "底层框架 / SDK",
+            "delta": -6,
+            "reason": "命中「sdk」：框架、开发工具包、编译器这类底层设施，没有你能插手的那层"
+          },
+          {
+            "label": "垂直行业",
+            "delta": 8,
+            "reason": "命中「公众号」：能对上具体行业，买家能直接找到"
+          }
+        ],
+        "note": ""
+      },
+      "readmeFetched": true,
+      "readmeHanRatio": 0.6631,
+      "readmeHead": "WxJava - 微信开发 Java SDK 微信 开发工具包，支持包括微信支付、开放平台、公众号、企业微信、视频号、小程序等微信功能模块的后端开发。 特别赞助 - - > 赞助商招募中，欢迎联系合作。 关注公众号 想获得技术交流群（QQ群/微信群/钉钉群）等信息，请扫码关注 公众号： 目录索引 - 快速开始（3分钟） - AI 编程智能体 SKILL 安装 - 我该选哪个模块？ - Maven 引用方式 - 最小示例 - 重要信息 - 其他说明 - 版本说明 - 应用案例 ",
+      "starsDelta": null,
+      "revisit": false,
+      "revisitReason": "",
+      "why": "强项是许可证（25/25），Apache-2.0。底层框架 / SDK +-6，垂直行业 +8。"
+    },
+    {
+      "fullName": "coreyhaines31/marketingskills",
+      "name": "marketingskills",
+      "owner": "coreyhaines31",
+      "ownerType": "User",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "homepage": "https://marketing-skills.com",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "stars": 59468,
+      "forks": 8683,
+      "openIssues": 74,
+      "sizeMB": 6.8,
+      "createdAt": "2026-01-15T19:45:23Z",
+      "pushedAt": "2026-11-10T06:12:20Z",
+      "ageDays": 298,
+      "idleDays": 0,
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "ai-seo",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "codex",
+        "content-marketing",
+        "conversion-rate-optimization",
+        "copywriting",
+        "cursor",
+        "email-marketing",
+        "generative-engine-optimization",
+        "growth-marketing",
+        "marketing",
+        "marketing-automation",
+        "saas-marketing",
+        "seo",
+        "skill-md"
+      ],
+      "archived": false,
+      "sources": [
+        "主题 · seo"
+      ],
+      "score": 70,
+      "baseScore": 62,
+      "grade": "B",
+      "dims": [
+        {
+          "key": "license",
+          "label": "许可证",
+          "max": 25,
+          "source": "api",
+          "value": "MIT",
+          "score": 25,
+          "basis": "license.spdx_id = MIT（MIT/Apache 这类，改完能闭源卖）"
+        },
+        {
+          "key": "lang",
+          "label": "上手成本",
+          "max": 20,
+          "source": "api+rule",
+          "value": "JavaScript",
+          "score": 20,
+          "basis": "language = JavaScript → 语言分档 20"
+        },
+        {
+          "key": "demand",
+          "label": "需求真实",
+          "max": 20,
+          "source": "api+rule",
+          "value": "74/59468",
+          "score": 6,
+          "basis": "待处理 74 / 星数 59468 = 0.12% < 0.5% → 6（星多但没人提问，多是「点个星就走了」，6 为外推值）；注意 open_issues_count 含 PR"
+        },
+        {
+          "key": "zh",
+          "label": "中文友好",
+          "max": 15,
+          "source": "heuristic",
+          "value": 0,
+          "score": 0,
+          "basis": "描述汉字占比 0% ≤ 15% → +0；README 前 2000 字汉字占比 0% ≤ 8% → +0；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+        },
+        {
+          "key": "size",
+          "label": "交付轻重",
+          "max": 10,
+          "source": "api+rule",
+          "value": "6.8 MB",
+          "score": 10,
+          "basis": "仓库 6.8 MB，在 5–100 MB 之间 → 线性插值 10（插值是本脚本外推）"
+        },
+        {
+          "key": "fresh",
+          "label": "时效红利",
+          "max": 10,
+          "source": "api+rule",
+          "value": "298 天",
+          "score": 1,
+          "basis": "建于 298 天前 ≥ 180 天 → 1（半年前的老项目）"
+        }
+      ],
+      "adjust": {
+        "total": 8,
+        "raw": 8,
+        "clamped": false,
+        "items": [
+          {
+            "label": "垂直行业",
+            "delta": 8,
+            "reason": "命中「seo」：能对上具体行业，买家能直接找到"
+          }
+        ],
+        "note": ""
+      },
+      "readmeFetched": true,
+      "readmeHanRatio": 0,
+      "readmeHead": "Marketing Skills for AI Agents A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth en",
+      "starsDelta": null,
+      "revisit": false,
+      "revisitReason": "",
+      "why": "强项是许可证（25/25），MIT。垂直行业 +8。JavaScript 写的，今晚能跑起来。"
+    },
+    {
+      "fullName": "AgriciDaniel/claude-seo",
+      "name": "claude-seo",
+      "owner": "AgriciDaniel",
+      "ownerType": "User",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "homepage": "skool.com/ai-marketing-hub-pro",
+      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 27775,
+      "forks": 3600,
+      "openIssues": 95,
+      "sizeMB": 6.8,
+      "createdAt": "2026-02-07T08:17:38Z",
+      "pushedAt": "2026-11-01T06:07:26Z",
+      "ageDays": 275,
+      "idleDays": 9,
+      "topics": [
+        "ai",
+        "ai-seo",
+        "claude-code",
+        "claude-code-skill",
+        "marketing-automation",
+        "open-source",
+        "seo"
+      ],
+      "archived": false,
+      "sources": [
+        "主题 · seo"
+      ],
+      "score": 70,
+      "baseScore": 62,
+      "grade": "B",
+      "dims": [
+        {
+          "key": "license",
+          "label": "许可证",
+          "max": 25,
+          "source": "api",
+          "value": "MIT",
+          "score": 25,
+          "basis": "license.spdx_id = MIT（MIT/Apache 这类，改完能闭源卖）"
+        },
+        {
+          "key": "lang",
+          "label": "上手成本",
+          "max": 20,
+          "source": "api+rule",
+          "value": "Python",
+          "score": 20,
+          "basis": "language = Python → 语言分档 20"
+        },
+        {
+          "key": "demand",
+          "label": "需求真实",
+          "max": 20,
+          "source": "api+rule",
+          "value": "95/27775",
+          "score": 6,
+          "basis": "待处理 95 / 星数 27775 = 0.34% < 0.5% → 6（星多但没人提问，多是「点个星就走了」，6 为外推值）；注意 open_issues_count 含 PR"
+        },
+        {
+          "key": "zh",
+          "label": "中文友好",
+          "max": 15,
+          "source": "heuristic",
+          "value": 0,
+          "score": 0,
+          "basis": "描述汉字占比 0% ≤ 15% → +0；README 前 2000 字汉字占比 0% ≤ 8% → +0；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+        },
+        {
+          "key": "size",
+          "label": "交付轻重",
+          "max": 10,
+          "source": "api+rule",
+          "value": "6.8 MB",
+          "score": 10,
+          "basis": "仓库 6.8 MB，在 5–100 MB 之间 → 线性插值 10（插值是本脚本外推）"
+        },
+        {
+          "key": "fresh",
+          "label": "时效红利",
+          "max": 10,
+          "source": "api+rule",
+          "value": "275 天",
+          "score": 1,
+          "basis": "建于 275 天前 ≥ 180 天 → 1（半年前的老项目）"
+        }
+      ],
+      "adjust": {
+        "total": 8,
+        "raw": 8,
+        "clamped": false,
+        "items": [
+          {
+            "label": "垂直行业",
+            "delta": 8,
+            "reason": "命中「seo」：能对上具体行业，买家能直接找到"
+          }
+        ],
+        "note": ""
+      },
+      "readmeFetched": true,
+      "readmeHanRatio": 0,
+      "readmeHead": "Claude SEO Free, open-source SEO audits inside Claude Code . Rank higher in Google and get cited by AI search. Install · Demo · Results · Team · Commands · Pricing · FAQ Claude SEO is a free SEO plugin for Claude Code. Give it any website a",
+      "starsDelta": null,
+      "revisit": false,
+      "revisitReason": "",
+      "why": "强项是许可证（25/25），MIT。垂直行业 +8。Python 写的，今晚能跑起来。"
+    },
+    {
+      "fullName": "deepseek-ai/DeepInfer",
+      "name": "DeepInfer",
+      "owner": "deepseek-ai",
+      "ownerType": "Organization",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "homepage": "",
+      "description": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 25763,
+      "forks": 3161,
+      "openIssues": 247,
+      "sizeMB": 3.1,
+      "createdAt": "2026-10-16T07:47:23Z",
+      "pushedAt": "2026-11-03T07:31:59Z",
+      "ageDays": 24,
+      "idleDays": 6,
+      "topics": [],
+      "archived": false,
+      "sources": [
+        "近 30 天新建"
+      ],
+      "score": 69,
+      "baseScore": 81,
+      "grade": "B",
+      "dims": [
+        {
+          "key": "license",
+          "label": "许可证",
+          "max": 25,
+          "source": "api",
+          "value": "Apache-2.0",
+          "score": 25,
+          "basis": "license.spdx_id = Apache-2.0（MIT/Apache 这类，改完能闭源卖）"
+        },
+        {
+          "key": "lang",
+          "label": "上手成本",
+          "max": 20,
+          "source": "api+rule",
+          "value": "Python",
+          "score": 20,
+          "basis": "language = Python → 语言分档 20"
+        },
+        {
+          "key": "demand",
+          "label": "需求真实",
+          "max": 20,
+          "source": "api+rule",
+          "value": "247/25763",
+          "score": 16,
+          "basis": "待处理 247 / 星数 25763 = 0.96%，落在 0.5%–2% → 16；注意 open_issues_count 含 PR"
+        },
+        {
+          "key": "zh",
+          "label": "中文友好",
+          "max": 15,
+          "source": "heuristic",
+          "value": 0,
+          "score": 0,
+          "basis": "描述汉字占比 0% ≤ 15% → +0；README 前 2000 字汉字占比 0% ≤ 8% → +0；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+        },
+        {
+          "key": "size",
+          "label": "交付轻重",
+          "max": 10,
+          "source": "api+rule",
+          "value": "3.1 MB",
+          "score": 10,
+          "basis": "仓库 3.1 MB ≤ 5 MB → 满"
+        },
+        {
+          "key": "fresh",
+          "label": "时效红利",
+          "max": 10,
+          "source": "api+rule",
+          "value": "24 天",
+          "score": 10,
+          "basis": "建于 24 天前 ≤ 30 天 → 满"
+        }
+      ],
+      "adjust": {
+        "total": -12,
+        "raw": -14,
+        "clamped": true,
+        "items": [
+          {
+            "label": "底层框架 / SDK",
+            "delta": -6,
+            "reason": "命中「framework」：框架、开发工具包、编译器这类底层设施，没有你能插手的那层"
+          },
+          {
+            "label": "大厂在维护",
+            "delta": -8,
+            "reason": "25763 星且 owner 是组织账号 —— 那儿没有你插手的空间"
+          }
+        ],
+        "note": ""
+      },
+      "readmeFetched": true,
+      "readmeHanRatio": 0,
+      "readmeHead": "DeepInfer DeepInfer is the high-performance inference framework that powers DeepSeek's large-scale production services. This open-source release provides offline inference with the core features needed for serving at scale. Supported models",
+      "starsDelta": null,
+      "revisit": false,
+      "revisitReason": "",
+      "why": "强项是许可证（25/25），Apache-2.0。底层框架 / SDK -6，大厂在维护 -8。Python 写的，今晚能跑起来。"
+    },
+    {
+      "fullName": "dramaclaw/dramaclaw",
+      "name": "dramaclaw",
+      "owner": "dramaclaw",
+      "ownerType": "Organization",
+      "url": "https://github.com/dramaclaw/dramaclaw",
+      "homepage": "https://dramaclaw.ai",
+      "description": "A general-purpose AIGC video engine: script to finished film in one pipeline — dramas, ads, product videos, otome games, and more. | 通用 AIGC 视频引擎 —— 从剧本到成片一条流水线，漫剧、广告、电商、乙游皆可",
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "stars": 7652,
+      "forks": 957,
+      "openIssues": 99,
+      "sizeMB": 694.5,
+      "createdAt": "2026-03-27T04:34:30Z",
+      "pushedAt": "2026-11-10T06:17:59Z",
+      "ageDays": 228,
+      "idleDays": 0,
+      "topics": [
+        "ai-agent",
+        "ai-filmmaking",
+        "ai-video",
+        "aigc",
+        "aigc-pipeline",
+        "content-creation",
+        "dramaclaw",
+        "fastapi",
+        "generative-ai",
+        "image-to-video",
+        "python",
+        "react",
+        "self-hosted",
+        "storyboard",
+        "text-to-video",
+        "tts",
+        "video-engine",
+        "video-generation",
+        "voice-synthesis"
+      ],
+      "archived": false,
+      "sources": [
+        "关键词 · 电商"
+      ],
+      "score": 63,
+      "baseScore": 55,
+      "grade": "B",
+      "dims": [
+        {
+          "key": "license",
+          "label": "许可证",
+          "max": 25,
+          "source": "api",
+          "value": "Other",
+          "score": 8,
+          "basis": "license 字段为空 / NOASSERTION → 按外推值 8；没有许可证＝没有授权，最需要人工复核"
+        },
+        {
+          "key": "lang",
+          "label": "上手成本",
+          "max": 20,
+          "source": "api+rule",
+          "value": "TypeScript",
+          "score": 20,
+          "basis": "language = TypeScript → 语言分档 20"
+        },
+        {
+          "key": "demand",
+          "label": "需求真实",
+          "max": 20,
+          "source": "api+rule",
+          "value": "99/7652",
+          "score": 16,
+          "basis": "待处理 99 / 星数 7652 = 1.29%，落在 0.5%–2% → 16；注意 open_issues_count 含 PR"
+        },
+        {
+          "key": "zh",
+          "label": "中文友好",
+          "max": 15,
+          "source": "heuristic",
+          "value": 8,
+          "score": 8,
+          "basis": "描述汉字占比 18% > 15% → +8；README 前 2000 字汉字占比 0% ≤ 8% → +0；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+        },
+        {
+          "key": "size",
+          "label": "交付轻重",
+          "max": 10,
+          "source": "api+rule",
+          "value": "694.5 MB",
+          "score": 2,
+          "basis": "仓库 695 MB ≥ 100 MB → 2（依赖深，打包给别人容易崩）"
+        },
+        {
+          "key": "fresh",
+          "label": "时效红利",
+          "max": 10,
+          "source": "api+rule",
+          "value": "228 天",
+          "score": 1,
+          "basis": "建于 228 天前 ≥ 180 天 → 1（半年前的老项目）"
+        }
+      ],
+      "adjust": {
+        "total": 8,
+        "raw": 8,
+        "clamped": false,
+        "items": [
+          {
+            "label": "垂直行业",
+            "delta": 8,
+            "reason": "命中「电商」：能对上具体行业，买家能直接找到"
+          }
+        ],
+        "note": ""
+      },
+      "readmeFetched": true,
+      "readmeHanRatio": 0.0024,
+      "readmeHead": "DramaClaw Make Your Own DC. They say you're obsolete. Maybe it's the whole idea of \"working for someone else\" that's obsolete. In the age of AI, the real question isn't whether machines replace people. The real question is: Who owns the mac",
+      "starsDelta": null,
+      "revisit": false,
+      "revisitReason": "",
+      "why": "强项是上手成本（20/20），TypeScript。垂直行业 +8。TypeScript 写的，今晚能跑起来。"
+    },
+    {
+      "fullName": "storytold/photocraft",
+      "name": "photocraft",
+      "owner": "storytold",
+      "ownerType": "Organization",
+      "url": "https://github.com/storytold/photocraft",
+      "homepage": "https://getartcraft.com/apps/photocraft",
+      "description": "PhotoCraft: An open-source photo editor written from scratch in pure Rust",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "stars": 78319,
+      "forks": 13853,
+      "openIssues": 4121,
+      "sizeMB": 165.3,
+      "createdAt": "2026-09-30T13:37:48Z",
+      "pushedAt": "2026-11-10T02:04:40Z",
+      "ageDays": 40,
+      "idleDays": 0,
+      "topics": [
+        "art",
+        "image-editing",
+        "image-editing-software",
+        "image-editor",
+        "images",
+        "photo-editing",
+        "rust"
+      ],
+      "archived": false,
+      "sources": [
+        "近 90 天新建"
+      ],
+      "score": 60,
+      "baseScore": 68,
+      "grade": "B",
+      "dims": [
+        {
+          "key": "license",
+          "label": "许可证",
+          "max": 25,
+          "source": "api",
+          "value": "Apache-2.0",
+          "score": 25,
+          "basis": "license.spdx_id = Apache-2.0（MIT/Apache 这类，改完能闭源卖）"
+        },
+        {
+          "key": "lang",
+          "label": "上手成本",
+          "max": 20,
+          "source": "api+rule",
+          "value": "Rust",
+          "score": 12,
+          "basis": "language = Rust → 语言分档 12"
+        },
+        {
+          "key": "demand",
+          "label": "需求真实",
+          "max": 20,
+          "source": "api+rule",
+          "value": "4121/78319",
+          "score": 20,
+          "basis": "待处理 4121 / 星数 78319 = 5.26% ≥ 2% → 满（真有人在用、在问、在等回复）；注意 open_issues_count 含 PR"
+        },
+        {
+          "key": "zh",
+          "label": "中文友好",
+          "max": 15,
+          "source": "heuristic",
+          "value": 0,
+          "score": 0,
+          "basis": "描述汉字占比 0% ≤ 15% → +0；README 前 2000 字汉字占比 0% ≤ 8% → +0；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+        },
+        {
+          "key": "size",
+          "label": "交付轻重",
+          "max": 10,
+          "source": "api+rule",
+          "value": "165.3 MB",
+          "score": 2,
+          "basis": "仓库 165 MB ≥ 100 MB → 2（依赖深，打包给别人容易崩）"
+        },
+        {
+          "key": "fresh",
+          "label": "时效红利",
+          "max": 10,
+          "source": "api+rule",
+          "value": "40 天",
+          "score": 9,
+          "basis": "建于 40 天前，在 30–180 天之间 → 线性插值 9（插值是本脚本外推）"
+        }
+      ],
+      "adjust": {
+        "total": -8,
+        "raw": -8,
+        "clamped": false,
+        "items": [
+          {
+            "label": "大厂在维护",
+            "delta": -8,
+            "reason": "78319 星且 owner 是组织账号 —— 那儿没有你插手的空间"
+          }
+        ],
+        "note": ""
+      },
+      "readmeFetched": true,
+      "readmeHanRatio": 0,
+      "readmeHead": "PhotoCraft Image editing; an open-source, clean-room reimplementation of Adobe Photoshop, rebuilt in pure Rust. Layers, masks, adjustment layers, layer styles, type, vectors, brushes and real PSD files, in a native app written entirely in R",
+      "starsDelta": null,
+      "revisit": false,
+      "revisitReason": "",
+      "why": "强项是许可证（25/25），Apache-2.0。大厂在维护 -8。"
+    }
+  ],
+  "rejected": [
+    {
+      "fullName": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "stars": 300356,
+      "language": "JavaScript",
+      "score": 57,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（57 分，C 级）"
+    },
+    {
+      "fullName": "D4Vinci/Scrapling",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "stars": 100732,
+      "language": "Python",
+      "score": 55,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（55 分，C 级）"
+    },
+    {
+      "fullName": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "stars": 277660,
+      "language": "TypeScript",
+      "score": 52,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（52 分，C 级）"
+    },
+    {
+      "fullName": "refined-github/refined-github",
+      "url": "https://github.com/refined-github/refined-github",
+      "stars": 32465,
+      "language": "TypeScript",
+      "score": 52,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（52 分，C 级）"
+    },
+    {
+      "fullName": "kriasoft/react-starter-kit",
+      "url": "https://github.com/kriasoft/react-starter-kit",
+      "stars": 23710,
+      "language": "TypeScript",
+      "score": 52,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（52 分，C 级）"
+    },
+    {
+      "fullName": "wasp-lang/open-saas",
+      "url": "https://github.com/wasp-lang/open-saas",
+      "stars": 16291,
+      "language": "MDX",
+      "score": 52,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（52 分，C 级）"
+    },
+    {
+      "fullName": "NervJS/taro",
+      "url": "https://github.com/NervJS/taro",
+      "stars": 37744,
+      "language": "TypeScript",
+      "score": 51,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（51 分，C 级）"
+    },
+    {
+      "fullName": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "stars": 447803,
+      "language": "TypeScript",
+      "score": 48,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（48 分，C 级）"
+    },
+    {
+      "fullName": "Gathin23/cleanyourtv",
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "stars": 55594,
+      "language": "Python",
+      "score": 47,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（47 分，C 级）"
+    },
+    {
+      "fullName": "ohmyzsh/ohmyzsh",
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "stars": 190405,
+      "language": "Shell",
+      "score": 45,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（45 分，C 级）"
+    },
+    {
+      "fullName": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "stars": 209968,
+      "language": "TypeScript",
+      "score": 35,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（35 分，C 级）"
+    },
+    {
+      "fullName": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "stars": 160801,
+      "language": "Python",
+      "score": 35,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（35 分，C 级）"
+    },
+    {
+      "fullName": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "stars": 200259,
+      "language": "TypeScript",
+      "score": 21,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（21 分，C 级）"
+    },
+    {
+      "fullName": "jaywcjlove/linux-command",
+      "url": "https://github.com/jaywcjlove/linux-command",
+      "stars": 37221,
+      "language": "Markdown",
+      "score": null,
+      "grade": null,
+      "reason": "redline",
+      "redlines": [
+        {
+          "code": "list",
+          "label": "纯清单合集",
+          "detail": "名称/简介/标签命中「大全」，形态是一堆谁都能下的文件"
+        }
+      ],
+      "summary": "纯清单合集"
+    },
+    {
+      "fullName": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "stars": 497720,
+      "language": "Python",
+      "score": null,
+      "grade": null,
+      "reason": "redline",
+      "redlines": [
+        {
+          "code": "list",
+          "label": "纯清单合集",
+          "detail": "名称/简介/标签命中「list of」，形态是一堆谁都能下的文件"
+        }
+      ],
+      "summary": "纯清单合集"
+    },
+    {
+      "fullName": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "stars": 561424,
+      "language": "Markdown",
+      "score": null,
+      "grade": null,
+      "reason": "redline",
+      "redlines": [
+        {
+          "code": "list",
+          "label": "纯清单合集",
+          "detail": "名称/简介/标签命中「awesome」，形态是一堆谁都能下的文件"
+        }
+      ],
+      "summary": "纯清单合集"
+    }
+  ]
+}

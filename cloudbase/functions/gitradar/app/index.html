@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="moa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>副业雷达 · 每天扫一遍 GitHub，只留今晚能动手的</title>
+<meta name="description" content="每天自动扫 GitHub 候选项目，按六维模型打分、四条红线出局，把结果做成一份能按分数和维度翻的榜单。">
+<meta name="author" content="老苏玩AI">
+<meta name="theme-color" content="#0b1310">
+<meta property="og:title" content="副业雷达 · 今日榜单">
+<meta property="og:description" content="每天自动扫 GitHub，按六维模型打分、四条红线出局。星数不是钱。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="老苏玩AI">
+<meta name="twitter:creator" content="老苏玩AI">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+<style>
+  :root[data-theme="moa"]{
+    --bg:#0b1310; --bg2:#0f1a15; --panel:#111e18; --panel2:#16261e;
+    --line:#22372b; --line2:#2c4636;
+    --tx:#e7f1e9; --tx2:#8fa89a; --tx3:#61786c;
+    --acc:#7dff9b; --acc2:#c9ff6e; --warn:#ffcf5a; --bad:#ff7b72; --good:#7dff9b;
+    --ring:rgba(125,255,155,.13); --shadow:0 18px 50px -24px rgba(0,0,0,.9);
+  }
+  :root[data-theme="night"]{
+    --bg:#07080c; --bg2:#0a0c12; --panel:#0e1119; --panel2:#121722;
+    --line:#1e2430; --line2:#2a3242;
+    --tx:#e8eaf2; --tx2:#8b91a6; --tx3:#5d6478;
+    --acc:#8ab4ff; --acc2:#b7a4ff; --warn:#ffc857; --bad:#ff7a7a; --good:#8ab4ff;
+    --ring:rgba(138,180,255,.13); --shadow:0 18px 50px -24px rgba(0,0,0,.95);
+  }
+  :root[data-theme="day"]{
+    --bg:#f5f4ef; --bg2:#fbfaf6; --panel:#ffffff; --panel2:#faf8f2;
+    --line:#e5e0d5; --line2:#d6cfc0;
+    --tx:#1b1a17; --tx2:#6d685e; --tx3:#98928a;
+    --acc:#0f8a4a; --acc2:#a15c00; --warn:#a15c00; --bad:#bb3a2c; --good:#0f8a4a;
+    --ring:rgba(15,138,74,.10); --shadow:0 16px 40px -26px rgba(40,35,20,.5);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:15.5px;line-height:1.7;-webkit-font-smoothing:antialiased;
+    background-image:radial-gradient(900px 500px at 88% -8%, var(--ring), transparent 70%),
+                     radial-gradient(700px 420px at 0% 8%, var(--ring), transparent 65%);
+    background-repeat:no-repeat;
+  }
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  a{color:var(--acc);text-decoration:none}
+  a:hover{text-decoration:underline}
+  button,select,input{font:inherit;color:inherit}
+  .mono{font-family:ui-monospace,"SFMono-Regular","JetBrains Mono","Cascadia Code",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+
+  /* topbar */
+  .topbar{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);
+    background:color-mix(in srgb,var(--bg) 84%,transparent);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px}
+  .brand{display:flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx2);white-space:nowrap}
+  .brand .dot{width:7px;height:7px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 18%,transparent);animation:pulse 2.6s infinite}
+  .brand .byline{font-size:11px;letter-spacing:.06em;text-transform:none;color:var(--tx3);border-left:1px solid var(--line2);padding-left:9px}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+  .brand b{color:var(--tx);font-weight:650;letter-spacing:.1em}
+  .bar-right{display:flex;align-items:center;gap:8px;flex-wrap:nowrap}
+  .themes{display:flex;gap:2px;padding:3px;border:1px solid var(--line);border-radius:99px;background:var(--panel)}
+  .themes button{background:none;border:0;border-radius:99px;padding:4px 9px;font-size:11.5px;color:var(--tx3);cursor:pointer;transition:.18s}
+  .themes button.on{background:var(--panel2);color:var(--tx)}
+  .btn{display:inline-flex;align-items:center;gap:6px;border-radius:99px;padding:7px 13px;font-size:12.5px;
+    border:1px solid var(--line2);background:var(--panel);cursor:pointer;transition:.18s;white-space:nowrap}
+  .btn:hover{border-color:var(--acc);color:var(--acc)}
+  .btn.solid{background:var(--acc);color:color-mix(in srgb,var(--bg) 92%,black);border-color:var(--acc);font-weight:650}
+  .btn.solid:hover{filter:brightness(1.07);color:color-mix(in srgb,var(--bg) 92%,black)}
+  select.datesel{background:var(--panel);border:1px solid var(--line2);border-radius:99px;padding:6px 10px;font-size:12.5px;cursor:pointer}
+
+  /* hero */
+  .hero{padding:46px 20px 8px}
+  .kicker{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--tx3);margin:0 0 16px}
+  .kicker .live{display:inline-flex;align-items:center;gap:6px;color:var(--acc);letter-spacing:.12em}
+  .hero h1{font-size:clamp(30px,5.6vw,52px);line-height:1.1;letter-spacing:-.02em;margin:0 0 16px;font-weight:800}
+  .hero h1 em{font-style:normal;color:var(--acc)}
+  .hero .lede{max-width:680px;color:var(--tx2);margin:0 0 26px;font-size:clamp(14.5px,1.5vw,16.5px)}
+  .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .stat{background:var(--bg2);padding:14px 14px}
+  .stat .n{font-size:clamp(20px,2.5vw,27px);font-weight:700;line-height:1.15;font-family:ui-monospace,monospace}
+  .stat .n small{font-size:.55em;color:var(--tx3);font-weight:500;margin-left:2px}
+  .stat .l{font-size:11.5px;color:var(--tx3);margin-top:2px}
+  .stat.hi .n{color:var(--acc)}
+  .stat.out .n{color:var(--tx2)}
+
+  /* section */
+  .sec{padding:46px 20px 4px}
+  .sechead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:20px}
+  .sechead .num{font-size:11.5px;letter-spacing:.14em;color:var(--acc);font-family:ui-monospace,monospace;padding-top:4px}
+  .sechead h2{font-size:clamp(19px,2.6vw,25px);margin:0;letter-spacing:-.01em;font-weight:750}
+  .sechead .en{margin-left:auto;font-size:10.5px;letter-spacing:.2em;color:var(--tx3);text-transform:uppercase;padding-top:4px}
+
+  /* summary trio */
+  .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .tcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 17px;box-shadow:var(--shadow)}
+  .tcard .th{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--tx3);margin-bottom:9px}
+  .tcard .tb{font-size:14.5px;line-height:1.65}
+  .tcard .tb b{color:var(--acc);font-weight:650}
+
+  /* controls */
+  .controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+  .controls label{font-size:11.5px;color:var(--tx3);letter-spacing:.06em}
+  .controls select,.controls input[type=search]{
+    background:var(--panel);border:1px solid var(--line2);border-radius:9px;padding:7px 10px;font-size:13px;min-width:0}
+  .controls input[type=search]{flex:1 1 150px;max-width:250px}
+  .chips{display:flex;gap:6px}
+  .chip{border:1px solid var(--line2);background:transparent;border-radius:99px;padding:5px 11px;font-size:12px;color:var(--tx2);cursor:pointer;transition:.16s}
+  .chip:hover{color:var(--tx);border-color:var(--tx3)}
+  .chip.on{background:color-mix(in srgb,var(--acc) 16%,transparent);border-color:var(--acc);color:var(--acc);font-weight:600}
+  .count-note{margin-left:auto;font-size:12px;color:var(--tx3)}
+
+  /* pick card */
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;margin-bottom:14px;
+    box-shadow:var(--shadow);overflow:hidden;transition:border-color .2s}
+  .card:hover{border-color:var(--line2)}
+  .card.revisit{border-style:dashed}
+  .chead{display:flex;gap:16px;padding:17px 18px 12px;align-items:flex-start}
+  .scorecol{flex:0 0 auto;text-align:center;min-width:76px}
+  .scorenum{font-family:ui-monospace,monospace;font-size:31px;font-weight:750;line-height:1.05;letter-spacing:-.02em}
+  .grade{display:inline-block;margin-top:5px;font-size:10.5px;letter-spacing:.1em;padding:1px 8px;border-radius:99px;border:1px solid currentColor;font-weight:700}
+  .g-S{color:var(--acc2)} .g-A{color:var(--acc)} .g-B{color:var(--warn)} .g-C{color:var(--tx3)}
+  .rankbadge{display:block;font-size:10px;letter-spacing:.14em;color:var(--tx3);margin-bottom:2px}
+  .cbody{flex:1 1 auto;min-width:0}
+  .titleline{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:4px}
+  .repo{font-size:17px;font-weight:700;letter-spacing:-.01em;word-break:break-all}
+  .owner{font-size:12px;color:var(--tx3)}
+  .desc{color:var(--tx2);font-size:13.5px;margin:0 0 9px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .facts{display:flex;flex-wrap:wrap;gap:5px 6px;font-size:11.5px;color:var(--tx3)}
+  .fact{padding:2px 8px;border:1px solid var(--line);border-radius:99px;background:var(--bg2);white-space:nowrap}
+  .fact b{color:var(--tx2);font-weight:600}
+  .fact.warn{border-color:color-mix(in srgb,var(--warn) 45%,transparent);color:var(--warn)}
+  .fact.bad{border-color:color-mix(in srgb,bad 45%,transparent);color:var(--bad)}
+  .revisit-tag{font-size:10.5px;letter-spacing:.08em;padding:1px 7px;border-radius:99px;border:1px dashed var(--warn);color:var(--warn)}
+
+  /* dims */
+  .dims{padding:2px 18px 14px;display:grid;grid-template-columns:1fr 1fr;gap:3px 22px}
+  .dim{padding:5px 0;border-bottom:1px dashed var(--line)}
+  .dim:last-child{border-bottom:0}
+  .dimtop{display:flex;align-items:baseline;gap:7px;font-size:12.5px;margin-bottom:4px}
+  .dimtop .dl{font-weight:600;color:var(--tx)}
+  .dimtop .dv{margin-left:auto;font-family:ui-monospace,monospace;font-size:12px;color:var(--tx2)}
+  .dimtop .dv b{color:var(--acc);font-weight:700}
+  .src{font-size:9.5px;letter-spacing:.06em;padding:0 5px;border-radius:4px;border:1px solid var(--line2);color:var(--tx3);white-space:nowrap}
+  .src.api{color:var(--good);border-color:color-mix(in srgb,var(--good) 40%,transparent)}
+  .src.rule{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 40%,transparent)}
+  .src.heuristic{color:var(--bad);border-color:color-mix(in srgb,var(--bad) 40%,transparent)}
+  .track{height:4px;border-radius:99px;background:var(--line);overflow:hidden}
+  .fill{height:100%;border-radius:99px;background:var(--acc);transition:width .5s ease}
+  .dim details{margin-top:4px}
+  .dim summary{font-size:11px;color:var(--tx3);cursor:pointer;list-style:none}
+  .dim summary::-webkit-details-marker{display:none}
+  .dim summary::before{content:"▸ ";font-size:9px}
+  .dim details[open] summary::before{content:"▾ "}
+  .basis{font-size:11.5px;color:var(--tx3);line-height:1.6;margin:4px 0 0;padding:6px 9px;background:var(--bg2);border-radius:8px;border:1px solid var(--line)}
+
+  /* adj + why */
+  .cfoot{padding:0 18px 16px}
+  .adjbox{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px;margin-bottom:9px}
+  .adjbox .adjl{font-size:11px;letter-spacing:.1em;color:var(--tx3);text-transform:uppercase}
+  .adjtag{padding:2px 8px;border-radius:99px;border:1px solid var(--line2);font-size:11.5px}
+  .adjtag.neg{color:var(--bad);border-color:color-mix(in srgb,var(--bad) 40%,transparent)}
+  .adjtag.pos{color:var(--good);border-color:color-mix(in srgb,var(--good) 40%,transparent)}
+  .adjtotal{font-family:ui-monospace,monospace;font-weight:700}
+  .why{font-size:13px;color:var(--tx2);line-height:1.65;padding:9px 12px;border-left:2px solid var(--acc);
+    background:color-mix(in srgb,var(--acc) 6%,transparent);border-radius:0 8px 8px 0;margin:0 0 10px}
+  .why b{color:var(--tx);font-weight:650}
+  .todo{font-size:11.5px;color:var(--tx3);border-top:1px dashed var(--line);padding-top:9px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .todo code{font-family:ui-monospace,monospace;font-size:11px;background:var(--bg2);padding:3px 7px;border-radius:6px;border:1px solid var(--line);color:var(--tx2)}
+  .copybtn{border:1px solid var(--line2);background:transparent;border-radius:99px;padding:2px 9px;font-size:11px;cursor:pointer;color:var(--tx3)}
+  .copybtn:hover{color:var(--acc);border-color:var(--acc)}
+
+  /* rejected */
+  .rej{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .rejrow{display:flex;gap:12px;align-items:flex-start;padding:10px 15px;border-bottom:1px solid var(--line);font-size:12.5px}
+  .rejrow:last-child{border-bottom:0}
+  .rejrow .rn{font-family:ui-monospace,monospace;color:var(--tx2);min-width:34px;text-align:right;flex:0 0 auto}
+  .rejrow .rname{font-weight:600;word-break:break-all}
+  .rejrow .rwhy{color:var(--tx3);font-size:11.5px;margin-top:2px;line-height:1.55}
+  .rejrow .rbadge{flex:0 0 auto;margin-left:auto;font-size:10.5px;letter-spacing:.06em;padding:1px 7px;border-radius:99px;border:1px solid var(--line2);color:var(--tx3);white-space:nowrap}
+  .rejrow .rbadge.redline{color:var(--bad);border-color:color-mix(in srgb,var(--bad) 45%,transparent);background:color-mix(in srgb,var(--bad) 8%,transparent)}
+  .rejrow.dim{opacity:.72}
+  .legend{font-size:11.5px;color:var(--tx3);margin-top:10px;line-height:1.7}
+
+  /* method */
+  .mtable{width:100%;border-collapse:collapse;font-size:12.5px}
+  .mtable th,.mtable td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  .mtable th{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);font-weight:600}
+  .mtable tr:last-child td{border-bottom:0}
+  .mtable td:first-child{white-space:nowrap;font-weight:600}
+  .mtable .mono{color:var(--tx2)}
+  .mwrap{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;overflow-x:auto}
+
+  .note{background:var(--panel);border:1px solid var(--line);border-left:2px solid var(--warn);border-radius:0 12px 12px 0;padding:13px 16px;font-size:13px;color:var(--tx2);margin-top:14px}
+  .note b{color:var(--tx)}
+
+  /* footer */
+  footer{margin-top:52px;border-top:1px solid var(--line);padding:22px 20px 46px;font-size:11.5px;color:var(--tx3)}
+  .frow{display:flex;gap:8px 18px;flex-wrap:wrap;align-items:center}
+  .frow .mono{color:var(--tx3)}
+
+  .empty{text-align:center;padding:56px 20px;color:var(--tx3);font-size:14px}
+  .empty b{display:block;color:var(--tx);font-size:17px;margin-bottom:8px}
+  .skeleton{height:120px;border-radius:16px;background:linear-gradient(90deg,var(--panel) 25%,var(--panel2) 37%,var(--panel) 63%);
+    background-size:400% 100%;animation:sk 1.4s ease infinite;margin-bottom:14px}
+  @keyframes sk{0%{background-position:100% 50%}100%{background-position:0 50%}}
+
+  @media (max-width:820px){
+    .stats{grid-template-columns:repeat(3,1fr)}
+    .trio{grid-template-columns:1fr}
+    .dims{grid-template-columns:1fr;gap:0}
+    .chead{padding:15px 14px 8px;gap:12px}
+    .dims,.cfoot{padding-left:14px;padding-right:14px}
+    .bar{height:52px}
+    .brand span.bt{display:none}
+    .repo{font-size:15.5px}
+  }
+  @media (max-width:520px){
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .scorenum{font-size:26px}
+    .scorecol{min-width:62px}
+    .bar-right .btn span.tx{display:none}
+    .count-note{margin-left:0;width:100%}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap bar">
+    <div class="brand"><i class="dot"></i><b>副业雷达</b><span class="bt">GIT RADAR</span><span class="byline">老苏玩AI</span></div>
+    <div class="bar-right">
+      <select id="dateSel" class="datesel" aria-label="选择日期"></select>
+      <div class="themes" id="themes">
+        <button data-t="moa" class="on">摸鱼绿</button>
+        <button data-t="night">深夜</button>
+        <button data-t="day">白天</button>
+      </div>
+      <button class="btn" id="shareBtn" title="分享这一天的榜单">↗<span class="tx">分享</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap hero">
+  <p class="kicker">
+    <span class="live"><i class="dot" style="width:6px;height:6px;border-radius:50%;background:currentColor;display:inline-block"></i>每天自动扫一遍</span>
+    <span id="runAt">读取数据中…</span>
+  </p>
+  <h1>星数不是钱。<br>这是<em>今天能动手</em>的那几个。</h1>
+  <p class="lede">
+    系统每天去 GitHub 抓候选仓库，按六维模型自动打分，撞四条红线直接出局，把结果存在 <code class="mono">data/</code> 里。
+    这个页面只是「看结果」的那一层：分数、等级、每个维度怎么来的、为什么入选、为什么被排掉，全部摊开给你看。
+  </p>
+  <div class="stats" id="stats"></div>
+</div>
+
+<div class="wrap sec">
+  <div class="sechead"><span class="num">01</span><h2>今天盘子什么样</h2><span class="en">Today</span></div>
+  <div class="trio" id="trio"></div>
+</div>
+
+<div class="wrap sec">
+  <div class="sechead"><span class="num">02</span><h2>今日榜单</h2><span class="en" id="picksEn">Picks</span></div>
+  <div class="controls">
+    <label for="sortSel">排序</label>
+    <select id="sortSel">
+      <option value="score">总分</option>
+      <option value="license">许可证（25）</option>
+      <option value="lang">上手成本（20）</option>
+      <option value="demand">需求真实（20）</option>
+      <option value="zh">中文友好（15）</option>
+      <option value="size">交付轻重（10）</option>
+      <option value="fresh">时效红利（10）</option>
+      <option value="stars">星数</option>
+      <option value="delta">涨星（需两天数据）</option>
+    </select>
+    <div class="chips" id="gradeChips">
+      <button class="chip on" data-g="all">全部</button>
+      <button class="chip" data-g="S">S</button>
+      <button class="chip" data-g="A">A</button>
+      <button class="chip" data-g="B">B</button>
+    </div>
+    <input type="search" id="q" placeholder="搜项目名 / 语言 / 标签">
+    <span class="count-note" id="countNote"></span>
+  </div>
+  <div id="picks"><div class="skeleton"></div><div class="skeleton"></div></div>
+</div>
+
+<div class="wrap sec">
+  <div class="sechead"><span class="num">03</span><h2>今天排掉了什么</h2><span class="en">Rejected</span></div>
+  <div class="rej" id="rejected"></div>
+  <p class="legend">雷达的另一半比推荐更有用：看多了会长出一种直觉，什么样的项目一看就是坑。撞了红线的排在最前面，不计分。</p>
+</div>
+
+<div class="wrap sec">
+  <div class="sechead"><span class="num">04</span><h2>分数从哪来</h2><span class="en">Method</span></div>
+  <div class="mwrap">
+    <table class="mtable">
+      <thead><tr><th>维度</th><th>满分</th><th>判分依据</th><th>性质</th></tr></thead>
+      <tbody id="methodRows"></tbody>
+    </table>
+  </div>
+  <div class="note" id="honestNote"></div>
+</div>
+
+<div class="wrap sec">
+  <div class="sechead"><span class="num">05</span><h2>这一轮是怎么跑的</h2><span class="en">Run log</span></div>
+  <div id="runlog"></div>
+</div>
+
+<footer><div class="wrap"><div class="frow" id="footrow"></div></div></footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var el = function (tag, cls, html) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (html != null) n.innerHTML = html;
+    return n;
+  };
+  var esc = function (s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c];
+    });
+  };
+  var nf = function (n) { return (n == null ? '—' : Number(n).toLocaleString('en-US')); };
+
+  var state = { data: null, dates: [], grade: 'all', sort: 'score', q: '' };
+  var DIM_LABEL = { license: '许可证', lang: '上手成本', demand: '需求真实', zh: '中文友好', size: '交付轻重', fresh: '时效红利' };
+  var SRC_TAG = {
+    api: ['api', '真实字段'],
+    'api+rule': ['rule', '真实字段 + 规则'],
+    rule: ['rule', '真实字段 + 规则'],
+    heuristic: ['heuristic', '启发式估算']
+  };
+
+  /* ---------- theme ---------- */
+  var savedTheme = localStorage.getItem('radar-theme') || 'moa';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  function syncThemeBtn() {
+    var cur = document.documentElement.getAttribute('data-theme');
+    Array.prototype.forEach.call(document.querySelectorAll('#themes button'), function (b) {
+      b.classList.toggle('on', b.dataset.t === cur);
+    });
+  }
+  syncThemeBtn();
+  $('#themes').addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-t]');
+    if (!b) return;
+    document.documentElement.setAttribute('data-theme', b.dataset.t);
+    localStorage.setItem('radar-theme', b.dataset.t);
+    syncThemeBtn();
+  });
+
+  /* ---------- data ---------- */
+  var BASE = location.pathname.indexOf('/git-radar') > -1 ? './' : './';
+  function getJSON(p) {
+    return fetch(p, { cache: 'no-cache' }).then(function (r) {
+      if (!r.ok) throw new Error(p + ' -> HTTP ' + r.status);
+      return r.json();
+    });
+  }
+
+  var params = new URLSearchParams(location.search);
+  var wantDate = params.get('date');
+  if (params.get('sort')) state.sort = params.get('sort');
+
+  getJSON('data/archive/index.json').then(function (list) {
+    state.dates = Array.isArray(list) ? list : [];
+  }).catch(function () { state.dates = []; })
+    .then(function () { return getJSON('data/latest.json'); })
+    .then(function (d) {
+      state.data = d;
+      if (!wantDate || wantDate === d.meta.date) return d;
+      return getJSON('data/archive/' + wantDate + '.json').then(function (old) {
+        state.data = old;
+        return old;
+      }).catch(function () { return d; });
+    })
+    .then(renderAll)
+    .catch(function (err) {
+      $('#picks').innerHTML = '<div class="empty"><b>读不到榜单数据</b>' +
+        '需要 <code class="mono">data/latest.json</code>。本地用 <code class="mono">file://</code> 直接双击打开会被浏览器拦掉跨域请求，' +
+        '用 <code class="mono">python -m http.server</code> 起个静态服务再看。<br><br><span class="mono">' + esc(err.message) + '</span></div>';
+      $('#stats').innerHTML = '';
+      $('#trio').innerHTML = '';
+    });
+
+  function renderAll(d) {
+    var m = d.meta;
+    renderDates(m.date);
+    renderStats(m);
+    renderTrio(d);
+    renderPicks();
+    renderRejected(d);
+    renderMethod(m);
+    renderRunlog(m);
+    $('#sortSel').value = state.sort;
+    $('#runAt').textContent = '数据时间 ' + fmtTime(m.runAt) + ' · 第 ' + m.date + ' 期';
+  }
+
+  function fmtTime(iso) {
+    try {
+      var d = new Date(iso);
+      var p = function (n) { return String(n).padStart(2, '0'); };
+      return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + ' ' + p(d.getHours()) + ':' + p(d.getMinutes());
+    } catch (e) { return iso; }
+  }
+
+  function renderDates(cur) {
+    var sel = $('#dateSel');
+    var list = state.dates.slice();
+    if (!list.some(function (x) { return x.date === cur; })) list.push({ date: cur, picked: 0 });
+    sel.innerHTML = list.map(function (x) {
+      return '<option value="' + x.date + '"' + (x.date === cur ? ' selected' : '') + '>' +
+        x.date + (x.date === cur ? '（今日）' : '') + '</option>';
+    }).join('');
+    sel.onchange = function () {
+      var u = new URL(location.href);
+      u.searchParams.set('date', sel.value);
+      location.href = u.toString();
+    };
+  }
+
+  function renderStats(m) {
+    var c = m.counts || {};
+    var items = [
+      ['扫描', c.unique, '', ''],
+      ['红线出局', c.redlined, 'out', ''],
+      ['分数不够', c.lowScore, 'out', ''],
+      ['入榜', c.picked, 'hi', ''],
+      ['最高分', m.topScore == null ? '—' : m.topScore, 'hi', '']
+    ];
+    $('#stats').innerHTML = items.map(function (x) {
+      return '<div class="stat ' + x[2] + '"><div class="n">' + (x[1] == null ? '—' : x[1]) + '</div><div class="l">' + x[0] + '</div></div>';
+    }).join('');
+  }
+
+  function renderTrio(d) {
+    var m = d.meta, picks = d.picks || [];
+    var top = picks[0];
+    var chinese = picks.filter(function (p) { return p.dims && p.dims.filter(function (x) { return x.key === 'zh'; })[0].score >= 8; }).length;
+    var grades = m.gradeCount || {};
+    var gstr = Object.keys(grades).sort().map(function (g) { return g + ' 级 ' + grades[g] + ' 个'; }).join('、') || '没有';
+
+    var a = top
+      ? '排第一的是 <b>' + esc(top.name) + '</b>，' + esc(top.language) + ' / ' + esc(top.license) + '，<b>' + top.score + ' 分</b>。' +
+        (top.adjust && top.adjust.total ? '可接手度 ' + (top.adjust.total > 0 ? '+' : '') + top.adjust.total + '。' : '') +
+        '点开卡片看它六个维度各自怎么来的。'
+      : '今天没有项目过线。';
+
+    var b = '一共扫了 <b>' + m.counts.unique + '</b> 个去重后的仓库，红线砍掉 ' + m.counts.redlined +
+      ' 个，分数不够 ' + m.counts.lowScore + ' 个，留下 <b>' + m.counts.picked + '</b> 个。' +
+      '等级分布：' + gstr + '；平均 ' + (m.avgScore == null ? '—' : m.avgScore) + ' 分。' +
+      (m.relaxLevel ? '<br>' + esc(m.relaxNote) + '。' : '');
+
+    var redlines = (d.rejected || []).filter(function (r) { return r.reason === 'redline'; });
+    var c = redlines.length
+      ? '撞红线的是 ' + redlines.map(function (r) { return '<b>' + esc(r.fullName) + '</b>（' + esc(r.summary) + '）'; }).join('、') + '。这些不看分数，直接出局。'
+      : '今天没有项目撞红线。';
+
+    $('#trio').innerHTML =
+      tcard('今晚干什么', a) + tcard('今天盘子什么样', b) + tcard('排掉了什么', c);
+  }
+  function tcard(h, b) { return '<div class="tcard"><div class="th">' + h + '</div><div class="tb">' + b + '</div></div>'; }
+
+  /* ---------- picks ---------- */
+  function dimOf(p, key) { return (p.dims || []).filter(function (x) { return x.key === key; })[0] || { score: 0, max: 1, basis: '', value: '' }; }
+
+  function pickValue(p, sort) {
+    if (sort === 'score') return p.score;
+    if (sort === 'stars') return p.stars;
+    if (sort === 'delta') return p.starsDelta ? p.starsDelta.value : -1e9;
+    return dimOf(p, sort).score;
+  }
+
+  function currentPicks() {
+    var picks = (state.data.picks || []).slice();
+    if (state.grade !== 'all') picks = picks.filter(function (p) { return p.grade === state.grade; });
+    if (state.q) {
+      var q = state.q.toLowerCase();
+      picks = picks.filter(function (p) {
+        return (p.fullName + ' ' + (p.description || '') + ' ' + (p.topics || []).join(' ') + ' ' + p.language).toLowerCase().indexOf(q) > -1;
+      });
+    }
+    picks.sort(function (a, b) { return pickValue(b, state.sort) - pickValue(a, state.sort); });
+    return picks;
+  }
+
+  function renderPicks() {
+    var all = state.data.picks || [];
+    var picks = currentPicks();
+    $('#countNote').textContent = picks.length + ' / ' + all.length + ' 个项目';
+    $('#picksEn').textContent = 'Picks · ' + all.length;
+    if (!picks.length) {
+      $('#picks').innerHTML = '<div class="empty"><b>没有符合当前筛选的项目</b>换个等级或清掉搜索词试试。</div>';
+      return;
+    }
+    $('#picks').innerHTML = picks.map(function (p, i) { return cardHTML(p, i); }).join('');
+  }
+
+  function cardHTML(p, i) {
+    var facts = [
+      '<span class="fact"><b>' + nf(p.stars) + '</b> ★</span>',
+      p.starsDelta ? '<span class="fact">' + (p.starsDelta.value >= 0 ? '+' : '') + nf(p.starsDelta.value) + ' / ' + p.starsDelta.sinceDays + ' 天</span>' : '',
+      '<span class="fact"><b>' + esc(p.language) + '</b></span>',
+      '<span class="fact"' + (p.license === '未声明' || p.license === 'NOASSERTION' ? ' data-x' : '') + '>' + esc(p.license === 'NOASSERTION' ? '未声明' : p.license) + '</span>',
+      '<span class="fact">' + p.sizeMB + ' MB</span>',
+      '<span class="fact">建 ' + p.ageDays + ' 天</span>',
+      '<span class="fact">' + p.idleDays + ' 天前还在提</span>',
+      '<span class="fact">issue ' + nf(p.openIssues) + '</span>'
+    ].filter(Boolean).join('');
+
+    var dims = (p.dims || []).map(function (d) {
+      var src = SRC_TAG[d.source] || SRC_TAG.heuristic;
+      var pct = Math.max(0, Math.min(100, d.max ? (d.score / d.max) * 100 : 0));
+      return '<div class="dim">' +
+        '<div class="dimtop"><span class="dl">' + esc(d.label) + '</span><span class="src ' + src[0] + '">' + src[1] + '</span>' +
+        '<span class="dv"><b>' + d.score + '</b>/' + d.max + '</span></div>' +
+        '<div class="track"><div class="fill" style="width:' + pct + '%"></div></div>' +
+        '<details><summary>' + esc(d.value) + '</summary><p class="basis">' + esc(d.basis) + '</p></details>' +
+        '</div>';
+    }).join('');
+
+    var adj = p.adjust || { total: 0, items: [] };
+    var adjHTML = '<div class="adjbox"><span class="adjl">可接手度</span>' +
+      '<span class="adjtag ' + (adj.total < 0 ? 'neg' : (adj.total > 0 ? 'pos' : '')) + ' adjtotal">' + (adj.total > 0 ? '+' : '') + adj.total + '</span>' +
+      (adj.items.length
+        ? adj.items.map(function (it) {
+            return '<span class="adjtag ' + (it.delta < 0 ? 'neg' : 'pos') + '" title="' + esc(it.reason) + '">' + esc(it.label) + ' ' + (it.delta > 0 ? '+' : '') + it.delta + '</span>';
+          }).join('')
+        : '<span class="adjtag">' + esc(adj.note || '无加减分') + '</span>') +
+      (adj.clamped ? '<span class="adjtag neg">原始 ' + (adj.raw > 0 ? '+' : '') + adj.raw + '，已夹到 [−12, +8]</span>' : '') +
+      '</div>';
+
+    return '<article class="card' + (p.revisit ? ' revisit' : '') + '">' +
+      '<div class="chead">' +
+        '<div class="scorecol"><span class="rankbadge">#' + (i + 1) + '</span>' +
+          '<div class="scorenum">' + p.score + '</div><span class="grade g-' + p.grade + '">' + p.grade + ' 级</span></div>' +
+        '<div class="cbody">' +
+          '<div class="titleline">' +
+            '<a class="repo" href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.fullName) + '</a>' +
+            '<span class="owner">' + esc(p.ownerType === 'Organization' ? '组织账号' : '个人账号') + '</span>' +
+            (p.revisit ? '<span class="revisit-tag" title="' + esc(p.revisitReason) + '">回看</span>' : '') +
+          '</div>' +
+          '<p class="desc">' + esc(p.description || '（这个仓库没写简介）') + '</p>' +
+          '<div class="facts">' + facts + '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="dims">' + dims + '</div>' +
+      '<div class="cfoot">' + adjHTML +
+        '<p class="why"><b>为什么入选：</b>' + esc(p.why || '') + '</p>' +
+        '<div class="todo"><span>三行落地（改哪一处 / 卖给谁 / 怎么交付）系统不自动写——那是要人来判断的，编不出来。</span>' +
+          '<button class="copybtn" data-copy="' + esc(p.fullName) + '">复制提问模版</button></div>' +
+      '</div>' +
+    '</article>';
+  }
+
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('.copybtn');
+    if (!b) return;
+    var name = b.dataset.copy;
+    var txt = '读一遍 https://github.com/' + name + ' 的 README 和代码结构，按「改哪一处 / 卖给谁 / 怎么交付」三行写。'
+      + '要求：每行一句中文，具体到文件名或功能点；说不出来就直说这个项目做不出三行。';
+    var done = function () { var o = b.textContent; b.textContent = '已复制'; setTimeout(function () { b.textContent = o; }, 1400); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).then(done).catch(fallback);
+    } else fallback();
+    function fallback() {
+      var t = document.createElement('textarea');
+      t.value = txt; document.body.appendChild(t); t.select();
+      try { document.execCommand('copy'); done(); } catch (err) {}
+      document.body.removeChild(t);
+    }
+  });
+
+  $('#sortSel').addEventListener('change', function (e) { state.sort = e.target.value; renderPicks(); });
+  $('#gradeChips').addEventListener('click', function (e) {
+    var b = e.target.closest('.chip'); if (!b) return;
+    state.grade = b.dataset.g;
+    Array.prototype.forEach.call(this.querySelectorAll('.chip'), function (c) { c.classList.toggle('on', c === b); });
+    renderPicks();
+  });
+  var qTimer;
+  $('#q').addEventListener('input', function (e) {
+    clearTimeout(qTimer);
+    var v = e.target.value;
+    qTimer = setTimeout(function () { state.q = v.trim(); renderPicks(); }, 160);
+  });
+
+  /* ---------- rejected ---------- */
+  function renderRejected(d) {
+    var list = (d.rejected || []).slice();
+    list.sort(function (a, b) {
+      var ra = a.reason === 'redline' ? 1 : 0, rb = b.reason === 'redline' ? 1 : 0;
+      if (ra !== rb) return rb - ra;
+      return (b.score == null ? -1 : b.score) - (a.score == null ? -1 : a.score);
+    });
+    if (!list.length) { $('#rejected').innerHTML = '<div class="rejrow">今天没有排掉任何项目。</div>'; return; }
+    $('#rejected').innerHTML = list.map(function (r) {
+      var red = r.reason === 'redline';
+      var why = red
+        ? (r.redlines || []).map(function (h) { return '· ' + h.label + '：' + h.detail; }).join('<br>')
+        : '· 六维 + 可接手度合计 ' + r.score + ' 分，低于 B 级门槛 60 分。';
+      return '<div class="rejrow' + (red ? '' : ' dim') + '">' +
+        '<span class="rn mono">' + (r.score == null ? '—' : r.score) + '</span>' +
+        '<div style="min-width:0;flex:1 1 auto"><div class="rname"><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.fullName) + '</a> ' +
+          '<span style="color:var(--tx3);font-weight:400;font-size:11.5px">' + nf(r.stars) + '★ · ' + esc(r.language) + '</span></div>' +
+          '<div class="rwhy">' + why + '</div></div>' +
+        '<span class="rbadge ' + (red ? 'redline' : '') + '">' + (red ? '红线出局' : 'C 级') + '</span>' +
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------- method ---------- */
+  var METHOD = [
+    ['许可证', '25', 'license.spdx_id 是 GitHub 返回的真实字段；分档（MIT/Apache 满、GPL 5、AGPL 0）为评分模型设定', 'api'],
+    ['上手成本', '20', 'language 是真实字段；语言→分数是模型给的映射（Py/JS/TS 满、C++ 10、Rust 12），未列出的语言按外推值', 'rule'],
+    ['需求真实', '20', 'stars / open_issues_count 是真实字段，算「待处理 issue ÷ 星数」；注意这个数含 PR', 'rule'],
+    ['中文友好', '15', '真实文本，但判分靠统计汉字比例：描述汉字 >15% 给 8、README 前 2000 字 >8% 给 7、标签带中文 +3。汉字多不等于文档好', 'heuristic'],
+    ['交付轻重', '10', 'size 是真实字段（KB）；≤5MB 满、≥100MB 给 2，中间线性插值', 'rule'],
+    ['时效红利', '10', 'created_at 是真实字段；≤30 天满、≥180 天给 1，中间线性插值', 'rule'],
+    ['可接手度', '±', '关键词命中估算：GPU/集群 −12、底层框架/SDK −6、≥2 万星且组织账号 −8、垂直行业 +8，夹到 [−12, +8]', 'heuristic'],
+    ['四条红线', '出局', '一年多没提交 / 星<50 / 纯清单合集 / 破解绕过 —— 前两条是真实字段，后两条是关键词匹配', 'heuristic']
+  ];
+
+  function renderMethod(m) {
+    $('#methodRows').innerHTML = METHOD.map(function (r) {
+      var src = SRC_TAG[r[3]];
+      return '<tr><td>' + r[0] + '</td><td class="mono">' + r[1] + '</td><td>' + esc(r[2]) +
+        '</td><td><span class="src ' + src[0] + '">' + src[1] + '</span></td></tr>';
+    }).join('');
+
+    var md = m.model || {};
+    $('#honestNote').innerHTML =
+      '<b>诚实说明：</b>权重 ' + JSON.stringify(md.weights) + '、四条红线、许可证与语言分档，都是本项目评分模型的固定设定。' +
+      '模型里另有一层<b>外推</b>，不是实测数据：等级门槛（S≥88 / A≥75 / B≥60）、MPL/LGPL 与未声明许可证的分值、区间线性插值、' +
+      '「可接手度」和四条红线里后两条的关键词表。<br><br>' +
+      '<b>哪些不是精确值：</b>中文友好是靠汉字比例统计的，可接手度是靠关键词命中的，两条关键词红线可能误判——' +
+      '比如一个正经项目简介里写了 "bypass cache" 就会被当成绕过。这些卡片上都标了「启发式估算」，没有伪装成精确值。<br><br>' +
+      '<b>涨星：</b>只有 state 里存过前一天星数的仓库才算得出来（需要至少跑两天）。第一次跑全部显示「—」，这是真的没有数据，不是 0。';
+  }
+
+  /* ---------- runlog ---------- */
+  function renderRunlog(m) {
+    var q = (m.queries || []).map(function (x) {
+      return '<tr><td>' + esc(x.name) + '</td><td class="mono" style="font-size:11px">' + esc(x.q) + '</td>' +
+        '<td class="mono">' + (x.error ? '失败' : (x.count || 0)) + '</td><td style="color:var(--tx3);font-size:11.5px">' + esc(x.why || '') + '</td></tr>';
+    }).join('');
+
+    var rows = [
+      ['跑的时间', fmtTime(m.runAt)],
+      ['抓取方式', m.auth === 'token' ? '带 GitHub Token（每小时 5000 次）' : '匿名（每小时 60 次，容易断）'],
+      ['API 调用', (m.apiCalls || 0) + ' 次' + (m.cacheMisses ? '，其中缓存缺失 ' + m.cacheMisses + ' 条' : '')],
+      ['README 抓取', (m.readmeFetched || 0) + ' / ' + (m.readmeBudget || 0) + ' 份'],
+      ['冷却状态', esc(m.relaxNote || '')],
+      ['回看条数', (m.revisitCount || 0) + ' 条']
+    ].map(function (r) {
+      return '<tr><td>' + r[0] + '</td><td style="color:var(--tx2)">' + r[1] + '</td></tr>';
+    }).join('');
+
+    $('#runlog').innerHTML =
+      '<div class="mwrap" style="margin-bottom:14px"><table class="mtable"><tbody>' + rows + '</tbody></table></div>' +
+      '<div class="mwrap"><table class="mtable"><thead><tr><th>抓取来源</th><th>查询式</th><th>返回</th><th>为什么抓这一路</th></tr></thead><tbody>' + q + '</tbody></table></div>';
+
+    $('#footrow').innerHTML =
+      '<span>作者：<b>老苏玩AI</b></span>' +
+      '<span>仓库：<a href="https://github.com/Jimmysu2616/git-radar" target="_blank" rel="noopener">github.com/Jimmysu2616/git-radar</a></span>' +
+      '<span class="mono">' + m.date + ' 期 · 生成于 ' + fmtTime(m.runAt) + '</span>';
+  }
+
+  /* ---------- share ---------- */
+  $('#shareBtn').addEventListener('click', function () {
+    var date = state.data ? state.data.meta.date : '';
+    var u = new URL(location.href);
+    u.searchParams.set('date', date);
+    u.searchParams.set('sort', state.sort);
+    var url = u.toString();
+    var m = state.data ? state.data.meta : {};
+    var txt = '副业雷达 ' + date + '：扫 ' + (m.counts ? m.counts.unique : '?') + ' 个仓库，留下 ' +
+      (m.counts ? m.counts.picked : '?') + ' 个，最高 ' + (m.topScore == null ? '—' : m.topScore) + ' 分。';
+    if (navigator.share) {
+      navigator.share({ title: '副业雷达 · ' + date + ' · 老苏玩AI', text: txt, url: url }).catch(function () {});
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(txt + '（老苏玩AI） ' + url).then(function () {
+        var b = $('#shareBtn'); var o = b.innerHTML; b.innerHTML = '已复制链接';
+        setTimeout(function () { b.innerHTML = o; }, 1400);
+      }).catch(function () { prompt('复制这个地址分享：', url); });
+    } else {
+      prompt('复制这个地址分享：', url);
+    }
+  });
+})();
+</script>
+</body>
+</html>
