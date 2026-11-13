@@ -1,89 +1,89 @@
 {
   "meta": {
-    "date": "2026-11-11",
-    "runAt": "2026-11-11T17:13:54.958Z",
-    "auth": "anonymous",
-    "apiCalls": 30,
+    "date": "2026-11-13",
+    "runAt": "2026-11-13T07:38:15.085Z",
+    "auth": "token",
+    "apiCalls": 75,
     "rateLimit": {
-      "limit": 60,
-      "remaining": 45,
-      "reset": 1794420964
+      "limit": 5000,
+      "remaining": 4940,
+      "reset": 1794559126
     },
     "cacheMisses": 0,
-    "readmeFetched": 15,
-    "readmeBudget": 15,
+    "readmeFetched": 60,
+    "readmeBudget": 60,
     "queries": [
       {
         "name": "近 30 天新建",
-        "q": "created:>=2026-10-12 stars:>=50",
+        "q": "created:>=2026-10-14 stars:>=50",
         "why": "三十天内新冒头、已经有人注意到的小项目",
         "count": 50,
         "added": 50,
-        "total": 5595
+        "total": 5797
       },
       {
         "name": "近 90 天新建",
-        "q": "created:>=2026-08-13 stars:>=200",
+        "q": "created:>=2026-08-15 stars:>=200",
         "why": "稍长窗口，补 30 天池子的空",
         "count": 50,
-        "added": 41,
-        "total": 4196
+        "added": 40,
+        "total": 4124
       },
       {
         "name": "近 3 天活跃",
-        "q": "pushed:>=2026-11-08 stars:>=500",
+        "q": "pushed:>=2026-11-10 stars:>=500",
         "why": "trending 的替代：还在被真实提交的高星项目",
         "count": 50,
-        "added": 49,
-        "total": 20246
+        "added": 50,
+        "total": 19124
       },
       {
         "name": "近 7 天活跃",
-        "q": "pushed:>=2026-11-04 stars:>=150",
+        "q": "pushed:>=2026-11-06 stars:>=150",
         "why": "活跃但规模小一些，避免只看到巨头",
         "count": 50,
-        "added": 6,
-        "total": 49045
+        "added": 12,
+        "total": 47620
       },
       {
         "name": "主题 · agent",
-        "q": "topic:ai-agents stars:>=100 pushed:>=2026-10-28",
+        "q": "topic:ai-agents stars:>=100 pushed:>=2026-10-30",
         "why": "AI 类项目是当前最容易交付的一批",
         "count": 50,
         "added": 43,
-        "total": 1923
+        "total": 1908
       },
       {
         "name": "主题 · mcp",
-        "q": "topic:mcp stars:>=50 pushed:>=2026-10-28",
+        "q": "topic:mcp stars:>=50 pushed:>=2026-10-30",
         "why": "MCP 是 2026 年的新交付形态",
         "count": 50,
         "added": 29,
-        "total": 2728
+        "total": 2750
       },
       {
         "name": "主题 · seo",
-        "q": "topic:seo stars:>=100 pushed:>=2026-10-12",
+        "q": "topic:seo stars:>=100 pushed:>=2026-10-14",
         "why": "SEO 是买家愿意直接付费的方向",
         "count": 50,
-        "added": 49,
-        "total": 134
+        "added": 48,
+        "total": 132
       },
       {
         "name": "主题 · 效率工具",
-        "q": "topic:productivity stars:>=300 pushed:>=2026-10-28",
+        "q": "topic:productivity stars:>=300 pushed:>=2026-10-30",
         "why": "小而全的效率工具，最容易包一层界面卖",
         "count": 50,
         "added": 47,
-        "total": 227
+        "total": 220
       },
       {
         "name": "关键词 · 电商",
-        "q": "电商 stars:>=100 pushed:>=2026-10-12",
+        "q": "电商 stars:>=100 pushed:>=2026-10-14",
         "why": "垂直行业，可接手度 +8",
-        "count": 38,
-        "added": 38,
-        "total": 38
+        "count": 37,
+        "added": 37,
+        "total": 37
       },
       {
         "name": "关键词 · 命理",
@@ -91,65 +91,65 @@
         "why": "排盘引擎一类的垂直小工具，需求明确",
         "count": 50,
         "added": 50,
-        "total": 177
+        "total": 179
       },
       {
         "name": "主题 · 自动化",
-        "q": "topic:automation stars:>=200 pushed:>=2026-10-28",
+        "q": "topic:automation stars:>=200 pushed:>=2026-10-30",
         "why": "能自动化的事才有交付价值",
         "count": 50,
         "added": 43,
-        "total": 631
+        "total": 613
       },
       {
         "name": "主题 · 浏览器插件",
-        "q": "topic:chrome-extension stars:>=100 pushed:>=2026-10-28",
+        "q": "topic:chrome-extension stars:>=100 pushed:>=2026-10-30",
         "why": "插件是最好卖的一种形态",
         "count": 50,
         "added": 46,
-        "total": 281
+        "total": 280
       },
       {
         "name": "主题 · 微信生态",
-        "q": "topic:weixin stars:>=50 pushed:>=2026-10-28",
+        "q": "topic:weixin stars:>=50 pushed:>=2026-10-30",
         "why": "中文买家最集中的场景",
-        "count": 30,
-        "added": 30,
-        "total": 30
+        "count": 29,
+        "added": 29,
+        "total": 29
       },
       {
         "name": "主题 · SaaS",
-        "q": "topic:saas stars:>=200 pushed:>=2026-10-28",
+        "q": "topic:saas stars:>=200 pushed:>=2026-10-30",
         "why": "已经有人付费的形态",
         "count": 50,
-        "added": 49,
-        "total": 59
+        "added": 50,
+        "total": 61
       },
       {
         "name": "主题 · 采集",
-        "q": "topic:scraping stars:>=300 pushed:>=2026-10-28",
+        "q": "topic:scraping stars:>=300 pushed:>=2026-10-30",
         "why": "采集类是最常见的副业需求",
         "count": 50,
         "added": 45,
-        "total": 54
+        "total": 56
       }
     ],
     "counts": {
-      "unique": 615,
-      "redlined": 79,
-      "lowScore": 286,
-      "qualified": 250,
+      "unique": 619,
+      "redlined": 76,
+      "lowScore": 298,
+      "qualified": 245,
       "picked": 8
     },
-    "topScore": 81,
-    "avgScore": 81,
+    "topScore": 87,
+    "avgScore": 83,
     "gradeCount": {
       "A": 8
     },
     "relaxLevel": 0,
     "relaxNote": "正常：只推 7 天内没推过的项目",
     "revisitCount": 0,
-    "starsDeltaAvailable": 3,
+    "starsDeltaAvailable": 7,
     "model": {
       "weights": {
         "license": 25,
@@ -173,36 +173,51 @@
   },
   "picks": [
     {
-      "fullName": "Jakeschincariol/day-trader-skill",
-      "name": "day-trader-skill",
-      "owner": "Jakeschincariol",
+      "fullName": "whiteguo233/OpenBiliClaw",
+      "name": "OpenBiliClaw",
+      "owner": "whiteguo233",
       "ownerType": "User",
-      "url": "https://github.com/Jakeschincariol/day-trader-skill",
-      "homepage": "",
-      "description": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
+      "url": "https://github.com/whiteguo233/OpenBiliClaw",
+      "homepage": "https://whiteguo233.github.io/OpenBiliClaw/",
+      "description": "本地私有、开源的自进化跨平台 AI 内容发现 Agent：先理解你，再主动从 B站、小红书、抖音、YouTube、X、知乎、Reddit、微博等平台与开放 Web 寻找内容。（支持 deepseek harness 插件） | Local-first open-source cross-platform AI content discovery agent: understands you, then proactively finds content across Bilibili, Xiaohongshu, Douyin, YouTube, X, Zhihu, Reddit, Weibo and the open web.（support deepseek harness plugin）",
       "language": "Python",
       "license": "MIT",
-      "stars": 6920,
-      "forks": 1678,
-      "openIssues": 59,
-      "sizeMB": 0.4,
-      "createdAt": "2026-10-20T14:17:54Z",
-      "pushedAt": "2026-10-20T14:18:00Z",
-      "ageDays": 22,
-      "idleDays": 22,
+      "stars": 3750,
+      "forks": 202,
+      "openIssues": 25,
+      "sizeMB": 126.3,
+      "createdAt": "2026-03-07T13:46:10Z",
+      "pushedAt": "2026-11-12T08:58:34Z",
+      "ageDays": 250,
+      "idleDays": 0,
       "topics": [
-        "backtesting",
-        "claude",
-        "claude-skills",
-        "day-trading",
-        "stock-market"
+        "ai-agent",
+        "bilibili",
+        "chrome-extension",
+        "content-discovery",
+        "cross-platform",
+        "deepseek-harness",
+        "douyin",
+        "dsh",
+        "dsh-plugin",
+        "llm",
+        "local-first",
+        "personal-ai",
+        "privacy-first",
+        "python",
+        "recommendation-system",
+        "self-hosted",
+        "typescript",
+        "xiaohongshu",
+        "youtube",
+        "zhihu"
       ],
       "archived": false,
       "sources": [
-        "近 30 天新建"
+        "主题 · 浏览器插件"
       ],
-      "score": 81,
-      "baseScore": 81,
+      "score": 87,
+      "baseScore": 79,
       "grade": "A",
       "dims": [
         {
@@ -228,97 +243,99 @@
           "label": "需求真实",
           "max": 20,
           "source": "api+rule",
-          "value": "59/6920",
+          "value": "25/3750",
           "score": 16,
-          "basis": "待处理 59 / 星数 6920 = 0.85%，落在 0.5%–2% → 16；注意 open_issues_count 含 PR"
+          "basis": "待处理 25 / 星数 3750 = 0.67%，落在 0.5%–2% → 16；注意 open_issues_count 含 PR"
         },
         {
           "key": "zh",
           "label": "中文友好",
           "max": 15,
           "source": "heuristic",
-          "value": 0,
-          "score": 0,
-          "basis": "描述汉字占比 0% ≤ 15% → +0；README 未抓取（配额预算内未轮到）→ README 项 0 分，这是保守估计；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+          "value": 15,
+          "score": 15,
+          "basis": "描述汉字占比 16% > 15% → +8；README 前 2000 字汉字占比 46% > 8% → +7；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
         },
         {
           "key": "size",
           "label": "交付轻重",
           "max": 10,
           "source": "api+rule",
-          "value": "0.4 MB",
-          "score": 10,
-          "basis": "仓库 0.4 MB ≤ 5 MB → 满"
+          "value": "126.3 MB",
+          "score": 2,
+          "basis": "仓库 126 MB ≥ 100 MB → 2（依赖深，打包给别人容易崩）"
         },
         {
           "key": "fresh",
           "label": "时效红利",
           "max": 10,
           "source": "api+rule",
-          "value": "22 天",
-          "score": 10,
-          "basis": "建于 22 天前 ≤ 30 天 → 满"
+          "value": "250 天",
+          "score": 1,
+          "basis": "建于 250 天前 ≥ 180 天 → 1（半年前的老项目）"
         }
       ],
       "adjust": {
-        "total": 0,
-        "raw": 0,
+        "total": 8,
+        "raw": 8,
         "clamped": false,
-        "items": [],
-        "note": "没有命中任何加减分规则"
+        "items": [
+          {
+            "label": "垂直行业",
+            "delta": 8,
+            "reason": "命中「小红书」：能对上具体行业，买家能直接找到"
+          }
+        ],
+        "note": ""
       },
-      "readmeFetched": false,
-      "readmeHanRatio": null,
-      "readmeHead": "",
+      "readmeFetched": true,
+      "readmeHanRatio": 0.4624,
+      "readmeHead": "🦀 OpenBiliClaw 通用个性化内容推荐 Agent——本地运行、跨平台理解你、只为你一个人构建 *A general-purpose personalized content discovery Agent — runs on your machine, understands only you* 项目主页 | English | 中文 国内 AtomGit 源码镜像：OpenBiliClaw 模型算力支持：感谢 硅基流动（SiliconFlow） 提供免费模型额",
       "starsDelta": {
-        "value": 221,
-        "sinceDays": 1,
+        "value": 9,
+        "sinceDays": 2,
         "since": "2026-11-11"
       },
       "revisit": false,
       "revisitReason": "",
-      "why": "强项是许可证（25/25），MIT。Python 写的，今晚能跑起来。"
+      "why": "强项是许可证（25/25），MIT。垂直行业 +8。Python 写的，今晚能跑起来。"
     },
     {
-      "fullName": "LNPANDY/NX2Apple",
-      "name": "NX2Apple",
-      "owner": "LNPANDY",
+      "fullName": "Renhuai123/ziwei-doushu",
+      "name": "ziwei-doushu",
+      "owner": "Renhuai123",
       "ownerType": "User",
-      "url": "https://github.com/LNPANDY/NX2Apple",
-      "homepage": "https://github.com/LNPANDY/NX2Apple#readme",
-      "description": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
-      "language": "Swift",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "homepage": "https://ouranic.cn/?from=gh-about",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
       "license": "MIT",
-      "stars": 6124,
-      "forks": 765,
-      "openIssues": 164,
-      "sizeMB": 235.3,
-      "createdAt": "2026-10-20T18:16:07Z",
-      "pushedAt": "2026-11-11T17:05:16Z",
-      "ageDays": 21,
+      "stars": 17887,
+      "forks": 3480,
+      "openIssues": 8,
+      "sizeMB": 2.9,
+      "createdAt": "2026-05-01T05:09:59Z",
+      "pushedAt": "2026-11-13T07:09:04Z",
+      "ageDays": 196,
       "idleDays": 0,
       "topics": [
-        "apple-silicon",
-        "custom-format",
-        "homebrew",
-        "ios",
-        "ipa",
-        "ipad",
-        "ipados",
-        "iphone",
-        "metal",
-        "native-port",
-        "nintendo-switch",
-        "nxnative",
-        "romfs",
-        "switch-games"
+        "bazi",
+        "chinese-astrology",
+        "divination",
+        "fortune-telling",
+        "nextjs",
+        "open-source",
+        "purple-star-astrology",
+        "typescript",
+        "zi-wei-dou-shu",
+        "ziwei-doushu"
       ],
       "archived": false,
       "sources": [
-        "近 30 天新建"
+        "关键词 · 命理"
       ],
-      "score": 81,
-      "baseScore": 81,
+      "score": 85,
+      "baseScore": 77,
       "grade": "A",
       "dims": [
         {
@@ -335,104 +352,216 @@
           "label": "上手成本",
           "max": 20,
           "source": "api+rule",
-          "value": "Swift",
-          "score": 16,
-          "basis": "language = Swift → 语言分档 16"
+          "value": "TypeScript",
+          "score": 20,
+          "basis": "language = TypeScript → 语言分档 20"
         },
         {
           "key": "demand",
           "label": "需求真实",
           "max": 20,
           "source": "api+rule",
-          "value": "164/6124",
-          "score": 20,
-          "basis": "待处理 164 / 星数 6124 = 2.68% ≥ 2% → 满（真有人在用、在问、在等回复）；注意 open_issues_count 含 PR"
+          "value": "8/17887",
+          "score": 6,
+          "basis": "待处理 8 / 星数 17887 = 0.04% < 0.5% → 6（星多但没人提问，多是「点个星就走了」，6 为外推值）；注意 open_issues_count 含 PR"
         },
         {
           "key": "zh",
           "label": "中文友好",
           "max": 15,
           "source": "heuristic",
-          "value": 8,
-          "score": 8,
-          "basis": "描述汉字占比 16% > 15% → +8；README 未抓取（配额预算内未轮到）→ README 项 0 分，这是保守估计；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+          "value": 15,
+          "score": 15,
+          "basis": "描述汉字占比 85% > 15% → +8；README 前 2000 字汉字占比 58% > 8% → +7；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
         },
         {
           "key": "size",
           "label": "交付轻重",
           "max": 10,
           "source": "api+rule",
-          "value": "235.3 MB",
-          "score": 2,
-          "basis": "仓库 235 MB ≥ 100 MB → 2（依赖深，打包给别人容易崩）"
+          "value": "2.9 MB",
+          "score": 10,
+          "basis": "仓库 2.9 MB ≤ 5 MB → 满"
         },
         {
           "key": "fresh",
           "label": "时效红利",
           "max": 10,
           "source": "api+rule",
-          "value": "21 天",
-          "score": 10,
-          "basis": "建于 21 天前 ≤ 30 天 → 满"
+          "value": "196 天",
+          "score": 1,
+          "basis": "建于 196 天前 ≥ 180 天 → 1（半年前的老项目）"
         }
       ],
       "adjust": {
-        "total": 0,
-        "raw": 0,
+        "total": 8,
+        "raw": 8,
         "clamped": false,
-        "items": [],
-        "note": "没有命中任何加减分规则"
+        "items": [
+          {
+            "label": "垂直行业",
+            "delta": 8,
+            "reason": "命中「命理」：能对上具体行业，买家能直接找到"
+          }
+        ],
+        "note": ""
       },
-      "readmeFetched": false,
-      "readmeHanRatio": null,
-      "readmeHead": "",
+      "readmeFetched": true,
+      "readmeHanRatio": 0.5822,
+      "readmeHead": "紫微斗数 · 开源排盘引擎 算法是公开的传统智慧，不应该被锁在围墙里 中文 · English 一、项目理念 ：紫微斗数是中国传统命理学的瑰宝，倪海厦老师在《天纪》中系统梳理了正宗的紫微斗数体系。我们希望通过技术手段让更多人接触和学习这门学问。 开源排盘算法和知识库，是因为我们相信： 算法是公开的传统智慧，不应该被锁在围墙里 。真正的价值在于解读的深度、用户体验的打磨、以及持续运营的积累。 二、项目信息 ：基于 倪海厦《天纪》 教学体系的紫微斗数排盘系统，包含完整排盘算法、四",
       "starsDelta": {
-        "value": 158,
-        "sinceDays": 1,
+        "value": 301,
+        "sinceDays": 2,
         "since": "2026-11-11"
       },
       "revisit": false,
       "revisitReason": "",
-      "why": "强项是许可证（25/25），MIT。"
+      "why": "强项是许可证（25/25），MIT。垂直行业 +8。TypeScript 写的，今晚能跑起来。"
     },
     {
-      "fullName": "haydenschmitty/floorplan",
-      "name": "floorplan",
-      "owner": "haydenschmitty",
+      "fullName": "jinchenma94/bazi-skill",
+      "name": "bazi-skill",
+      "owner": "jinchenma94",
       "ownerType": "User",
-      "url": "https://github.com/haydenschmitty/floorplan",
-      "homepage": "https://haydenschmitty.github.io/floorplan-demo/",
-      "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
+      "url": "https://github.com/jinchenma94/bazi-skill",
+      "homepage": "",
+      "description": "四柱八字命理分析",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 3918,
+      "forks": 589,
+      "openIssues": 12,
+      "sizeMB": 0,
+      "createdAt": "2026-04-04T18:27:34Z",
+      "pushedAt": "2026-08-17T17:53:04Z",
+      "ageDays": 222,
+      "idleDays": 87,
+      "topics": [],
+      "archived": false,
+      "sources": [
+        "关键词 · 命理"
+      ],
+      "score": 85,
+      "baseScore": 77,
+      "grade": "A",
+      "dims": [
+        {
+          "key": "license",
+          "label": "许可证",
+          "max": 25,
+          "source": "api",
+          "value": "MIT",
+          "score": 25,
+          "basis": "license.spdx_id = MIT（MIT/Apache 这类，改完能闭源卖）"
+        },
+        {
+          "key": "lang",
+          "label": "上手成本",
+          "max": 20,
+          "source": "api+rule",
+          "value": "Python",
+          "score": 20,
+          "basis": "language = Python → 语言分档 20"
+        },
+        {
+          "key": "demand",
+          "label": "需求真实",
+          "max": 20,
+          "source": "api+rule",
+          "value": "12/3918",
+          "score": 6,
+          "basis": "待处理 12 / 星数 3918 = 0.31% < 0.5% → 6（星多但没人提问，多是「点个星就走了」，6 为外推值）；注意 open_issues_count 含 PR"
+        },
+        {
+          "key": "zh",
+          "label": "中文友好",
+          "max": 15,
+          "source": "heuristic",
+          "value": 15,
+          "score": 15,
+          "basis": "描述汉字占比 100% > 15% → +8；README 前 2000 字汉字占比 71% > 8% → +7；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+        },
+        {
+          "key": "size",
+          "label": "交付轻重",
+          "max": 10,
+          "source": "api+rule",
+          "value": "0.0 MB",
+          "score": 10,
+          "basis": "仓库 0.0 MB ≤ 5 MB → 满"
+        },
+        {
+          "key": "fresh",
+          "label": "时效红利",
+          "max": 10,
+          "source": "api+rule",
+          "value": "222 天",
+          "score": 1,
+          "basis": "建于 222 天前 ≥ 180 天 → 1（半年前的老项目）"
+        }
+      ],
+      "adjust": {
+        "total": 8,
+        "raw": 8,
+        "clamped": false,
+        "items": [
+          {
+            "label": "垂直行业",
+            "delta": 8,
+            "reason": "命中「命理」：能对上具体行业，买家能直接找到"
+          }
+        ],
+        "note": ""
+      },
+      "readmeFetched": true,
+      "readmeHanRatio": 0.7103,
+      "readmeHead": "赛博算命 Skill 基于 Claude Code 的八字排盘与命理分析工具。通过交互式对话收集出生信息，排出四柱八字，参照九本经典命理典籍进行专业分析。 功能 - 信息收集 — 逐步收集姓名、阳历/农历生日、出生时辰、性别、出生地等信息 - 排盘计算 — 自动排出年柱、月柱、日柱、时柱，计算大运与流年 - 综合分析 — 日主强弱、十神关系、五行平衡、格局判定、大运流年解读，以及事业、感情、健康等方面的建议 安装 > 注意 ：Claude Code 从 git 仓库根目录的 ",
+      "starsDelta": {
+        "value": 20,
+        "sinceDays": 2,
+        "since": "2026-11-11"
+      },
+      "revisit": false,
+      "revisitReason": "",
+      "why": "强项是许可证（25/25），MIT。垂直行业 +8。Python 写的，今晚能跑起来。"
+    },
+    {
+      "fullName": "xaboy/form-create",
+      "name": "form-create",
+      "owner": "xaboy",
+      "ownerType": "User",
+      "url": "https://github.com/xaboy/form-create",
+      "homepage": "https://www.form-create.com/",
+      "description": ":fire::fire::fire: 强大的低代码动态表单组件，通过 JSON 数据驱动表单渲染，适配移动端，支持可视化设计。提高开发者对表单的开发效率。目前在政务系统、OA系统、ERP系统、电商系统、流程管理等系统中已稳定应用。",
       "language": "JavaScript",
       "license": "MIT",
-      "stars": 3578,
-      "forks": 286,
-      "openIssues": 63,
-      "sizeMB": 6,
-      "createdAt": "2026-10-27T12:03:01Z",
-      "pushedAt": "2026-11-11T03:49:40Z",
-      "ageDays": 15,
-      "idleDays": 0,
+      "stars": 7117,
+      "forks": 1107,
+      "openIssues": 27,
+      "sizeMB": 19.8,
+      "createdAt": "2018-02-11T03:25:40Z",
+      "pushedAt": "2026-11-03T10:31:47Z",
+      "ageDays": 3197,
+      "idleDays": 9,
       "topics": [
-        "ai-coding",
-        "architecture-diagram",
-        "claude",
-        "claude-code",
-        "claude-code-plugin",
-        "codebase-visualization",
-        "codex",
-        "codex-plugin",
-        "developer-tools",
-        "onboarding",
-        "openai",
-        "vibe-coding"
+        "ant-design-vue",
+        "arco-design",
+        "element-plus",
+        "element-ui",
+        "form",
+        "form-designer",
+        "lowcode",
+        "naive-ui",
+        "tiny-vue",
+        "vant",
+        "vue"
       ],
       "archived": false,
       "sources": [
-        "近 30 天新建"
+        "关键词 · 电商"
       ],
-      "score": 81,
-      "baseScore": 81,
+      "score": 84,
+      "baseScore": 76,
       "grade": "A",
       "dims": [
         {
@@ -458,93 +587,109 @@
           "label": "需求真实",
           "max": 20,
           "source": "api+rule",
-          "value": "63/3578",
-          "score": 16,
-          "basis": "待处理 63 / 星数 3578 = 1.76%，落在 0.5%–2% → 16；注意 open_issues_count 含 PR"
+          "value": "27/7117",
+          "score": 6,
+          "basis": "待处理 27 / 星数 7117 = 0.38% < 0.5% → 6（星多但没人提问，多是「点个星就走了」，6 为外推值）；注意 open_issues_count 含 PR"
         },
         {
           "key": "zh",
           "label": "中文友好",
           "max": 15,
           "source": "heuristic",
-          "value": 0,
-          "score": 0,
-          "basis": "描述汉字占比 0% ≤ 15% → +0；README 未抓取（配额预算内未轮到）→ README 项 0 分，这是保守估计；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+          "value": 15,
+          "score": 15,
+          "basis": "描述汉字占比 67% > 15% → +8；README 前 2000 字汉字占比 32% > 8% → +7；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
         },
         {
           "key": "size",
           "label": "交付轻重",
           "max": 10,
           "source": "api+rule",
-          "value": "6.0 MB",
-          "score": 10,
-          "basis": "仓库 6.0 MB，在 5–100 MB 之间 → 线性插值 10（插值是本脚本外推）"
+          "value": "19.8 MB",
+          "score": 9,
+          "basis": "仓库 19.8 MB，在 5–100 MB 之间 → 线性插值 9（插值是本脚本外推）"
         },
         {
           "key": "fresh",
           "label": "时效红利",
           "max": 10,
           "source": "api+rule",
-          "value": "15 天",
-          "score": 10,
-          "basis": "建于 15 天前 ≤ 30 天 → 满"
+          "value": "3197 天",
+          "score": 1,
+          "basis": "建于 3197 天前 ≥ 180 天 → 1（半年前的老项目）"
         }
       ],
       "adjust": {
-        "total": 0,
-        "raw": 0,
+        "total": 8,
+        "raw": 8,
         "clamped": false,
-        "items": [],
-        "note": "没有命中任何加减分规则"
+        "items": [
+          {
+            "label": "垂直行业",
+            "delta": 8,
+            "reason": "命中「电商」：能对上具体行业，买家能直接找到"
+          }
+        ],
+        "note": ""
       },
-      "readmeFetched": false,
-      "readmeHanRatio": null,
-      "readmeHead": "",
+      "readmeFetched": true,
+      "readmeHanRatio": 0.3161,
+      "readmeHead": "官网 &nbsp;|&nbsp; 帮助文档 &nbsp;|&nbsp; Agent Skills &nbsp;|&nbsp; 可视化表单设计器 &nbsp;|&nbsp; 移动端表单设计器 FormCreate 是一个可以通过 JSON 生成具有动态渲染、数据收集、验证和提交功能的低代码表单生成组件。支持8个UI框架，适配移动端，并且支持生成任何 Vue 组件。内置20+种常用表单组件和自定义组件，再复杂的表单都可以轻松搞定。 特点 - 使用JSON数据生成表单 - 支持扩展",
       "starsDelta": {
-        "value": 124,
-        "sinceDays": 1,
+        "value": -1,
+        "sinceDays": 2,
         "since": "2026-11-11"
       },
       "revisit": false,
       "revisitReason": "",
-      "why": "强项是许可证（25/25），MIT。JavaScript 写的，今晚能跑起来。"
+      "why": "强项是许可证（25/25），MIT。垂直行业 +8。JavaScript 写的，今晚能跑起来。"
     },
     {
-      "fullName": "fanyuantaier/wechatauto-replica",
-      "name": "wechatauto-replica",
-      "owner": "fanyuantaier",
+      "fullName": "iniwap/AIWriteX",
+      "name": "AIWriteX",
+      "owner": "iniwap",
       "ownerType": "User",
-      "url": "https://github.com/fanyuantaier/wechatauto-replica",
-      "homepage": "https://pypi.org/project/wechatauto-replica/",
-      "description": "Windows WeChat automation for Windows (non-web), wxauto replica supporting WeChat 4.x - Windows 微信客户端自动化（非网页版）复刻版",
+      "url": "https://github.com/iniwap/AIWriteX",
+      "homepage": "https://aiwritex.voidai.cc",
+      "description": "AIWriteX - 微信公众号全自动AI工具：全网热搜舆情聚合+趋势分析+爆款选题+文章采集+一键生成排版发布 | AI自动配图 | 去AI味、过朱雀检测 | 支持小红书/百家号/头条等多平台 | 洗稿润色支持多账号 | 专家赛道 | 小绿书贴图 | 短视频文案 | 手机控制 | 小说连载 | 短剧剧本 | 爆文10w+神器",
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 655,
-      "forks": 279,
-      "openIssues": 21,
-      "sizeMB": 2.3,
-      "createdAt": "2026-08-07T09:42:11Z",
-      "pushedAt": "2026-11-09T14:39:06Z",
-      "ageDays": 96,
-      "idleDays": 2,
+      "stars": 2259,
+      "forks": 429,
+      "openIssues": 0,
+      "sizeMB": 19.3,
+      "createdAt": "2025-04-02T07:28:12Z",
+      "pushedAt": "2026-11-13T06:51:12Z",
+      "ageDays": 590,
+      "idleDays": 0,
       "topics": [
-        "automation",
-        "ocr",
-        "sqlcipher",
-        "uiautomation",
+        "agents",
+        "ai-agents",
+        "ai-auto-wxgzh",
+        "ai-wx",
+        "aipy",
+        "aipyapp",
+        "aixiezuo",
+        "baowen",
+        "crewai",
+        "gongzhonghao-a",
+        "openclaw",
+        "qu-ai-wei",
+        "search-tool",
+        "web-search",
         "wechat",
-        "wechat-automation",
-        "wechat4",
-        "wechatauto",
         "weixin",
-        "wxauto"
+        "wx",
+        "wx-template",
+        "wxgzh",
+        "xiaohongshu"
       ],
       "archived": false,
       "sources": [
         "主题 · 微信生态"
       ],
-      "score": 81,
-      "baseScore": 81,
+      "score": 84,
+      "baseScore": 76,
       "grade": "A",
       "dims": [
         {
@@ -570,95 +715,88 @@
           "label": "需求真实",
           "max": 20,
           "source": "api+rule",
-          "value": "21/655",
-          "score": 20,
-          "basis": "待处理 21 / 星数 655 = 3.21% ≥ 2% → 满（真有人在用、在问、在等回复）；注意 open_issues_count 含 PR"
+          "value": "0/2259",
+          "score": 6,
+          "basis": "待处理 0 / 星数 2259 = 0.00% < 0.5% → 6（星多但没人提问，多是「点个星就走了」，6 为外推值）；注意 open_issues_count 含 PR"
         },
         {
           "key": "zh",
           "label": "中文友好",
           "max": 15,
           "source": "heuristic",
-          "value": 0,
-          "score": 0,
-          "basis": "描述汉字占比 15% ≤ 15% → +0；README 未抓取（配额预算内未轮到）→ README 项 0 分，这是保守估计；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+          "value": 15,
+          "score": 15,
+          "basis": "描述汉字占比 73% > 15% → +8；README 前 2000 字汉字占比 78% > 8% → +7；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
         },
         {
           "key": "size",
           "label": "交付轻重",
           "max": 10,
           "source": "api+rule",
-          "value": "2.3 MB",
-          "score": 10,
-          "basis": "仓库 2.3 MB ≤ 5 MB → 满"
+          "value": "19.3 MB",
+          "score": 9,
+          "basis": "仓库 19.3 MB，在 5–100 MB 之间 → 线性插值 9（插值是本脚本外推）"
         },
         {
           "key": "fresh",
           "label": "时效红利",
           "max": 10,
           "source": "api+rule",
-          "value": "96 天",
-          "score": 6,
-          "basis": "建于 96 天前，在 30–180 天之间 → 线性插值 6（插值是本脚本外推）"
+          "value": "590 天",
+          "score": 1,
+          "basis": "建于 590 天前 ≥ 180 天 → 1（半年前的老项目）"
         }
       ],
       "adjust": {
-        "total": 0,
-        "raw": 0,
+        "total": 8,
+        "raw": 8,
         "clamped": false,
-        "items": [],
-        "note": "没有命中任何加减分规则"
+        "items": [
+          {
+            "label": "垂直行业",
+            "delta": 8,
+            "reason": "命中「小红书」：能对上具体行业，买家能直接找到"
+          }
+        ],
+        "note": ""
       },
-      "readmeFetched": false,
-      "readmeHanRatio": null,
-      "readmeHead": "",
-      "starsDelta": null,
+      "readmeFetched": true,
+      "readmeHanRatio": 0.778,
+      "readmeHead": "AIWriteX- 微信公众号AI写作助手 | CrewAI多智能体爆文生成神器 AIWriteX 新一代智能内容创作平台 ：一键全自动热点选题 + 实时搜索借鉴 + AI创意生成 + 精美排版 + AI自动配图 + 微信公众号自动发布，融合 AI + 全网热点雷达 + 微信文章采集下载 + 深度洗稿与内容挖掘 + 多智能体协作 + 去AI味润色 + 手机智能体控制/类OpenClaw + 系统智能自进化 ，让你的文章快人一步、阅读量10w+不是梦！ > 想先看看效果？ 👉",
+      "starsDelta": {
+        "value": 10,
+        "sinceDays": 2,
+        "since": "2026-11-11"
+      },
       "revisit": false,
       "revisitReason": "",
-      "why": "强项是许可证（25/25），Apache-2.0。Python 写的，今晚能跑起来。"
+      "why": "强项是许可证（25/25），Apache-2.0。垂直行业 +8。Python 写的，今晚能跑起来。"
     },
     {
-      "fullName": "JustinBeckwith/linkinator",
-      "name": "linkinator",
-      "owner": "JustinBeckwith",
+      "fullName": "Lee-xeo/Claude-Cage",
+      "name": "Claude-Cage",
+      "owner": "Lee-xeo",
       "ownerType": "User",
-      "url": "https://github.com/JustinBeckwith/linkinator",
-      "homepage": "",
-      "description": "Broken link checker that crawls websites and validates links. Find broken links, dead links, and invalid URLs in websites, documentation, and local files. Perfect for SEO audits and CI/CD.",
-      "language": "TypeScript",
+      "url": "https://github.com/Lee-xeo/Claude-Cage",
+      "homepage": "https://lee-xeo.github.io/Claude-Cage/",
+      "description": "Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。多平台适配，支持多账号管理、远程部署、移动端操控。",
+      "language": "Go",
       "license": "MIT",
-      "stars": 1289,
-      "forks": 110,
-      "openIssues": 19,
-      "sizeMB": 5.1,
-      "createdAt": "2019-02-12T02:13:33Z",
-      "pushedAt": "2026-11-11T12:06:34Z",
-      "ageDays": 2829,
+      "stars": 5046,
+      "forks": 556,
+      "openIssues": 59,
+      "sizeMB": 50.8,
+      "createdAt": "2026-10-31T15:07:08Z",
+      "pushedAt": "2026-11-13T06:17:46Z",
+      "ageDays": 12,
       "idleDays": 0,
-      "topics": [
-        "404",
-        "broken-link-checker",
-        "broken-links",
-        "ci-cd",
-        "dead-links",
-        "html",
-        "link-checker",
-        "link-validator",
-        "nodejs",
-        "seo",
-        "seo-tools",
-        "testing",
-        "typescript",
-        "url-validator",
-        "web-crawler",
-        "website-crawler"
-      ],
+      "topics": [],
       "archived": false,
       "sources": [
-        "主题 · seo"
+        "近 30 天新建"
       ],
-      "score": 80,
-      "baseScore": 72,
+      "score": 82,
+      "baseScore": 88,
       "grade": "A",
       "dims": [
         {
@@ -675,345 +813,101 @@
           "label": "上手成本",
           "max": 20,
           "source": "api+rule",
-          "value": "TypeScript",
-          "score": 20,
-          "basis": "language = TypeScript → 语言分档 20"
+          "value": "Go",
+          "score": 16,
+          "basis": "language = Go → 语言分档 16"
         },
         {
           "key": "demand",
           "label": "需求真实",
           "max": 20,
           "source": "api+rule",
-          "value": "19/1289",
+          "value": "59/5046",
           "score": 16,
-          "basis": "待处理 19 / 星数 1289 = 1.47%，落在 0.5%–2% → 16；注意 open_issues_count 含 PR"
+          "basis": "待处理 59 / 星数 5046 = 1.17%，落在 0.5%–2% → 16；注意 open_issues_count 含 PR"
         },
         {
           "key": "zh",
           "label": "中文友好",
           "max": 15,
           "source": "heuristic",
-          "value": 0,
-          "score": 0,
-          "basis": "描述汉字占比 0% ≤ 15% → +0；README 未抓取（配额预算内未轮到）→ README 项 0 分，这是保守估计；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+          "value": 15,
+          "score": 15,
+          "basis": "描述汉字占比 70% > 15% → +8；README 前 2000 字汉字占比 53% > 8% → +7；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
         },
         {
           "key": "size",
           "label": "交付轻重",
           "max": 10,
           "source": "api+rule",
-          "value": "5.1 MB",
-          "score": 10,
-          "basis": "仓库 5.1 MB，在 5–100 MB 之间 → 线性插值 10（插值是本脚本外推）"
+          "value": "50.8 MB",
+          "score": 6,
+          "basis": "仓库 50.8 MB，在 5–100 MB 之间 → 线性插值 6（插值是本脚本外推）"
         },
         {
           "key": "fresh",
           "label": "时效红利",
           "max": 10,
           "source": "api+rule",
-          "value": "2829 天",
-          "score": 1,
-          "basis": "建于 2829 天前 ≥ 180 天 → 1（半年前的老项目）"
+          "value": "12 天",
+          "score": 10,
+          "basis": "建于 12 天前 ≤ 30 天 → 满"
         }
       ],
       "adjust": {
-        "total": 8,
-        "raw": 8,
+        "total": -6,
+        "raw": -6,
         "clamped": false,
         "items": [
           {
-            "label": "垂直行业",
-            "delta": 8,
-            "reason": "命中「seo」：能对上具体行业，买家能直接找到"
+            "label": "底层框架 / SDK",
+            "delta": -6,
+            "reason": "命中「虚拟机」：框架、开发工具包、编译器这类底层设施，没有你能插手的那层"
           }
         ],
         "note": ""
       },
-      "readmeFetched": false,
-      "readmeHanRatio": null,
-      "readmeHead": "",
+      "readmeFetched": true,
+      "readmeHanRatio": 0.5324,
+      "readmeHead": "Claude Cage 把 Claude 大小姐关起来，为了更好地保护我们的相遇 项目主页 · 下载应用 · 使用文档 · 常见问题 简体中文 · 繁體中文 · Русский · العربية · فارسی · 한국어 · Español · မြန်မာဘာသာ · Беларуская · پښتو · دری · አማርኛ · Soomaali · ትግርኛ · Français 受够了 Anthropic 作为一个只是想和 Claude 对话与合作的正常用户，受",
       "starsDelta": null,
       "revisit": false,
       "revisitReason": "",
-      "why": "强项是许可证（25/25），MIT。垂直行业 +8。TypeScript 写的，今晚能跑起来。"
+      "why": "强项是许可证（25/25），MIT。底层框架 / SDK -6。"
     },
     {
-      "fullName": "Bhanunamikaze/Agentic-SEO-Skill",
-      "name": "Agentic-SEO-Skill",
-      "owner": "Bhanunamikaze",
+      "fullName": "learnwithu/mingli-master",
+      "name": "mingli-master",
+      "owner": "learnwithu",
       "ownerType": "User",
-      "url": "https://github.com/Bhanunamikaze/Agentic-SEO-Skill",
+      "url": "https://github.com/learnwithu/mingli-master",
       "homepage": "",
-      "description": "An LLM-first SEO analysis skill for Antigravity, Codex, Claude with 16 specialized sub-skills, 10 specialist agents, and 88 optional utility scripts used as evidence collectors.",
+      "description": "紫微斗数命盘解读 skill · 基于 iztro-py 精确排盘，生成可视化命盘 HTML",
       "language": "Python",
       "license": "MIT",
-      "stars": 1049,
-      "forks": 157,
-      "openIssues": 12,
-      "sizeMB": 0.7,
-      "createdAt": "2026-03-02T17:37:53Z",
-      "pushedAt": "2026-10-14T13:06:40Z",
-      "ageDays": 253,
-      "idleDays": 28,
+      "stars": 783,
+      "forks": 109,
+      "openIssues": 2,
+      "sizeMB": 20.3,
+      "createdAt": "2026-06-02T08:56:29Z",
+      "pushedAt": "2026-08-15T12:51:17Z",
+      "ageDays": 163,
+      "idleDays": 89,
       "topics": [
-        "ai-skill",
-        "ai-skills",
-        "antigravity-ai",
-        "antigravity-skills",
-        "antigravity-tools",
+        "agent-skill",
+        "chinese-astrology",
         "claude-skill",
-        "claude-skills",
-        "codex-skill",
-        "codex-skills",
-        "seo",
-        "seo-optimization",
-        "skills"
-      ],
-      "archived": false,
-      "sources": [
-        "主题 · seo"
-      ],
-      "score": 80,
-      "baseScore": 72,
-      "grade": "A",
-      "dims": [
-        {
-          "key": "license",
-          "label": "许可证",
-          "max": 25,
-          "source": "api",
-          "value": "MIT",
-          "score": 25,
-          "basis": "license.spdx_id = MIT（MIT/Apache 这类，改完能闭源卖）"
-        },
-        {
-          "key": "lang",
-          "label": "上手成本",
-          "max": 20,
-          "source": "api+rule",
-          "value": "Python",
-          "score": 20,
-          "basis": "language = Python → 语言分档 20"
-        },
-        {
-          "key": "demand",
-          "label": "需求真实",
-          "max": 20,
-          "source": "api+rule",
-          "value": "12/1049",
-          "score": 16,
-          "basis": "待处理 12 / 星数 1049 = 1.14%，落在 0.5%–2% → 16；注意 open_issues_count 含 PR"
-        },
-        {
-          "key": "zh",
-          "label": "中文友好",
-          "max": 15,
-          "source": "heuristic",
-          "value": 0,
-          "score": 0,
-          "basis": "描述汉字占比 0% ≤ 15% → +0；README 未抓取（配额预算内未轮到）→ README 项 0 分，这是保守估计；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
-        },
-        {
-          "key": "size",
-          "label": "交付轻重",
-          "max": 10,
-          "source": "api+rule",
-          "value": "0.7 MB",
-          "score": 10,
-          "basis": "仓库 0.7 MB ≤ 5 MB → 满"
-        },
-        {
-          "key": "fresh",
-          "label": "时效红利",
-          "max": 10,
-          "source": "api+rule",
-          "value": "253 天",
-          "score": 1,
-          "basis": "建于 253 天前 ≥ 180 天 → 1（半年前的老项目）"
-        }
-      ],
-      "adjust": {
-        "total": 8,
-        "raw": 8,
-        "clamped": false,
-        "items": [
-          {
-            "label": "垂直行业",
-            "delta": 8,
-            "reason": "命中「seo」：能对上具体行业，买家能直接找到"
-          }
-        ],
-        "note": ""
-      },
-      "readmeFetched": false,
-      "readmeHanRatio": null,
-      "readmeHead": "",
-      "starsDelta": null,
-      "revisit": false,
-      "revisitReason": "",
-      "why": "强项是许可证（25/25），MIT。垂直行业 +8。Python 写的，今晚能跑起来。"
-    },
-    {
-      "fullName": "crawlseo/crawlseo",
-      "name": "crawlseo",
-      "owner": "crawlseo",
-      "ownerType": "Organization",
-      "url": "https://github.com/crawlseo/crawlseo",
-      "homepage": "https://crawlseo.cloud/",
-      "description": "Open-source SEO monitoring. GSC + Site Crawler + Core Web Vitals in one dashboard.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 692,
-      "forks": 102,
-      "openIssues": 4,
-      "sizeMB": 4.2,
-      "createdAt": "2026-04-06T12:42:10Z",
-      "pushedAt": "2026-11-02T11:09:52Z",
-      "ageDays": 219,
-      "idleDays": 9,
-      "topics": [
-        "backlinks",
-        "core-web-vitals",
-        "core-web-vitalsl",
-        "geo",
-        "google-search-console",
-        "keyword-research",
-        "mcp",
-        "nextjs",
-        "open-source",
-        "prisma",
-        "rank-tracker",
-        "self-hosted",
-        "seo",
-        "seo-monitoring",
-        "seo-tools",
-        "shadcn-ui",
-        "site-audit",
-        "site-crawler",
-        "tailwindcss",
-        "typescript"
-      ],
-      "archived": false,
-      "sources": [
-        "主题 · seo"
-      ],
-      "score": 80,
-      "baseScore": 72,
-      "grade": "A",
-      "dims": [
-        {
-          "key": "license",
-          "label": "许可证",
-          "max": 25,
-          "source": "api",
-          "value": "MIT",
-          "score": 25,
-          "basis": "license.spdx_id = MIT（MIT/Apache 这类，改完能闭源卖）"
-        },
-        {
-          "key": "lang",
-          "label": "上手成本",
-          "max": 20,
-          "source": "api+rule",
-          "value": "TypeScript",
-          "score": 20,
-          "basis": "language = TypeScript → 语言分档 20"
-        },
-        {
-          "key": "demand",
-          "label": "需求真实",
-          "max": 20,
-          "source": "api+rule",
-          "value": "4/692",
-          "score": 16,
-          "basis": "待处理 4 / 星数 692 = 0.58%，落在 0.5%–2% → 16；注意 open_issues_count 含 PR"
-        },
-        {
-          "key": "zh",
-          "label": "中文友好",
-          "max": 15,
-          "source": "heuristic",
-          "value": 0,
-          "score": 0,
-          "basis": "描述汉字占比 0% ≤ 15% → +0；README 未抓取（配额预算内未轮到）→ README 项 0 分，这是保守估计；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
-        },
-        {
-          "key": "size",
-          "label": "交付轻重",
-          "max": 10,
-          "source": "api+rule",
-          "value": "4.2 MB",
-          "score": 10,
-          "basis": "仓库 4.2 MB ≤ 5 MB → 满"
-        },
-        {
-          "key": "fresh",
-          "label": "时效红利",
-          "max": 10,
-          "source": "api+rule",
-          "value": "219 天",
-          "score": 1,
-          "basis": "建于 219 天前 ≥ 180 天 → 1（半年前的老项目）"
-        }
-      ],
-      "adjust": {
-        "total": 8,
-        "raw": 8,
-        "clamped": false,
-        "items": [
-          {
-            "label": "垂直行业",
-            "delta": 8,
-            "reason": "命中「seo」：能对上具体行业，买家能直接找到"
-          }
-        ],
-        "note": ""
-      },
-      "readmeFetched": false,
-      "readmeHanRatio": null,
-      "readmeHead": "",
-      "starsDelta": null,
-      "revisit": false,
-      "revisitReason": "",
-      "why": "强项是许可证（25/25），MIT。垂直行业 +8。TypeScript 写的，今晚能跑起来。"
-    },
-    {
-      "fullName": "Bronya0/Kafka-King",
-      "name": "Kafka-King",
-      "owner": "Bronya0",
-      "ownerType": "User",
-      "url": "https://github.com/Bronya0/Kafka-King",
-      "homepage": "https://zread.ai/Bronya0/Kafka-King",
-      "description": "A modern and practical kafka GUI client 💕🎉Kafka-King 是一款现代化、实用的 Kafka GUI 客户端，旨在通过直观的桌面界面简化 Apache Kafka 管理。作为一款跨平台应用程序，它为开发人员和管理员提供了强大的工具，可与 Kafka 集群交互，无需依赖命令行界面或基于 Web 的解决方案。",
-      "language": "Vue",
-      "license": "Apache-2.0",
-      "stars": 1345,
-      "forks": 79,
-      "openIssues": 61,
-      "sizeMB": 8.2,
-      "createdAt": "2024-02-14T05:34:37Z",
-      "pushedAt": "2026-09-09T05:33:17Z",
-      "ageDays": 1001,
-      "idleDays": 63,
-      "topics": [
-        "gui",
-        "kafka",
-        "kafka-client",
-        "kafka-clients",
-        "kafka-connector",
-        "kafka-gui",
-        "kafka-gui-client",
-        "kafkagui",
-        "wails",
-        "wails-app",
-        "wails2"
+        "fortune-telling",
+        "iztro",
+        "ziwei",
+        "ziwei-doushu"
       ],
       "archived": false,
       "sources": [
         "关键词 · 命理"
       ],
-      "score": 80,
-      "baseScore": 80,
+      "score": 79,
+      "baseScore": 77,
       "grade": "A",
       "dims": [
         {
@@ -1021,77 +915,226 @@
           "label": "许可证",
           "max": 25,
           "source": "api",
-          "value": "Apache-2.0",
+          "value": "MIT",
           "score": 25,
-          "basis": "license.spdx_id = Apache-2.0（MIT/Apache 这类，改完能闭源卖）"
+          "basis": "license.spdx_id = MIT（MIT/Apache 这类，改完能闭源卖）"
         },
         {
           "key": "lang",
           "label": "上手成本",
           "max": 20,
           "source": "api+rule",
-          "value": "Vue",
-          "score": 16,
-          "basis": "language = Vue → 语言分档 16"
+          "value": "Python",
+          "score": 20,
+          "basis": "language = Python → 语言分档 20"
         },
         {
           "key": "demand",
           "label": "需求真实",
           "max": 20,
           "source": "api+rule",
-          "value": "61/1345",
-          "score": 20,
-          "basis": "待处理 61 / 星数 1345 = 4.54% ≥ 2% → 满（真有人在用、在问、在等回复）；注意 open_issues_count 含 PR"
+          "value": "2/783",
+          "score": 6,
+          "basis": "待处理 2 / 星数 783 = 0.26% < 0.5% → 6（星多但没人提问，多是「点个星就走了」，6 为外推值）；注意 open_issues_count 含 PR"
         },
         {
           "key": "zh",
           "label": "中文友好",
           "max": 15,
           "source": "heuristic",
-          "value": 8,
-          "score": 8,
-          "basis": "描述汉字占比 49% > 15% → +8；README 未抓取（配额预算内未轮到）→ README 项 0 分，这是保守估计；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+          "value": 15,
+          "score": 15,
+          "basis": "描述汉字占比 53% > 15% → +8；README 前 2000 字汉字占比 68% > 8% → +7；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
         },
         {
           "key": "size",
           "label": "交付轻重",
           "max": 10,
           "source": "api+rule",
-          "value": "8.2 MB",
-          "score": 10,
-          "basis": "仓库 8.2 MB，在 5–100 MB 之间 → 线性插值 10（插值是本脚本外推）"
+          "value": "20.3 MB",
+          "score": 9,
+          "basis": "仓库 20.3 MB，在 5–100 MB 之间 → 线性插值 9（插值是本脚本外推）"
         },
         {
           "key": "fresh",
           "label": "时效红利",
           "max": 10,
           "source": "api+rule",
-          "value": "1001 天",
-          "score": 1,
-          "basis": "建于 1001 天前 ≥ 180 天 → 1（半年前的老项目）"
+          "value": "163 天",
+          "score": 2,
+          "basis": "建于 163 天前，在 30–180 天之间 → 线性插值 2（插值是本脚本外推）"
         }
       ],
       "adjust": {
-        "total": 0,
-        "raw": 0,
+        "total": 2,
+        "raw": 2,
         "clamped": false,
-        "items": [],
-        "note": "没有命中任何加减分规则"
+        "items": [
+          {
+            "label": "底层框架 / SDK",
+            "delta": -6,
+            "reason": "命中「runtime」：框架、开发工具包、编译器这类底层设施，没有你能插手的那层"
+          },
+          {
+            "label": "垂直行业",
+            "delta": 8,
+            "reason": "命中「命理」：能对上具体行业，买家能直接找到"
+          }
+        ],
+        "note": ""
       },
-      "readmeFetched": false,
-      "readmeHanRatio": null,
-      "readmeHead": "",
-      "starsDelta": null,
+      "readmeFetched": true,
+      "readmeHanRatio": 0.6801,
+      "readmeHead": "命理解读师.skill > *「Elon Musk 的命盘示例」* 输入生辰信息，生成一张精美的紫微斗数可视化命盘解读报告。 融合紫微三合派、中州派和手相互证的方法论。Python 精确排盘，确定性规则引擎判格局，AI 生成有温度的解读，HTML 双主题可视化输出。 效果示例 · 安装 · 使用 · 工作原理 · V2 更新日志 · 仓库结构 效果示例 输入生辰信息后，命理解读师自动排盘并生成可视化命盘。以马斯克的命盘为例： > 「天机太阴坐命寅宫——这个组合的核心词是：用脑",
+      "starsDelta": {
+        "value": 2,
+        "sinceDays": 2,
+        "since": "2026-11-11"
+      },
       "revisit": false,
       "revisitReason": "",
-      "why": "强项是许可证（25/25），Apache-2.0。"
+      "why": "强项是许可证（25/25），MIT。底层框架 / SDK +-6，垂直行业 +8。Python 写的，今晚能跑起来。"
+    },
+    {
+      "fullName": "Pluviobyte/saas-growth-agents",
+      "name": "saas-growth-agents",
+      "owner": "Pluviobyte",
+      "ownerType": "User",
+      "url": "https://github.com/Pluviobyte/saas-growth-agents",
+      "homepage": "",
+      "description": "Hand your SaaS growth chores to an agent: new-term radar, keyword-to-site discovery, competitor backlinks, directory submissions, plus a social analysis pack with a Douyin comments skill. Works with Grok Bot, Muse, Dot, Hermes, OpenClaw, Claude Code and Codex.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 532,
+      "forks": 131,
+      "openIssues": 0,
+      "sizeMB": 0.4,
+      "createdAt": "2026-10-30T15:47:16Z",
+      "pushedAt": "2026-11-10T14:18:47Z",
+      "ageDays": 13,
+      "idleDays": 2,
+      "topics": [
+        "agent-skill",
+        "agent-skills",
+        "agents",
+        "ai-agents",
+        "aisa",
+        "claude-code",
+        "codex",
+        "comments-scraper",
+        "douyin",
+        "grok",
+        "growth",
+        "saas",
+        "seo",
+        "social-media",
+        "xiaohongshu"
+      ],
+      "archived": false,
+      "sources": [
+        "主题 · SaaS"
+      ],
+      "score": 79,
+      "baseScore": 71,
+      "grade": "A",
+      "dims": [
+        {
+          "key": "license",
+          "label": "许可证",
+          "max": 25,
+          "source": "api",
+          "value": "MIT",
+          "score": 25,
+          "basis": "license.spdx_id = MIT（MIT/Apache 这类，改完能闭源卖）"
+        },
+        {
+          "key": "lang",
+          "label": "上手成本",
+          "max": 20,
+          "source": "api+rule",
+          "value": "Python",
+          "score": 20,
+          "basis": "language = Python → 语言分档 20"
+        },
+        {
+          "key": "demand",
+          "label": "需求真实",
+          "max": 20,
+          "source": "api+rule",
+          "value": "0/532",
+          "score": 6,
+          "basis": "待处理 0 / 星数 532 = 0.00% < 0.5% → 6（星多但没人提问，多是「点个星就走了」，6 为外推值）；注意 open_issues_count 含 PR"
+        },
+        {
+          "key": "zh",
+          "label": "中文友好",
+          "max": 15,
+          "source": "heuristic",
+          "value": 0,
+          "score": 0,
+          "basis": "描述汉字占比 0% ≤ 15% → +0；README 前 2000 字汉字占比 0% ≤ 8% → +0；（汉字占比是文本统计，不等于「真的有中文文档质量」——启发式）"
+        },
+        {
+          "key": "size",
+          "label": "交付轻重",
+          "max": 10,
+          "source": "api+rule",
+          "value": "0.4 MB",
+          "score": 10,
+          "basis": "仓库 0.4 MB ≤ 5 MB → 满"
+        },
+        {
+          "key": "fresh",
+          "label": "时效红利",
+          "max": 10,
+          "source": "api+rule",
+          "value": "13 天",
+          "score": 10,
+          "basis": "建于 13 天前 ≤ 30 天 → 满"
+        }
+      ],
+      "adjust": {
+        "total": 8,
+        "raw": 8,
+        "clamped": false,
+        "items": [
+          {
+            "label": "垂直行业",
+            "delta": 8,
+            "reason": "命中「seo」：能对上具体行业，买家能直接找到"
+          }
+        ],
+        "note": ""
+      },
+      "readmeFetched": true,
+      "readmeHanRatio": 0.0024,
+      "readmeHead": "saas-growth-agents Hand your SaaS growth chores to an agent that runs them every day. Spot new search terms, find who ranks for them, check competitor backlinks, submit to directories, and file good posts into a knowledge base. These jobs r",
+      "starsDelta": {
+        "value": 7,
+        "sinceDays": 2,
+        "since": "2026-11-11"
+      },
+      "revisit": false,
+      "revisitReason": "",
+      "why": "强项是许可证（25/25），MIT。垂直行业 +8。Python 写的，今晚能跑起来。"
     }
   ],
   "rejected": [
     {
+      "fullName": "amosblomqvist/learnharness",
+      "url": "https://github.com/amosblomqvist/learnharness",
+      "stars": 9097,
+      "language": "TypeScript",
+      "score": 59,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（59 分，C 级）"
+    },
+    {
       "fullName": "xiaoyang111222/cn-math-taxonomy",
       "url": "https://github.com/xiaoyang111222/cn-math-taxonomy",
-      "stars": 7662,
+      "stars": 7909,
       "language": "Python",
       "score": 59,
       "grade": "C",
@@ -1102,7 +1145,7 @@
     {
       "fullName": "InukaAsith/TwinDesk",
       "url": "https://github.com/InukaAsith/TwinDesk",
-      "stars": 3929,
+      "stars": 4006,
       "language": "JavaScript",
       "score": 59,
       "grade": "C",
@@ -1113,19 +1156,8 @@
     {
       "fullName": "shihabal3amri/DiPlay",
       "url": "https://github.com/shihabal3amri/DiPlay",
-      "stars": 13649,
+      "stars": 13735,
       "language": "Kotlin",
-      "score": 59,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（59 分，C 级）"
-    },
-    {
-      "fullName": "yt-dlp/yt-dlp",
-      "url": "https://github.com/yt-dlp/yt-dlp",
-      "stars": 206912,
-      "language": "Python",
       "score": 59,
       "grade": "C",
       "reason": "low-score",
@@ -1135,7 +1167,7 @@
     {
       "fullName": "mem0ai/mem0",
       "url": "https://github.com/mem0ai/mem0",
-      "stars": 68815,
+      "stars": 68901,
       "language": "Python",
       "score": 59,
       "grade": "C",
@@ -1146,7 +1178,7 @@
     {
       "fullName": "every-app/open-seo",
       "url": "https://github.com/every-app/open-seo",
-      "stars": 27323,
+      "stars": 27532,
       "language": "TypeScript",
       "score": 59,
       "grade": "C",
@@ -1157,7 +1189,7 @@
     {
       "fullName": "Yoast/wordpress-seo",
       "url": "https://github.com/Yoast/wordpress-seo",
-      "stars": 2010,
+      "stars": 2011,
       "language": "JavaScript",
       "score": 59,
       "grade": "C",
@@ -1168,7 +1200,7 @@
     {
       "fullName": "ActivityWatch/activitywatch",
       "url": "https://github.com/ActivityWatch/activitywatch",
-      "stars": 19597,
+      "stars": 19612,
       "language": "Python",
       "score": 59,
       "grade": "C",
@@ -1179,7 +1211,7 @@
     {
       "fullName": "YishenTu/claudian",
       "url": "https://github.com/YishenTu/claudian",
-      "stars": 15975,
+      "stars": 15979,
       "language": "TypeScript",
       "score": 59,
       "grade": "C",
@@ -1190,7 +1222,7 @@
     {
       "fullName": "actiontech/sqle",
       "url": "https://github.com/actiontech/sqle",
-      "stars": 1505,
+      "stars": 1506,
       "language": "Go",
       "score": 59,
       "grade": "C",
@@ -1201,7 +1233,7 @@
     {
       "fullName": "hhszzzz/taibu",
       "url": "https://github.com/hhszzzz/taibu",
-      "stars": 761,
+      "stars": 764,
       "language": "TypeScript",
       "score": 59,
       "grade": "C",
@@ -1212,7 +1244,7 @@
     {
       "fullName": "huginn/huginn",
       "url": "https://github.com/huginn/huginn",
-      "stars": 50503,
+      "stars": 50521,
       "language": "Ruby",
       "score": 59,
       "grade": "C",
@@ -1223,8 +1255,19 @@
     {
       "fullName": "scriptscat/scriptcat",
       "url": "https://github.com/scriptscat/scriptcat",
-      "stars": 5856,
+      "stars": 5864,
       "language": "TypeScript",
+      "score": 59,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（59 分，C 级）"
+    },
+    {
+      "fullName": "polyrabbit/WeCron",
+      "url": "https://github.com/polyrabbit/WeCron",
+      "stars": 694,
+      "language": "JavaScript",
       "score": 59,
       "grade": "C",
       "reason": "low-score",
@@ -1245,7 +1288,7 @@
     {
       "fullName": "heydamir/unslop",
       "url": "https://github.com/heydamir/unslop",
-      "stars": 14389,
+      "stars": 15293,
       "language": "JavaScript",
       "score": 58,
       "grade": "C",
@@ -1256,7 +1299,7 @@
     {
       "fullName": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "stars": 321743,
+      "stars": 323249,
       "language": "Shell",
       "score": 58,
       "grade": "C",
@@ -1267,7 +1310,7 @@
     {
       "fullName": "msitarzewski/agency-agents",
       "url": "https://github.com/msitarzewski/agency-agents",
-      "stars": 167748,
+      "stars": 167998,
       "language": "Shell",
       "score": 58,
       "grade": "C",
@@ -1278,7 +1321,7 @@
     {
       "fullName": "Donchitos/Claude-Code-Game-Studios",
       "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-      "stars": 38376,
+      "stars": 38795,
       "language": "Shell",
       "score": 58,
       "grade": "C",
@@ -1289,7 +1332,7 @@
     {
       "fullName": "rowboatlabs/rowboat",
       "url": "https://github.com/rowboatlabs/rowboat",
-      "stars": 18154,
+      "stars": 18200,
       "language": "TypeScript",
       "score": 58,
       "grade": "C",
@@ -1300,7 +1343,7 @@
     {
       "fullName": "Flow-Launcher/Flow.Launcher",
       "url": "https://github.com/Flow-Launcher/Flow.Launcher",
-      "stars": 16015,
+      "stars": 16021,
       "language": "C#",
       "score": 58,
       "grade": "C",
@@ -1311,7 +1354,7 @@
     {
       "fullName": "uditgoenka/autoresearch",
       "url": "https://github.com/uditgoenka/autoresearch",
-      "stars": 6830,
+      "stars": 6833,
       "language": "Shell",
       "score": 58,
       "grade": "C",
@@ -1322,7 +1365,7 @@
     {
       "fullName": "dromara/MaxKey",
       "url": "https://github.com/dromara/MaxKey",
-      "stars": 1989,
+      "stars": 1990,
       "language": "Java",
       "score": 58,
       "grade": "C",
@@ -1333,7 +1376,7 @@
     {
       "fullName": "china-testing/bazi",
       "url": "https://github.com/china-testing/bazi",
-      "stars": 1586,
+      "stars": 1594,
       "language": "Python",
       "score": 58,
       "grade": "C",
@@ -1344,7 +1387,7 @@
     {
       "fullName": "assafelovic/gpt-researcher",
       "url": "https://github.com/assafelovic/gpt-researcher",
-      "stars": 30629,
+      "stars": 30657,
       "language": "Python",
       "score": 58,
       "grade": "C",
@@ -1366,7 +1409,7 @@
     {
       "fullName": "triggerdotdev/trigger.dev",
       "url": "https://github.com/triggerdotdev/trigger.dev",
-      "stars": 16747,
+      "stars": 16757,
       "language": "TypeScript",
       "score": 58,
       "grade": "C",
@@ -1388,7 +1431,7 @@
     {
       "fullName": "nextai-translator/nextai-translator",
       "url": "https://github.com/nextai-translator/nextai-translator",
-      "stars": 25039,
+      "stars": 25047,
       "language": "TypeScript",
       "score": 58,
       "grade": "C",
@@ -1399,7 +1442,7 @@
     {
       "fullName": "wechatsync/Wechatsync",
       "url": "https://github.com/wechatsync/Wechatsync",
-      "stars": 6609,
+      "stars": 6618,
       "language": "TypeScript",
       "score": 58,
       "grade": "C",
@@ -1410,7 +1453,7 @@
     {
       "fullName": "code-charity/youtube",
       "url": "https://github.com/code-charity/youtube",
-      "stars": 4677,
+      "stars": 4683,
       "language": "JavaScript",
       "score": 58,
       "grade": "C",
@@ -1421,7 +1464,7 @@
     {
       "fullName": "mofan6/Moect",
       "url": "https://github.com/mofan6/Moect",
-      "stars": 621,
+      "stars": 664,
       "language": "Python",
       "score": 58,
       "grade": "C",
@@ -1432,7 +1475,7 @@
     {
       "fullName": "archtechx/tenancy",
       "url": "https://github.com/archtechx/tenancy",
-      "stars": 4432,
+      "stars": 4431,
       "language": "PHP",
       "score": 58,
       "grade": "C",
@@ -1443,7 +1486,7 @@
     {
       "fullName": "spatie/laravel-onboard",
       "url": "https://github.com/spatie/laravel-onboard",
-      "stars": 849,
+      "stars": 850,
       "language": "PHP",
       "score": 58,
       "grade": "C",
@@ -1454,7 +1497,7 @@
     {
       "fullName": "fushengqian/fuintCatering",
       "url": "https://github.com/fushengqian/fuintCatering",
-      "stars": 448,
+      "stars": 450,
       "language": "Java",
       "score": 58,
       "grade": "C",
@@ -1474,9 +1517,20 @@
       "summary": "分数不够（58 分，C 级）"
     },
     {
+      "fullName": "janestreet/agent_skills",
+      "url": "https://github.com/janestreet/agent_skills",
+      "stars": 7939,
+      "language": "无",
+      "score": 57,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（57 分，C 级）"
+    },
+    {
       "fullName": "unclebob/ub-mode",
       "url": "https://github.com/unclebob/ub-mode",
-      "stars": 7725,
+      "stars": 7873,
       "language": "无",
       "score": 57,
       "grade": "C",
@@ -1487,19 +1541,8 @@
     {
       "fullName": "huamidev/GestaltX",
       "url": "https://github.com/huamidev/GestaltX",
-      "stars": 6075,
+      "stars": 7073,
       "language": "Swift",
-      "score": 57,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（57 分，C 级）"
-    },
-    {
-      "fullName": "janestreet/agent_skills",
-      "url": "https://github.com/janestreet/agent_skills",
-      "stars": 5314,
-      "language": "无",
       "score": 57,
       "grade": "C",
       "reason": "low-score",
@@ -1509,7 +1552,7 @@
     {
       "fullName": "Revivedx/SavageWindRecomp",
       "url": "https://github.com/Revivedx/SavageWindRecomp",
-      "stars": 3926,
+      "stars": 4121,
       "language": "C",
       "score": 57,
       "grade": "C",
@@ -1520,7 +1563,7 @@
     {
       "fullName": "openai/math",
       "url": "https://github.com/openai/math",
-      "stars": 17503,
+      "stars": 17521,
       "language": "Lean",
       "score": 57,
       "grade": "C",
@@ -1531,7 +1574,7 @@
     {
       "fullName": "cdyforever/how-to-live-better",
       "url": "https://github.com/cdyforever/how-to-live-better",
-      "stars": 14467,
+      "stars": 14553,
       "language": "HTML",
       "score": 57,
       "grade": "C",
@@ -1542,7 +1585,7 @@
     {
       "fullName": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 301185,
+      "stars": 302131,
       "language": "JavaScript",
       "score": 57,
       "grade": "C",
@@ -1564,7 +1607,7 @@
     {
       "fullName": "allinssl/allinssl",
       "url": "https://github.com/allinssl/allinssl",
-      "stars": 3628,
+      "stars": 3630,
       "language": "TypeScript",
       "score": 57,
       "grade": "C",
@@ -1575,7 +1618,7 @@
     {
       "fullName": "floccusaddon/floccus",
       "url": "https://github.com/floccusaddon/floccus",
-      "stars": 8633,
+      "stars": 8636,
       "language": "TypeScript",
       "score": 57,
       "grade": "C",
@@ -1586,7 +1629,7 @@
     {
       "fullName": "Manavarya09/design-extract",
       "url": "https://github.com/Manavarya09/design-extract",
-      "stars": 5043,
+      "stars": 5070,
       "language": "HTML",
       "score": 57,
       "grade": "C",
@@ -1597,7 +1640,7 @@
     {
       "fullName": "hoothin/UserScripts",
       "url": "https://github.com/hoothin/UserScripts",
-      "stars": 4365,
+      "stars": 4371,
       "language": "JavaScript",
       "score": 57,
       "grade": "C",
@@ -1619,7 +1662,7 @@
     {
       "fullName": "ccch1mneyyy/dsh-Go",
       "url": "https://github.com/ccch1mneyyy/dsh-Go",
-      "stars": 19613,
+      "stars": 21176,
       "language": "Dart",
       "score": 56,
       "grade": "C",
@@ -1630,7 +1673,7 @@
     {
       "fullName": "designfuchen/word-atlas",
       "url": "https://github.com/designfuchen/word-atlas",
-      "stars": 4699,
+      "stars": 4789,
       "language": "TypeScript",
       "score": 56,
       "grade": "C",
@@ -1639,10 +1682,10 @@
       "summary": "分数不够（56 分，C 级）"
     },
     {
-      "fullName": "Edge0-AI/Edge0",
-      "url": "https://github.com/Edge0-AI/Edge0",
-      "stars": 9697,
-      "language": "C++",
+      "fullName": "horizon-rust/horizon",
+      "url": "https://github.com/horizon-rust/horizon",
+      "stars": 9190,
+      "language": "Rust",
       "score": 56,
       "grade": "C",
       "reason": "low-score",
@@ -1652,7 +1695,7 @@
     {
       "fullName": "react/react",
       "url": "https://github.com/react/react",
-      "stars": 252470,
+      "stars": 252565,
       "language": "JavaScript",
       "score": 56,
       "grade": "C",
@@ -1663,7 +1706,7 @@
     {
       "fullName": "anomalyco/opencode",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 226095,
+      "stars": 226525,
       "language": "TypeScript",
       "score": 56,
       "grade": "C",
@@ -1674,7 +1717,7 @@
     {
       "fullName": "ollama/ollama",
       "url": "https://github.com/ollama/ollama",
-      "stars": 186663,
+      "stars": 186841,
       "language": "Go",
       "score": 56,
       "grade": "C",
@@ -1685,7 +1728,7 @@
     {
       "fullName": "langflow-ai/langflow",
       "url": "https://github.com/langflow-ai/langflow",
-      "stars": 156539,
+      "stars": 156589,
       "language": "Python",
       "score": 56,
       "grade": "C",
@@ -1696,7 +1739,7 @@
     {
       "fullName": "farion1231/cc-switch",
       "url": "https://github.com/farion1231/cc-switch",
-      "stars": 153638,
+      "stars": 154071,
       "language": "Rust",
       "score": 56,
       "grade": "C",
@@ -1707,8 +1750,19 @@
     {
       "fullName": "vercel/next.js",
       "url": "https://github.com/vercel/next.js",
-      "stars": 143471,
+      "stars": 143499,
       "language": "JavaScript",
+      "score": 56,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（56 分，C 级）"
+    },
+    {
+      "fullName": "golang/go",
+      "url": "https://github.com/golang/go",
+      "stars": 139883,
+      "language": "Go",
       "score": 56,
       "grade": "C",
       "reason": "low-score",
@@ -1718,7 +1772,7 @@
     {
       "fullName": "stablyai/orca",
       "url": "https://github.com/stablyai/orca",
-      "stars": 122170,
+      "stars": 123804,
       "language": "TypeScript",
       "score": 56,
       "grade": "C",
@@ -1729,7 +1783,7 @@
     {
       "fullName": "google-gemini/gemini-cli",
       "url": "https://github.com/google-gemini/gemini-cli",
-      "stars": 108774,
+      "stars": 108806,
       "language": "TypeScript",
       "score": 56,
       "grade": "C",
@@ -1740,7 +1794,7 @@
     {
       "fullName": "cheaper-inference/OmniRoute",
       "url": "https://github.com/cheaper-inference/OmniRoute",
-      "stars": 86507,
+      "stars": 86962,
       "language": "TypeScript",
       "score": 56,
       "grade": "C",
@@ -1751,7 +1805,7 @@
     {
       "fullName": "Mintplex-Labs/anything-llm",
       "url": "https://github.com/Mintplex-Labs/anything-llm",
-      "stars": 68184,
+      "stars": 68238,
       "language": "JavaScript",
       "score": 56,
       "grade": "C",
@@ -1762,7 +1816,7 @@
     {
       "fullName": "crewAIInc/crewAI",
       "url": "https://github.com/crewAIInc/crewAI",
-      "stars": 60776,
+      "stars": 60834,
       "language": "Python",
       "score": 56,
       "grade": "C",
@@ -1773,7 +1827,7 @@
     {
       "fullName": "HKUDS/DeepTutor",
       "url": "https://github.com/HKUDS/DeepTutor",
-      "stars": 58251,
+      "stars": 58755,
       "language": "Python",
       "score": 56,
       "grade": "C",
@@ -1784,7 +1838,7 @@
     {
       "fullName": "ruvnet/RuView",
       "url": "https://github.com/ruvnet/RuView",
-      "stars": 104018,
+      "stars": 104191,
       "language": "Rust",
       "score": 56,
       "grade": "C",
@@ -1795,7 +1849,7 @@
     {
       "fullName": "sansan0/TrendRadar",
       "url": "https://github.com/sansan0/TrendRadar",
-      "stars": 63590,
+      "stars": 63616,
       "language": "Python",
       "score": 56,
       "grade": "C",
@@ -1806,7 +1860,7 @@
     {
       "fullName": "github/github-mcp-server",
       "url": "https://github.com/github/github-mcp-server",
-      "stars": 34390,
+      "stars": 34423,
       "language": "Go",
       "score": 56,
       "grade": "C",
@@ -1817,8 +1871,19 @@
     {
       "fullName": "jrnl-org/jrnl",
       "url": "https://github.com/jrnl-org/jrnl",
-      "stars": 7352,
+      "stars": 7356,
       "language": "Python",
+      "score": 56,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（56 分，C 级）"
+    },
+    {
+      "fullName": "houshifang/image",
+      "url": "https://github.com/houshifang/image",
+      "stars": 211,
+      "language": "CSS",
       "score": 56,
       "grade": "C",
       "reason": "low-score",
@@ -1828,7 +1893,7 @@
     {
       "fullName": "eyuputku57-ops/-CoreGold---Global-Virtual-Card-Platform-for-Media-Buying-AI-SaaS-Cross-Border-Payments",
       "url": "https://github.com/eyuputku57-ops/-CoreGold---Global-Virtual-Card-Platform-for-Media-Buying-AI-SaaS-Cross-Border-Payments",
-      "stars": 109,
+      "stars": 115,
       "language": "无",
       "score": 56,
       "grade": "C",
@@ -1839,7 +1904,7 @@
     {
       "fullName": "tutkuma123-sys/CoreGold---Anti-Ban-Virtual-Card-Infrastructure-for-Media-Buyers-Cross-Border-Ops",
       "url": "https://github.com/tutkuma123-sys/CoreGold---Anti-Ban-Virtual-Card-Infrastructure-for-Media-Buyers-Cross-Border-Ops",
-      "stars": 106,
+      "stars": 112,
       "language": "无",
       "score": 56,
       "grade": "C",
@@ -1850,7 +1915,29 @@
     {
       "fullName": "beombeim-alt/CoreGold---Direct-Multi-Tenant-VCC-Clearing-Engine-for-Global-Ad-Scalers-Media-Agencies",
       "url": "https://github.com/beombeim-alt/CoreGold---Direct-Multi-Tenant-VCC-Clearing-Engine-for-Global-Ad-Scalers-Media-Agencies",
-      "stars": 104,
+      "stars": 110,
+      "language": "无",
+      "score": 56,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（56 分，C 级）"
+    },
+    {
+      "fullName": "cherchiobarbie931-rgb/-CoreGold---E-Com-Matrix-Card-Gateway",
+      "url": "https://github.com/cherchiobarbie931-rgb/-CoreGold---E-Com-Matrix-Card-Gateway",
+      "stars": 103,
+      "language": "无",
+      "score": 56,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（56 分，C 级）"
+    },
+    {
+      "fullName": "cherchiobarbie931-rgb/CoreGold---VCC-Infrastructure-for-Dropshipping-Proxy-IPs-Social-Matrix",
+      "url": "https://github.com/cherchiobarbie931-rgb/CoreGold---VCC-Infrastructure-for-Dropshipping-Proxy-IPs-Social-Matrix",
+      "stars": 101,
       "language": "无",
       "score": 56,
       "grade": "C",
@@ -1861,7 +1948,7 @@
     {
       "fullName": "appsmithorg/appsmith",
       "url": "https://github.com/appsmithorg/appsmith",
-      "stars": 41225,
+      "stars": 41248,
       "language": "TypeScript",
       "score": 56,
       "grade": "C",
@@ -1872,7 +1959,7 @@
     {
       "fullName": "kestra-io/kestra",
       "url": "https://github.com/kestra-io/kestra",
-      "stars": 30205,
+      "stars": 30219,
       "language": "Java",
       "score": 56,
       "grade": "C",
@@ -1883,7 +1970,7 @@
     {
       "fullName": "simstudioai/sim",
       "url": "https://github.com/simstudioai/sim",
-      "stars": 30121,
+      "stars": 30130,
       "language": "TypeScript",
       "score": 56,
       "grade": "C",
@@ -1894,7 +1981,7 @@
     {
       "fullName": "apify/crawlee",
       "url": "https://github.com/apify/crawlee",
-      "stars": 26421,
+      "stars": 26435,
       "language": "TypeScript",
       "score": 56,
       "grade": "C",
@@ -1905,7 +1992,7 @@
     {
       "fullName": "PrefectHQ/prefect",
       "url": "https://github.com/PrefectHQ/prefect",
-      "stars": 24151,
+      "stars": 24152,
       "language": "Python",
       "score": 56,
       "grade": "C",
@@ -1916,7 +2003,7 @@
     {
       "fullName": "OhMyGuus/I-Still-Dont-Care-About-Cookies",
       "url": "https://github.com/OhMyGuus/I-Still-Dont-Care-About-Cookies",
-      "stars": 4279,
+      "stars": 4280,
       "language": "JavaScript",
       "score": 56,
       "grade": "C",
@@ -1936,9 +2023,31 @@
       "summary": "分数不够（56 分，C 级）"
     },
     {
+      "fullName": "DeekeScript/ad-deeke",
+      "url": "https://github.com/DeekeScript/ad-deeke",
+      "stars": 438,
+      "language": "JavaScript",
+      "score": 56,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（56 分，C 级）"
+    },
+    {
+      "fullName": "saas-js/saas-ui",
+      "url": "https://github.com/saas-js/saas-ui",
+      "stars": 1657,
+      "language": "TypeScript",
+      "score": 56,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（56 分，C 级）"
+    },
+    {
       "fullName": "devrsi0n/chirpy",
       "url": "https://github.com/devrsi0n/chirpy",
-      "stars": 600,
+      "stars": 599,
       "language": "TypeScript",
       "score": 56,
       "grade": "C",
@@ -1949,7 +2058,7 @@
     {
       "fullName": "1broseidon/ketch",
       "url": "https://github.com/1broseidon/ketch",
-      "stars": 747,
+      "stars": 748,
       "language": "Go",
       "score": 56,
       "grade": "C",
@@ -1958,9 +2067,20 @@
       "summary": "分数不够（56 分，C 级）"
     },
     {
+      "fullName": "Edge0-AI/Edge0",
+      "url": "https://github.com/Edge0-AI/Edge0",
+      "stars": 10584,
+      "language": "C++",
+      "score": 55,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（55 分，C 级）"
+    },
+    {
       "fullName": "D4Vinci/Scrapling",
       "url": "https://github.com/D4Vinci/Scrapling",
-      "stars": 101546,
+      "stars": 102292,
       "language": "Python",
       "score": 55,
       "grade": "C",
@@ -1971,8 +2091,19 @@
     {
       "fullName": "nowork-studio/notfair-plugin",
       "url": "https://github.com/nowork-studio/notfair-plugin",
-      "stars": 4139,
+      "stars": 4143,
       "language": "无",
+      "score": 55,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（55 分，C 级）"
+    },
+    {
+      "fullName": "Illyism/seo-skills",
+      "url": "https://github.com/Illyism/seo-skills",
+      "stars": 1180,
+      "language": "JavaScript",
       "score": 55,
       "grade": "C",
       "reason": "low-score",
@@ -1982,7 +2113,7 @@
     {
       "fullName": "rtk-ai/rtk",
       "url": "https://github.com/rtk-ai/rtk",
-      "stars": 86224,
+      "stars": 86411,
       "language": "Rust",
       "score": 55,
       "grade": "C",
@@ -1993,7 +2124,7 @@
     {
       "fullName": "FANzR-arch/Numerologist_skills",
       "url": "https://github.com/FANzR-arch/Numerologist_skills",
-      "stars": 1606,
+      "stars": 1616,
       "language": "Python",
       "score": 55,
       "grade": "C",
@@ -2004,7 +2135,7 @@
     {
       "fullName": "ajayyy/SponsorBlock",
       "url": "https://github.com/ajayyy/SponsorBlock",
-      "stars": 14070,
+      "stars": 14080,
       "language": "TypeScript",
       "score": 55,
       "grade": "C",
@@ -2015,8 +2146,19 @@
     {
       "fullName": "thedevdojo/wave",
       "url": "https://github.com/thedevdojo/wave",
-      "stars": 6553,
+      "stars": 6555,
       "language": "PHP",
+      "score": 55,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（55 分，C 级）"
+    },
+    {
+      "fullName": "intelligo-dev/intelligo",
+      "url": "https://github.com/intelligo-dev/intelligo",
+      "stars": 433,
+      "language": "TypeScript",
       "score": 55,
       "grade": "C",
       "reason": "low-score",
@@ -2026,7 +2168,7 @@
     {
       "fullName": "NotRexed/Hookshot",
       "url": "https://github.com/NotRexed/Hookshot",
-      "stars": 7373,
+      "stars": 9018,
       "language": "C++",
       "score": 54,
       "grade": "C",
@@ -2037,7 +2179,7 @@
     {
       "fullName": "anhao/ai-pose-gallery-zh",
       "url": "https://github.com/anhao/ai-pose-gallery-zh",
-      "stars": 6750,
+      "stars": 6863,
       "language": "TypeScript",
       "score": 54,
       "grade": "C",
@@ -2048,7 +2190,7 @@
     {
       "fullName": "morluto/rea",
       "url": "https://github.com/morluto/rea",
-      "stars": 452090,
+      "stars": 456020,
       "language": "TypeScript",
       "score": 54,
       "grade": "C",
@@ -2059,7 +2201,7 @@
     {
       "fullName": "Genymobile/scrcpy",
       "url": "https://github.com/Genymobile/scrcpy",
-      "stars": 154570,
+      "stars": 154704,
       "language": "C",
       "score": 54,
       "grade": "C",
@@ -2070,8 +2212,19 @@
     {
       "fullName": "nextlevelbuilder/ui-ux-pro-max-skill",
       "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 148128,
+      "stars": 148831,
       "language": "Python",
+      "score": 54,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（54 分，C 级）"
+    },
+    {
+      "fullName": "garrytan/gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "stars": 141412,
+      "language": "TypeScript",
       "score": 54,
       "grade": "C",
       "reason": "low-score",
@@ -2081,7 +2234,7 @@
     {
       "fullName": "microsoft/markitdown",
       "url": "https://github.com/microsoft/markitdown",
-      "stars": 194923,
+      "stars": 195154,
       "language": "Python",
       "score": 54,
       "grade": "C",
@@ -2092,7 +2245,7 @@
     {
       "fullName": "Leonxlnx/taste-skill",
       "url": "https://github.com/Leonxlnx/taste-skill",
-      "stars": 113398,
+      "stars": 114534,
       "language": "JavaScript",
       "score": 54,
       "grade": "C",
@@ -2103,7 +2256,7 @@
     {
       "fullName": "tt-a1i/archify",
       "url": "https://github.com/tt-a1i/archify",
-      "stars": 95579,
+      "stars": 96045,
       "language": "JavaScript",
       "score": 54,
       "grade": "C",
@@ -2114,7 +2267,7 @@
     {
       "fullName": "unclecode/crawl4ai",
       "url": "https://github.com/unclecode/crawl4ai",
-      "stars": 87226,
+      "stars": 87297,
       "language": "Python",
       "score": 54,
       "grade": "C",
@@ -2125,7 +2278,7 @@
     {
       "fullName": "rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "stars": 78470,
+      "stars": 78618,
       "language": "Python",
       "score": 54,
       "grade": "C",
@@ -2136,7 +2289,7 @@
     {
       "fullName": "Yeachan-Heo/oh-my-claudecode",
       "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
-      "stars": 40765,
+      "stars": 40798,
       "language": "TypeScript",
       "score": 54,
       "grade": "C",
@@ -2147,7 +2300,7 @@
     {
       "fullName": "microsoft/playwright-mcp",
       "url": "https://github.com/microsoft/playwright-mcp",
-      "stars": 39502,
+      "stars": 39572,
       "language": "TypeScript",
       "score": 54,
       "grade": "C",
@@ -2158,7 +2311,7 @@
     {
       "fullName": "sxyazi/yazi",
       "url": "https://github.com/sxyazi/yazi",
-      "stars": 43362,
+      "stars": 43399,
       "language": "Rust",
       "score": 54,
       "grade": "C",
@@ -2169,19 +2322,8 @@
     {
       "fullName": "zeasin/qihang-erp-open",
       "url": "https://github.com/zeasin/qihang-erp-open",
-      "stars": 322,
+      "stars": 323,
       "language": "Java",
-      "score": 54,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（54 分，C 级）"
-    },
-    {
-      "fullName": "wss7750/shanhui-ai-kefu",
-      "url": "https://github.com/wss7750/shanhui-ai-kefu",
-      "stars": 202,
-      "language": "无",
       "score": 54,
       "grade": "C",
       "reason": "low-score",
@@ -2191,7 +2333,7 @@
     {
       "fullName": "feder-cr/Jobs_Applier_AI_Agent",
       "url": "https://github.com/feder-cr/Jobs_Applier_AI_Agent",
-      "stars": 32469,
+      "stars": 32499,
       "language": "Python",
       "score": 54,
       "grade": "C",
@@ -2202,7 +2344,7 @@
     {
       "fullName": "EFForg/privacybadger",
       "url": "https://github.com/EFForg/privacybadger",
-      "stars": 3886,
+      "stars": 3887,
       "language": "JavaScript",
       "score": 54,
       "grade": "C",
@@ -2213,7 +2355,7 @@
     {
       "fullName": "madong-code/madong-admin-saas",
       "url": "https://github.com/madong-code/madong-admin-saas",
-      "stars": 1021,
+      "stars": 1042,
       "language": "PHP",
       "score": 54,
       "grade": "C",
@@ -2224,7 +2366,7 @@
     {
       "fullName": "soxoj/maigret",
       "url": "https://github.com/soxoj/maigret",
-      "stars": 40358,
+      "stars": 40556,
       "language": "Python",
       "score": 54,
       "grade": "C",
@@ -2235,7 +2377,7 @@
     {
       "fullName": "botswin/BotBrowser",
       "url": "https://github.com/botswin/BotBrowser",
-      "stars": 2663,
+      "stars": 2667,
       "language": "TypeScript",
       "score": 54,
       "grade": "C",
@@ -2257,7 +2399,18 @@
     {
       "fullName": "TheAlgorithms/Python",
       "url": "https://github.com/TheAlgorithms/Python",
-      "stars": 226023,
+      "stars": 226071,
+      "language": "Python",
+      "score": 53,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（53 分，C 级）"
+    },
+    {
+      "fullName": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "stars": 149592,
       "language": "Python",
       "score": 53,
       "grade": "C",
@@ -2268,19 +2421,8 @@
     {
       "fullName": "CyC2018/CS-Notes",
       "url": "https://github.com/CyC2018/CS-Notes",
-      "stars": 186484,
+      "stars": 186500,
       "language": "JavaScript",
-      "score": 53,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（53 分，C 级）"
-    },
-    {
-      "fullName": "github/spec-kit",
-      "url": "https://github.com/github/spec-kit",
-      "stars": 149323,
-      "language": "Python",
       "score": 53,
       "grade": "C",
       "reason": "low-score",
@@ -2290,7 +2432,7 @@
     {
       "fullName": "HKUDS/nanobot",
       "url": "https://github.com/HKUDS/nanobot",
-      "stars": 50015,
+      "stars": 50051,
       "language": "Python",
       "score": 53,
       "grade": "C",
@@ -2301,7 +2443,7 @@
     {
       "fullName": "ChromeDevTools/chrome-devtools-mcp",
       "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "stars": 55100,
+      "stars": 55187,
       "language": "TypeScript",
       "score": 53,
       "grade": "C",
@@ -2312,7 +2454,7 @@
     {
       "fullName": "liangdabiao/ecom-details-image",
       "url": "https://github.com/liangdabiao/ecom-details-image",
-      "stars": 1652,
+      "stars": 1670,
       "language": "Python",
       "score": 53,
       "grade": "C",
@@ -2323,7 +2465,7 @@
     {
       "fullName": "JC0v0/Customer-Agent",
       "url": "https://github.com/JC0v0/Customer-Agent",
-      "stars": 1018,
+      "stars": 1026,
       "language": "Python",
       "score": 53,
       "grade": "C",
@@ -2334,7 +2476,7 @@
     {
       "fullName": "CNWU16/vedic-astro-skills",
       "url": "https://github.com/CNWU16/vedic-astro-skills",
-      "stars": 1030,
+      "stars": 1032,
       "language": "Python",
       "score": 53,
       "grade": "C",
@@ -2345,7 +2487,7 @@
     {
       "fullName": "fastlane/fastlane",
       "url": "https://github.com/fastlane/fastlane",
-      "stars": 42384,
+      "stars": 42387,
       "language": "Ruby",
       "score": 53,
       "grade": "C",
@@ -2356,7 +2498,7 @@
     {
       "fullName": "extension-js/extension.js",
       "url": "https://github.com/extension-js/extension.js",
-      "stars": 5208,
+      "stars": 5210,
       "language": "TypeScript",
       "score": 53,
       "grade": "C",
@@ -2367,19 +2509,8 @@
     {
       "fullName": "honestbleeps/Reddit-Enhancement-Suite",
       "url": "https://github.com/honestbleeps/Reddit-Enhancement-Suite",
-      "stars": 4551,
+      "stars": 4552,
       "language": "JavaScript",
-      "score": 53,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（53 分，C 级）"
-    },
-    {
-      "fullName": "rachelos/we-mp-rss",
-      "url": "https://github.com/rachelos/we-mp-rss",
-      "stars": 5170,
-      "language": "Python",
       "score": 53,
       "grade": "C",
       "reason": "low-score",
@@ -2400,7 +2531,7 @@
     {
       "fullName": "oqtane/oqtane.framework",
       "url": "https://github.com/oqtane/oqtane.framework",
-      "stars": 2261,
+      "stars": 2262,
       "language": "C#",
       "score": 53,
       "grade": "C",
@@ -2411,7 +2542,7 @@
     {
       "fullName": "spider-rs/spider",
       "url": "https://github.com/spider-rs/spider",
-      "stars": 2840,
+      "stars": 2843,
       "language": "Rust",
       "score": 53,
       "grade": "C",
@@ -2422,18 +2553,7 @@
     {
       "fullName": "tiliondev/fortress",
       "url": "https://github.com/tiliondev/fortress",
-      "stars": 798,
-      "language": "Python",
-      "score": 53,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（53 分，C 级）"
-    },
-    {
-      "fullName": "digitalmethodsinitiative/4cat",
-      "url": "https://github.com/digitalmethodsinitiative/4cat",
-      "stars": 428,
+      "stars": 800,
       "language": "Python",
       "score": 53,
       "grade": "C",
@@ -2444,7 +2564,7 @@
     {
       "fullName": "Droid-Deck/DroidDeck",
       "url": "https://github.com/Droid-Deck/DroidDeck",
-      "stars": 19443,
+      "stars": 19760,
       "language": "Kotlin",
       "score": 52,
       "grade": "C",
@@ -2455,7 +2575,7 @@
     {
       "fullName": "flutter/flutter",
       "url": "https://github.com/flutter/flutter",
-      "stars": 181180,
+      "stars": 181252,
       "language": "Dart",
       "score": 52,
       "grade": "C",
@@ -2466,8 +2586,19 @@
     {
       "fullName": "huggingface/transformers",
       "url": "https://github.com/huggingface/transformers",
-      "stars": 168815,
+      "stars": 168937,
       "language": "Python",
+      "score": 52,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（52 分，C 级）"
+    },
+    {
+      "fullName": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "stars": 135118,
+      "language": "Rust",
       "score": 52,
       "grade": "C",
       "reason": "low-score",
@@ -2477,7 +2608,7 @@
     {
       "fullName": "infiniflow/ragflow",
       "url": "https://github.com/infiniflow/ragflow",
-      "stars": 94035,
+      "stars": 94102,
       "language": "Go",
       "score": 52,
       "grade": "C",
@@ -2488,7 +2619,7 @@
     {
       "fullName": "bytedance/deer-flow",
       "url": "https://github.com/bytedance/deer-flow",
-      "stars": 85251,
+      "stars": 85297,
       "language": "Python",
       "score": 52,
       "grade": "C",
@@ -2499,7 +2630,7 @@
     {
       "fullName": "shanraisshan/claude-code-best-practice",
       "url": "https://github.com/shanraisshan/claude-code-best-practice",
-      "stars": 68966,
+      "stars": 69015,
       "language": "HTML",
       "score": 52,
       "grade": "C",
@@ -2510,7 +2641,7 @@
     {
       "fullName": "langchain-ai/langgraph",
       "url": "https://github.com/langchain-ai/langgraph",
-      "stars": 44802,
+      "stars": 44883,
       "language": "Python",
       "score": 52,
       "grade": "C",
@@ -2521,19 +2652,8 @@
     {
       "fullName": "VectifyAI/PageIndex",
       "url": "https://github.com/VectifyAI/PageIndex",
-      "stars": 40369,
+      "stars": 40403,
       "language": "Python",
-      "score": 52,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（52 分，C 级）"
-    },
-    {
-      "fullName": "jdevalk/specification.website",
-      "url": "https://github.com/jdevalk/specification.website",
-      "stars": 923,
-      "language": "TypeScript",
       "score": 52,
       "grade": "C",
       "reason": "low-score",
@@ -2543,7 +2663,7 @@
     {
       "fullName": "plotly/dash",
       "url": "https://github.com/plotly/dash",
-      "stars": 24487,
+      "stars": 24490,
       "language": "Python",
       "score": 52,
       "grade": "C",
@@ -2554,7 +2674,7 @@
     {
       "fullName": "jarun/nnn",
       "url": "https://github.com/jarun/nnn",
-      "stars": 22120,
+      "stars": 22122,
       "language": "C",
       "score": 52,
       "grade": "C",
@@ -2565,7 +2685,7 @@
     {
       "fullName": "gz-yami/mall4j",
       "url": "https://github.com/gz-yami/mall4j",
-      "stars": 5326,
+      "stars": 5327,
       "language": "JavaScript",
       "score": 52,
       "grade": "C",
@@ -2576,7 +2696,7 @@
     {
       "fullName": "refined-github/refined-github",
       "url": "https://github.com/refined-github/refined-github",
-      "stars": 32476,
+      "stars": 32478,
       "language": "TypeScript",
       "score": 52,
       "grade": "C",
@@ -2587,7 +2707,7 @@
     {
       "fullName": "Anarios/return-youtube-dislike",
       "url": "https://github.com/Anarios/return-youtube-dislike",
-      "stars": 13842,
+      "stars": 13848,
       "language": "JavaScript",
       "score": 52,
       "grade": "C",
@@ -2598,8 +2718,19 @@
     {
       "fullName": "dessant/buster",
       "url": "https://github.com/dessant/buster",
-      "stars": 9373,
+      "stars": 9379,
       "language": "JavaScript",
+      "score": 52,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（52 分，C 级）"
+    },
+    {
+      "fullName": "salarcode/SmartProxy",
+      "url": "https://github.com/salarcode/SmartProxy",
+      "stars": 2773,
+      "language": "TypeScript",
       "score": 52,
       "grade": "C",
       "reason": "low-score",
@@ -2609,7 +2740,7 @@
     {
       "fullName": "kriasoft/react-starter-kit",
       "url": "https://github.com/kriasoft/react-starter-kit",
-      "stars": 23713,
+      "stars": 23715,
       "language": "TypeScript",
       "score": 52,
       "grade": "C",
@@ -2620,7 +2751,7 @@
     {
       "fullName": "wasp-lang/open-saas",
       "url": "https://github.com/wasp-lang/open-saas",
-      "stars": 16295,
+      "stars": 16305,
       "language": "MDX",
       "score": 52,
       "grade": "C",
@@ -2629,9 +2760,20 @@
       "summary": "分数不够（52 分，C 级）"
     },
     {
+      "fullName": "eternity4719/HowToLiveBetter",
+      "url": "https://github.com/eternity4719/HowToLiveBetter",
+      "stars": 75442,
+      "language": "HTML",
+      "score": 51,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（51 分，C 级）"
+    },
+    {
       "fullName": "deepseek-ai/deepseek-harness",
       "url": "https://github.com/deepseek-ai/deepseek-harness",
-      "stars": 278886,
+      "stars": 280070,
       "language": "TypeScript",
       "score": 51,
       "grade": "C",
@@ -2640,10 +2782,10 @@
       "summary": "分数不够（51 分，C 级）"
     },
     {
-      "fullName": "eternity4719/HowToLiveBetter",
-      "url": "https://github.com/eternity4719/HowToLiveBetter",
-      "stars": 75020,
-      "language": "HTML",
+      "fullName": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "stars": 120876,
+      "language": "Python",
       "score": 51,
       "grade": "C",
       "reason": "low-score",
@@ -2653,19 +2795,8 @@
     {
       "fullName": "code-yeongyu/oh-my-openagent",
       "url": "https://github.com/code-yeongyu/oh-my-openagent",
-      "stars": 70841,
+      "stars": 70889,
       "language": "TypeScript",
-      "score": 51,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（51 分，C 级）"
-    },
-    {
-      "fullName": "vercel-labs/agent-desktop",
-      "url": "https://github.com/vercel-labs/agent-desktop",
-      "stars": 21913,
-      "language": "Rust",
       "score": 51,
       "grade": "C",
       "reason": "low-score",
@@ -2686,7 +2817,7 @@
     {
       "fullName": "NervJS/taro",
       "url": "https://github.com/NervJS/taro",
-      "stars": 37749,
+      "stars": 37752,
       "language": "TypeScript",
       "score": 51,
       "grade": "C",
@@ -2708,7 +2839,7 @@
     {
       "fullName": "autoscrape-labs/pydoll",
       "url": "https://github.com/autoscrape-labs/pydoll",
-      "stars": 7138,
+      "stars": 7141,
       "language": "HTML",
       "score": 51,
       "grade": "C",
@@ -2719,7 +2850,7 @@
     {
       "fullName": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
-      "stars": 71218,
+      "stars": 71502,
       "language": "Python",
       "score": 50,
       "grade": "C",
@@ -2730,7 +2861,7 @@
     {
       "fullName": "upstash/context7",
       "url": "https://github.com/upstash/context7",
-      "stars": 64609,
+      "stars": 64716,
       "language": "TypeScript",
       "score": 50,
       "grade": "C",
@@ -2741,7 +2872,7 @@
     {
       "fullName": "jeecgboot/JeecgBoot",
       "url": "https://github.com/jeecgboot/JeecgBoot",
-      "stars": 48427,
+      "stars": 48448,
       "language": "Java",
       "score": 50,
       "grade": "C",
@@ -2752,8 +2883,19 @@
     {
       "fullName": "tombcato/clash-ip-checker",
       "url": "https://github.com/tombcato/clash-ip-checker",
-      "stars": 1086,
+      "stars": 1088,
       "language": "Python",
+      "score": 50,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（50 分，C 级）"
+    },
+    {
+      "fullName": "vercel-labs/agent-desktop",
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "stars": 22912,
+      "language": "Rust",
       "score": 50,
       "grade": "C",
       "reason": "low-score",
@@ -2763,7 +2905,7 @@
     {
       "fullName": "openstyles/stylus",
       "url": "https://github.com/openstyles/stylus",
-      "stars": 6999,
+      "stars": 7004,
       "language": "JavaScript",
       "score": 50,
       "grade": "C",
@@ -2783,20 +2925,9 @@
       "summary": "分数不够（50 分，C 级）"
     },
     {
-      "fullName": "iplocate/free-proxy-list",
-      "url": "https://github.com/iplocate/free-proxy-list",
-      "stars": 397,
-      "language": "无",
-      "score": 50,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（50 分，C 级）"
-    },
-    {
       "fullName": "anefzaoui/misterdownloadmanager",
       "url": "https://github.com/anefzaoui/misterdownloadmanager",
-      "stars": 6602,
+      "stars": 8262,
       "language": "Rust",
       "score": 49,
       "grade": "C",
@@ -2807,7 +2938,7 @@
     {
       "fullName": "anthropics/claude-code",
       "url": "https://github.com/anthropics/claude-code",
-      "stars": 155283,
+      "stars": 155491,
       "language": "TypeScript",
       "score": 49,
       "grade": "C",
@@ -2818,7 +2949,7 @@
     {
       "fullName": "wu529778790/panhub.shenzjd.com",
       "url": "https://github.com/wu529778790/panhub.shenzjd.com",
-      "stars": 1811,
+      "stars": 1810,
       "language": "Vue",
       "score": 49,
       "grade": "C",
@@ -2829,7 +2960,7 @@
     {
       "fullName": "dark-kingA/cloudTools",
       "url": "https://github.com/dark-kingA/cloudTools",
-      "stars": 1171,
+      "stars": 1170,
       "language": "无",
       "score": 49,
       "grade": "C",
@@ -2840,7 +2971,7 @@
     {
       "fullName": "immersive-translate/immersive-translate",
       "url": "https://github.com/immersive-translate/immersive-translate",
-      "stars": 19750,
+      "stars": 19782,
       "language": "无",
       "score": 49,
       "grade": "C",
@@ -2851,7 +2982,7 @@
     {
       "fullName": "hanydd/BilibiliSponsorBlock",
       "url": "https://github.com/hanydd/BilibiliSponsorBlock",
-      "stars": 6354,
+      "stars": 6363,
       "language": "TypeScript",
       "score": 49,
       "grade": "C",
@@ -2873,7 +3004,7 @@
     {
       "fullName": "thedotmack/claude-mem",
       "url": "https://github.com/thedotmack/claude-mem",
-      "stars": 116117,
+      "stars": 116650,
       "language": "TypeScript",
       "score": 48,
       "grade": "C",
@@ -2884,7 +3015,7 @@
     {
       "fullName": "aaif-goose/goose",
       "url": "https://github.com/aaif-goose/goose",
-      "stars": 56460,
+      "stars": 56517,
       "language": "Rust",
       "score": 48,
       "grade": "C",
@@ -2895,7 +3026,7 @@
     {
       "fullName": "herdrdev/herdr",
       "url": "https://github.com/herdrdev/herdr",
-      "stars": 50241,
+      "stars": 50676,
       "language": "Rust",
       "score": 48,
       "grade": "C",
@@ -2906,7 +3037,7 @@
     {
       "fullName": "DeusData/codebase-memory-mcp",
       "url": "https://github.com/DeusData/codebase-memory-mcp",
-      "stars": 48499,
+      "stars": 48588,
       "language": "C",
       "score": 48,
       "grade": "C",
@@ -2917,7 +3048,7 @@
     {
       "fullName": "patchy631/ai-engineering-hub",
       "url": "https://github.com/patchy631/ai-engineering-hub",
-      "stars": 41764,
+      "stars": 41814,
       "language": "Jupyter Notebook",
       "score": 48,
       "grade": "C",
@@ -2939,7 +3070,7 @@
     {
       "fullName": "streetwriters/notesnook",
       "url": "https://github.com/streetwriters/notesnook",
-      "stars": 14917,
+      "stars": 14925,
       "language": "TypeScript",
       "score": 48,
       "grade": "C",
@@ -2950,7 +3081,7 @@
     {
       "fullName": "Zettlr/Zettlr",
       "url": "https://github.com/Zettlr/Zettlr",
-      "stars": 13903,
+      "stars": 13908,
       "language": "TypeScript",
       "score": 48,
       "grade": "C",
@@ -2961,7 +3092,7 @@
     {
       "fullName": "palxiao/poster-design",
       "url": "https://github.com/palxiao/poster-design",
-      "stars": 4990,
+      "stars": 4995,
       "language": "Vue",
       "score": 48,
       "grade": "C",
@@ -2981,9 +3112,20 @@
       "summary": "分数不够（48 分，C 级）"
     },
     {
+      "fullName": "CosmoBlk/email-marketing-bible",
+      "url": "https://github.com/CosmoBlk/email-marketing-bible",
+      "stars": 373,
+      "language": "无",
+      "score": 48,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（48 分，C 级）"
+    },
+    {
       "fullName": "scrapy/scrapy",
       "url": "https://github.com/scrapy/scrapy",
-      "stars": 65326,
+      "stars": 65359,
       "language": "Python",
       "score": 48,
       "grade": "C",
@@ -2994,7 +3136,7 @@
     {
       "fullName": "iiab/iiab",
       "url": "https://github.com/iiab/iiab",
-      "stars": 2040,
+      "stars": 2041,
       "language": "Jinja",
       "score": 48,
       "grade": "C",
@@ -3005,7 +3147,7 @@
     {
       "fullName": "Gathin23/cleanyourtv",
       "url": "https://github.com/Gathin23/cleanyourtv",
-      "stars": 56372,
+      "stars": 57133,
       "language": "Python",
       "score": 47,
       "grade": "C",
@@ -3016,7 +3158,7 @@
     {
       "fullName": "zortos293/Lichii",
       "url": "https://github.com/zortos293/Lichii",
-      "stars": 8443,
+      "stars": 8833,
       "language": "C++",
       "score": 47,
       "grade": "C",
@@ -3027,8 +3169,19 @@
     {
       "fullName": "Eglantine-Community/Eglantine",
       "url": "https://github.com/Eglantine-Community/Eglantine",
-      "stars": 5825,
+      "stars": 5907,
       "language": "C++",
+      "score": 47,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（47 分，C 级）"
+    },
+    {
+      "fullName": "JiaFeiMiao-K-Cat/DiscImageStudio",
+      "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+      "stars": 9809,
+      "language": "C#",
       "score": 47,
       "grade": "C",
       "reason": "low-score",
@@ -3038,7 +3191,7 @@
     {
       "fullName": "anthropics/skills",
       "url": "https://github.com/anthropics/skills",
-      "stars": 192944,
+      "stars": 193839,
       "language": "Python",
       "score": 47,
       "grade": "C",
@@ -3049,7 +3202,7 @@
     {
       "fullName": "HKUDS/Vibe-Trading",
       "url": "https://github.com/HKUDS/Vibe-Trading",
-      "stars": 38046,
+      "stars": 38130,
       "language": "Python",
       "score": 47,
       "grade": "C",
@@ -3060,7 +3213,7 @@
     {
       "fullName": "elie222/inbox-zero",
       "url": "https://github.com/elie222/inbox-zero",
-      "stars": 12988,
+      "stars": 13009,
       "language": "TypeScript",
       "score": 47,
       "grade": "C",
@@ -3115,7 +3268,7 @@
     {
       "fullName": "ImranR98/Obtainium",
       "url": "https://github.com/ImranR98/Obtainium",
-      "stars": 21451,
+      "stars": 21496,
       "language": "Dart",
       "score": 47,
       "grade": "C",
@@ -3126,8 +3279,19 @@
     {
       "fullName": "getmaxun/maxun",
       "url": "https://github.com/getmaxun/maxun",
-      "stars": 18211,
+      "stars": 18220,
       "language": "TypeScript",
+      "score": 47,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（47 分，C 级）"
+    },
+    {
+      "fullName": "saasyland/saasyland.com",
+      "url": "https://github.com/saasyland/saasyland.com",
+      "stars": 441,
+      "language": "MDX",
       "score": 47,
       "grade": "C",
       "reason": "low-score",
@@ -3137,8 +3301,19 @@
     {
       "fullName": "freeCodeCamp/freeCodeCamp",
       "url": "https://github.com/freeCodeCamp/freeCodeCamp",
-      "stars": 458992,
+      "stars": 459068,
       "language": "TypeScript",
+      "score": 46,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（46 分，C 级）"
+    },
+    {
+      "fullName": "ggml-org/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "stars": 134730,
+      "language": "C++",
       "score": 46,
       "grade": "C",
       "reason": "low-score",
@@ -3148,7 +3323,7 @@
     {
       "fullName": "headroomlabs-ai/headroom",
       "url": "https://github.com/headroomlabs-ai/headroom",
-      "stars": 79359,
+      "stars": 79521,
       "language": "Python",
       "score": 46,
       "grade": "C",
@@ -3159,7 +3334,7 @@
     {
       "fullName": "aimeos/aimeos-typo3",
       "url": "https://github.com/aimeos/aimeos-typo3",
-      "stars": 1582,
+      "stars": 1583,
       "language": "PHP",
       "score": 46,
       "grade": "C",
@@ -3170,7 +3345,7 @@
     {
       "fullName": "studio1902/statamic-peak",
       "url": "https://github.com/studio1902/statamic-peak",
-      "stars": 699,
+      "stars": 698,
       "language": "PHP",
       "score": 46,
       "grade": "C",
@@ -3181,7 +3356,7 @@
     {
       "fullName": "files-community/Files",
       "url": "https://github.com/files-community/Files",
-      "stars": 46585,
+      "stars": 46614,
       "language": "C#",
       "score": 46,
       "grade": "C",
@@ -3192,7 +3367,7 @@
     {
       "fullName": "puppeteer/puppeteer",
       "url": "https://github.com/puppeteer/puppeteer",
-      "stars": 95820,
+      "stars": 95826,
       "language": "TypeScript",
       "score": 46,
       "grade": "C",
@@ -3203,7 +3378,7 @@
     {
       "fullName": "googleworkspace/cli",
       "url": "https://github.com/googleworkspace/cli",
-      "stars": 32256,
+      "stars": 32287,
       "language": "Rust",
       "score": 46,
       "grade": "C",
@@ -3214,7 +3389,7 @@
     {
       "fullName": "OpnForm/OpnForm",
       "url": "https://github.com/OpnForm/OpnForm",
-      "stars": 4003,
+      "stars": 4009,
       "language": "PHP",
       "score": 46,
       "grade": "C",
@@ -3223,9 +3398,20 @@
       "summary": "分数不够（46 分，C 级）"
     },
     {
+      "fullName": "lemomo-ai/lemo-opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "stars": 15409,
+      "language": "JavaScript",
+      "score": 45,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（45 分，C 级）"
+    },
+    {
       "fullName": "peach-mitao/peach",
       "url": "https://github.com/peach-mitao/peach",
-      "stars": 14893,
+      "stars": 14947,
       "language": "Python",
       "score": 45,
       "grade": "C",
@@ -3236,7 +3422,7 @@
     {
       "fullName": "ohmyzsh/ohmyzsh",
       "url": "https://github.com/ohmyzsh/ohmyzsh",
-      "stars": 190513,
+      "stars": 190595,
       "language": "Shell",
       "score": 45,
       "grade": "C",
@@ -3247,8 +3433,19 @@
     {
       "fullName": "atlas-engineer/nyxt",
       "url": "https://github.com/atlas-engineer/nyxt",
-      "stars": 11060,
+      "stars": 11064,
       "language": "Common Lisp",
+      "score": 45,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（45 分，C 级）"
+    },
+    {
+      "fullName": "RICHQAQ/PasteMD",
+      "url": "https://github.com/RICHQAQ/PasteMD",
+      "stars": 5439,
+      "language": "Python",
       "score": 45,
       "grade": "C",
       "reason": "low-score",
@@ -3258,7 +3455,7 @@
     {
       "fullName": "Cp0204/quark-auto-save",
       "url": "https://github.com/Cp0204/quark-auto-save",
-      "stars": 3102,
+      "stars": 3106,
       "language": "Python",
       "score": 45,
       "grade": "C",
@@ -3269,7 +3466,7 @@
     {
       "fullName": "ansible/awx",
       "url": "https://github.com/ansible/awx",
-      "stars": 15627,
+      "stars": 15625,
       "language": "Python",
       "score": 45,
       "grade": "C",
@@ -3280,7 +3477,7 @@
     {
       "fullName": "frappe/press",
       "url": "https://github.com/frappe/press",
-      "stars": 579,
+      "stars": 580,
       "language": "Python",
       "score": 45,
       "grade": "C",
@@ -3291,7 +3488,7 @@
     {
       "fullName": "ultraworkers/claw-code",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 194794,
+      "stars": 194781,
       "language": "Rust",
       "score": 44,
       "grade": "C",
@@ -3302,7 +3499,7 @@
     {
       "fullName": "tasks/tasks",
       "url": "https://github.com/tasks/tasks",
-      "stars": 5731,
+      "stars": 5735,
       "language": "Kotlin",
       "score": 44,
       "grade": "C",
@@ -3313,7 +3510,7 @@
     {
       "fullName": "fushengqian/fuint",
       "url": "https://github.com/fushengqian/fuint",
-      "stars": 1800,
+      "stars": 1801,
       "language": "Java",
       "score": 44,
       "grade": "C",
@@ -3324,7 +3521,7 @@
     {
       "fullName": "crxjs/chrome-extension-tools",
       "url": "https://github.com/crxjs/chrome-extension-tools",
-      "stars": 4184,
+      "stars": 4183,
       "language": "TypeScript",
       "score": 44,
       "grade": "C",
@@ -3335,7 +3532,7 @@
     {
       "fullName": "xwmx/nb",
       "url": "https://github.com/xwmx/nb",
-      "stars": 8472,
+      "stars": 8473,
       "language": "Shell",
       "score": 43,
       "grade": "C",
@@ -3346,7 +3543,7 @@
     {
       "fullName": "abpframework/abp",
       "url": "https://github.com/abpframework/abp",
-      "stars": 14474,
+      "stars": 14475,
       "language": "C#",
       "score": 43,
       "grade": "C",
@@ -3368,7 +3565,7 @@
     {
       "fullName": "neon-mmd/websurfx",
       "url": "https://github.com/neon-mmd/websurfx",
-      "stars": 1230,
+      "stars": 1231,
       "language": "Rust",
       "score": 43,
       "grade": "C",
@@ -3379,7 +3576,7 @@
     {
       "fullName": "Zagitta/gpu-unlock",
       "url": "https://github.com/Zagitta/gpu-unlock",
-      "stars": 18699,
+      "stars": 19029,
       "language": "C",
       "score": 42,
       "grade": "C",
@@ -3390,7 +3587,7 @@
     {
       "fullName": "tensorflow/tensorflow",
       "url": "https://github.com/tensorflow/tensorflow",
-      "stars": 201503,
+      "stars": 201582,
       "language": "C++",
       "score": 42,
       "grade": "C",
@@ -3401,7 +3598,7 @@
     {
       "fullName": "langchain-ai/langchain",
       "url": "https://github.com/langchain-ai/langchain",
-      "stars": 149361,
+      "stars": 149431,
       "language": "Python",
       "score": 42,
       "grade": "C",
@@ -3412,7 +3609,7 @@
     {
       "fullName": "heygen-com/hyperframes",
       "url": "https://github.com/heygen-com/hyperframes",
-      "stars": 82715,
+      "stars": 83587,
       "language": "TypeScript",
       "score": 42,
       "grade": "C",
@@ -3423,7 +3620,7 @@
     {
       "fullName": "alainm23/planify",
       "url": "https://github.com/alainm23/planify",
-      "stars": 5794,
+      "stars": 5799,
       "language": "Vala",
       "score": 42,
       "grade": "C",
@@ -3434,7 +3631,7 @@
     {
       "fullName": "xisohi/CHINA-IPTV",
       "url": "https://github.com/xisohi/CHINA-IPTV",
-      "stars": 2037,
+      "stars": 2041,
       "language": "HTML",
       "score": 42,
       "grade": "C",
@@ -3445,7 +3642,7 @@
     {
       "fullName": "microsoft/playwright",
       "url": "https://github.com/microsoft/playwright",
-      "stars": 99869,
+      "stars": 100052,
       "language": "TypeScript",
       "score": 42,
       "grade": "C",
@@ -3456,18 +3653,7 @@
     {
       "fullName": "appium/appium",
       "url": "https://github.com/appium/appium",
-      "stars": 22209,
-      "language": "TypeScript",
-      "score": 42,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（42 分，C 级）"
-    },
-    {
-      "fullName": "xuejianxianzun/PixivBatchDownloader",
-      "url": "https://github.com/xuejianxianzun/PixivBatchDownloader",
-      "stars": 5780,
+      "stars": 22210,
       "language": "TypeScript",
       "score": 42,
       "grade": "C",
@@ -3478,7 +3664,7 @@
     {
       "fullName": "Aran404/SpotAPI",
       "url": "https://github.com/Aran404/SpotAPI",
-      "stars": 495,
+      "stars": 496,
       "language": "Python",
       "score": 42,
       "grade": "C",
@@ -3487,43 +3673,10 @@
       "summary": "分数不够（42 分，C 级）"
     },
     {
-      "fullName": "Illyism/seo-skills",
-      "url": "https://github.com/Illyism/seo-skills",
-      "stars": 904,
-      "language": "无",
-      "score": 41,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（41 分，C 级）"
-    },
-    {
-      "fullName": "daijro/camoufox",
-      "url": "https://github.com/daijro/camoufox",
-      "stars": 13193,
-      "language": "Python",
-      "score": 41,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（41 分，C 级）"
-    },
-    {
       "fullName": "Minireel/HGhub",
       "url": "https://github.com/Minireel/HGhub",
-      "stars": 8277,
+      "stars": 8727,
       "language": "无",
-      "score": 40,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（40 分，C 级）"
-    },
-    {
-      "fullName": "Comfy-Org/ComfyUI",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "stars": 146339,
-      "language": "Python",
       "score": 40,
       "grade": "C",
       "reason": "low-score",
@@ -3533,7 +3686,18 @@
     {
       "fullName": "EbookFoundation/free-programming-books",
       "url": "https://github.com/EbookFoundation/free-programming-books",
-      "stars": 401408,
+      "stars": 401515,
+      "language": "Python",
+      "score": 40,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（40 分，C 级）"
+    },
+    {
+      "fullName": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "stars": 146568,
       "language": "Python",
       "score": 40,
       "grade": "C",
@@ -3544,7 +3708,7 @@
     {
       "fullName": "espanso/espanso",
       "url": "https://github.com/espanso/espanso",
-      "stars": 14767,
+      "stars": 14773,
       "language": "Rust",
       "score": 40,
       "grade": "C",
@@ -3566,7 +3730,7 @@
     {
       "fullName": "JustAResearcher/gpu-unlock-ada",
       "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
-      "stars": 4870,
+      "stars": 4883,
       "language": "C",
       "score": 39,
       "grade": "C",
@@ -3577,7 +3741,7 @@
     {
       "fullName": "lobehub/lobehub",
       "url": "https://github.com/lobehub/lobehub",
-      "stars": 85007,
+      "stars": 85226,
       "language": "TypeScript",
       "score": 39,
       "grade": "C",
@@ -3588,19 +3752,8 @@
     {
       "fullName": "drawdb-io/drawdb",
       "url": "https://github.com/drawdb-io/drawdb",
-      "stars": 40306,
+      "stars": 40318,
       "language": "JavaScript",
-      "score": 39,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（39 分，C 级）"
-    },
-    {
-      "fullName": "browseros-ai/BrowserOS",
-      "url": "https://github.com/browseros-ai/BrowserOS",
-      "stars": 14313,
-      "language": "TypeScript",
       "score": 39,
       "grade": "C",
       "reason": "low-score",
@@ -3632,7 +3785,7 @@
     {
       "fullName": "relaticle/relaticle",
       "url": "https://github.com/relaticle/relaticle",
-      "stars": 1831,
+      "stars": 1838,
       "language": "PHP",
       "score": 39,
       "grade": "C",
@@ -3643,7 +3796,7 @@
     {
       "fullName": "snooppr/snoop",
       "url": "https://github.com/snooppr/snoop",
-      "stars": 4065,
+      "stars": 4064,
       "language": "Python",
       "score": 39,
       "grade": "C",
@@ -3654,19 +3807,8 @@
     {
       "fullName": "mudler/LocalAI",
       "url": "https://github.com/mudler/LocalAI",
-      "stars": 50320,
+      "stars": 50345,
       "language": "Go",
-      "score": 38,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（38 分，C 级）"
-    },
-    {
-      "fullName": "codewhale-hq/Codewhale",
-      "url": "https://github.com/codewhale-hq/Codewhale",
-      "stars": 41177,
-      "language": "Rust",
       "score": 38,
       "grade": "C",
       "reason": "low-score",
@@ -3676,7 +3818,7 @@
     {
       "fullName": "irinabuht12-oss/marketing-skills",
       "url": "https://github.com/irinabuht12-oss/marketing-skills",
-      "stars": 7309,
+      "stars": 7465,
       "language": "无",
       "score": 38,
       "grade": "C",
@@ -3687,7 +3829,7 @@
     {
       "fullName": "yaojingang/GEOFlow",
       "url": "https://github.com/yaojingang/GEOFlow",
-      "stars": 4079,
+      "stars": 4121,
       "language": "PHP",
       "score": 38,
       "grade": "C",
@@ -3698,7 +3840,7 @@
     {
       "fullName": "vicinaehq/vicinae",
       "url": "https://github.com/vicinaehq/vicinae",
-      "stars": 10583,
+      "stars": 10593,
       "language": "C++",
       "score": 38,
       "grade": "C",
@@ -3709,7 +3851,7 @@
     {
       "fullName": "nilbuild/developer-roadmap",
       "url": "https://github.com/nilbuild/developer-roadmap",
-      "stars": 371816,
+      "stars": 371935,
       "language": "TypeScript",
       "score": 37,
       "grade": "C",
@@ -3720,7 +3862,7 @@
     {
       "fullName": "PDFMathTranslate/PDFMathTranslate",
       "url": "https://github.com/PDFMathTranslate/PDFMathTranslate",
-      "stars": 38368,
+      "stars": 38401,
       "language": "Python",
       "score": 37,
       "grade": "C",
@@ -3731,7 +3873,7 @@
     {
       "fullName": "qusong0627/QuantMind",
       "url": "https://github.com/qusong0627/QuantMind",
-      "stars": 1906,
+      "stars": 1916,
       "language": "Python",
       "score": 37,
       "grade": "C",
@@ -3742,19 +3884,8 @@
     {
       "fullName": "DIYgod/RSSHub-Radar",
       "url": "https://github.com/DIYgod/RSSHub-Radar",
-      "stars": 7407,
+      "stars": 7412,
       "language": "TypeScript",
-      "score": 37,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（37 分，C 级）"
-    },
-    {
-      "fullName": "miroslavpejic85/mirotalkwebrtc",
-      "url": "https://github.com/miroslavpejic85/mirotalkwebrtc",
-      "stars": 365,
-      "language": "JavaScript",
       "score": 37,
       "grade": "C",
       "reason": "low-score",
@@ -3764,7 +3895,7 @@
     {
       "fullName": "scrapfly/Antibot-Detector",
       "url": "https://github.com/scrapfly/Antibot-Detector",
-      "stars": 628,
+      "stars": 629,
       "language": "JavaScript",
       "score": 37,
       "grade": "C",
@@ -3775,7 +3906,7 @@
     {
       "fullName": "twbs/bootstrap",
       "url": "https://github.com/twbs/bootstrap",
-      "stars": 175038,
+      "stars": 175051,
       "language": "MDX",
       "score": 36,
       "grade": "C",
@@ -3786,7 +3917,7 @@
     {
       "fullName": "microsoft/ai-agents-for-beginners",
       "url": "https://github.com/microsoft/ai-agents-for-beginners",
-      "stars": 79420,
+      "stars": 79531,
       "language": "Jupyter Notebook",
       "score": 36,
       "grade": "C",
@@ -3808,7 +3939,7 @@
     {
       "fullName": "n8n-io/n8n",
       "url": "https://github.com/n8n-io/n8n",
-      "stars": 210154,
+      "stars": 210352,
       "language": "TypeScript",
       "score": 35,
       "grade": "C",
@@ -3819,7 +3950,7 @@
     {
       "fullName": "langgenius/dify",
       "url": "https://github.com/langgenius/dify",
-      "stars": 160982,
+      "stars": 161075,
       "language": "Python",
       "score": 35,
       "grade": "C",
@@ -3830,7 +3961,7 @@
     {
       "fullName": "CherryHQ/cherry-studio",
       "url": "https://github.com/CherryHQ/cherry-studio",
-      "stars": 53435,
+      "stars": 53474,
       "language": "TypeScript",
       "score": 35,
       "grade": "C",
@@ -3841,7 +3972,7 @@
     {
       "fullName": "plainhub/plain-app",
       "url": "https://github.com/plainhub/plain-app",
-      "stars": 7178,
+      "stars": 7184,
       "language": "Kotlin",
       "score": 35,
       "grade": "C",
@@ -3852,7 +3983,7 @@
     {
       "fullName": "massCodeIO/massCode",
       "url": "https://github.com/massCodeIO/massCode",
-      "stars": 7109,
+      "stars": 7110,
       "language": "TypeScript",
       "score": 35,
       "grade": "C",
@@ -3872,9 +4003,20 @@
       "summary": "分数不够（35 分，C 级）"
     },
     {
+      "fullName": "codewhale-hq/Codewhale",
+      "url": "https://github.com/codewhale-hq/Codewhale",
+      "stars": 41176,
+      "language": "Rust",
+      "score": 34,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（34 分，C 级）"
+    },
+    {
       "fullName": "alyssaxuu/screenity",
       "url": "https://github.com/alyssaxuu/screenity",
-      "stars": 18984,
+      "stars": 18988,
       "language": "JavaScript",
       "score": 34,
       "grade": "C",
@@ -3885,7 +4027,7 @@
     {
       "fullName": "Tianyu199509/DeskBox",
       "url": "https://github.com/Tianyu199509/DeskBox",
-      "stars": 8883,
+      "stars": 9065,
       "language": "C#",
       "score": 34,
       "grade": "C",
@@ -3896,7 +4038,7 @@
     {
       "fullName": "pbek/QOwnNotes",
       "url": "https://github.com/pbek/QOwnNotes",
-      "stars": 5956,
+      "stars": 5957,
       "language": "C++",
       "score": 34,
       "grade": "C",
@@ -3907,19 +4049,8 @@
     {
       "fullName": "jub0t/Concat",
       "url": "https://github.com/jub0t/Concat",
-      "stars": 16758,
+      "stars": 17224,
       "language": "Rust",
-      "score": 33,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（33 分，C 级）"
-    },
-    {
-      "fullName": "AstrBotDevs/AstrBot",
-      "url": "https://github.com/AstrBotDevs/AstrBot",
-      "stars": 46701,
-      "language": "Python",
       "score": 33,
       "grade": "C",
       "reason": "low-score",
@@ -3929,8 +4060,19 @@
     {
       "fullName": "netdata/netdata",
       "url": "https://github.com/netdata/netdata",
-      "stars": 81369,
+      "stars": 81390,
       "language": "Go",
+      "score": 32,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（32 分，C 级）"
+    },
+    {
+      "fullName": "AstrBotDevs/AstrBot",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "stars": 46819,
+      "language": "Python",
       "score": 32,
       "grade": "C",
       "reason": "low-score",
@@ -3940,7 +4082,7 @@
     {
       "fullName": "KunAgent/Kun",
       "url": "https://github.com/KunAgent/Kun",
-      "stars": 6377,
+      "stars": 6379,
       "language": "TypeScript",
       "score": 31,
       "grade": "C",
@@ -3951,8 +4093,19 @@
     {
       "fullName": "Skyvern-AI/skyvern",
       "url": "https://github.com/Skyvern-AI/skyvern",
-      "stars": 23386,
+      "stars": 23404,
       "language": "Python",
+      "score": 31,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（31 分，C 级）"
+    },
+    {
+      "fullName": "browseros-ai/BrowserOS",
+      "url": "https://github.com/browseros-ai/BrowserOS",
+      "stars": 14333,
+      "language": "Rust",
       "score": 31,
       "grade": "C",
       "reason": "low-score",
@@ -3962,8 +4115,19 @@
     {
       "fullName": "aws-samples/custom-lens-wa-hub",
       "url": "https://github.com/aws-samples/custom-lens-wa-hub",
-      "stars": 2093,
+      "stars": 2095,
       "language": "无",
+      "score": 31,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（31 分，C 级）"
+    },
+    {
+      "fullName": "daijro/camoufox",
+      "url": "https://github.com/daijro/camoufox",
+      "stars": 13228,
+      "language": "C",
       "score": 31,
       "grade": "C",
       "reason": "low-score",
@@ -3973,7 +4137,7 @@
     {
       "fullName": "ShareX/ShareX",
       "url": "https://github.com/ShareX/ShareX",
-      "stars": 40949,
+      "stars": 41001,
       "language": "C#",
       "score": 30,
       "grade": "C",
@@ -3984,7 +4148,7 @@
     {
       "fullName": "mrkai77/Loop",
       "url": "https://github.com/mrkai77/Loop",
-      "stars": 11956,
+      "stars": 11962,
       "language": "Swift",
       "score": 30,
       "grade": "C",
@@ -3995,7 +4159,7 @@
     {
       "fullName": "AutoHotkey/AutoHotkey",
       "url": "https://github.com/AutoHotkey/AutoHotkey",
-      "stars": 13466,
+      "stars": 13469,
       "language": "C++",
       "score": 30,
       "grade": "C",
@@ -4006,7 +4170,7 @@
     {
       "fullName": "Significant-Gravitas/AutoGPT",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "stars": 187994,
+      "stars": 188007,
       "language": "Python",
       "score": 29,
       "grade": "C",
@@ -4017,7 +4181,7 @@
     {
       "fullName": "jwasham/coding-interview-university",
       "url": "https://github.com/jwasham/coding-interview-university",
-      "stars": 364255,
+      "stars": 364318,
       "language": "无",
       "score": 29,
       "grade": "C",
@@ -4028,7 +4192,7 @@
     {
       "fullName": "koala73/worldmonitor",
       "url": "https://github.com/koala73/worldmonitor",
-      "stars": 90489,
+      "stars": 90556,
       "language": "TypeScript",
       "score": 29,
       "grade": "C",
@@ -4039,7 +4203,7 @@
     {
       "fullName": "siyuan-note/siyuan",
       "url": "https://github.com/siyuan-note/siyuan",
-      "stars": 47180,
+      "stars": 47211,
       "language": "TypeScript",
       "score": 29,
       "grade": "C",
@@ -4050,7 +4214,7 @@
     {
       "fullName": "omnivore-app/omnivore",
       "url": "https://github.com/omnivore-app/omnivore",
-      "stars": 16415,
+      "stars": 16417,
       "language": "TypeScript",
       "score": 29,
       "grade": "C",
@@ -4061,7 +4225,7 @@
     {
       "fullName": "gildas-lormeau/SingleFile",
       "url": "https://github.com/gildas-lormeau/SingleFile",
-      "stars": 22889,
+      "stars": 22899,
       "language": "JavaScript",
       "score": 29,
       "grade": "C",
@@ -4072,19 +4236,8 @@
     {
       "fullName": "tinyhumansai/openhuman",
       "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": 42652,
+      "stars": 42675,
       "language": "Rust",
-      "score": 28,
-      "grade": "C",
-      "reason": "low-score",
-      "redlines": [],
-      "summary": "分数不够（28 分，C 级）"
-    },
-    {
-      "fullName": "voyager-crew/voyager",
-      "url": "https://github.com/voyager-crew/voyager",
-      "stars": 20601,
-      "language": "TypeScript",
       "score": 28,
       "grade": "C",
       "reason": "low-score",
@@ -4094,7 +4247,7 @@
     {
       "fullName": "dailydotdev/daily",
       "url": "https://github.com/dailydotdev/daily",
-      "stars": 20140,
+      "stars": 20137,
       "language": "JavaScript",
       "score": 28,
       "grade": "C",
@@ -4105,7 +4258,7 @@
     {
       "fullName": "massgravel/Microsoft-Activation-Scripts",
       "url": "https://github.com/massgravel/Microsoft-Activation-Scripts",
-      "stars": 198567,
+      "stars": 198784,
       "language": "Batchfile",
       "score": 27,
       "grade": "C",
@@ -4116,8 +4269,19 @@
     {
       "fullName": "mg-chao/snow-shot",
       "url": "https://github.com/mg-chao/snow-shot",
-      "stars": 6946,
+      "stars": 7007,
       "language": "C++",
+      "score": 27,
+      "grade": "C",
+      "reason": "low-score",
+      "redlines": [],
+      "summary": "分数不够（27 分，C 级）"
+    },
+    {
+      "fullName": "voyager-crew/voyager",
+      "url": "https://github.com/voyager-crew/voyager",
+      "stars": 20612,
+      "language": "TypeScript",
       "score": 27,
       "grade": "C",
       "reason": "low-score",
@@ -4127,7 +4291,7 @@
     {
       "fullName": "open-webui/open-webui",
       "url": "https://github.com/open-webui/open-webui",
-      "stars": 158394,
+      "stars": 158528,
       "language": "Svelte",
       "score": 25,
       "grade": "C",
@@ -4138,7 +4302,7 @@
     {
       "fullName": "passbolt/passbolt_api",
       "url": "https://github.com/passbolt/passbolt_api",
-      "stars": 6230,
+      "stars": 6235,
       "language": "PHP",
       "score": 25,
       "grade": "C",
@@ -4149,7 +4313,7 @@
     {
       "fullName": "arendst/Tasmota",
       "url": "https://github.com/arendst/Tasmota",
-      "stars": 24983,
+      "stars": 24986,
       "language": "C",
       "score": 24,
       "grade": "C",
@@ -4160,7 +4324,7 @@
     {
       "fullName": "blacklanternsecurity/bbot",
       "url": "https://github.com/blacklanternsecurity/bbot",
-      "stars": 11104,
+      "stars": 11113,
       "language": "Python",
       "score": 23,
       "grade": "C",
@@ -4171,7 +4335,7 @@
     {
       "fullName": "paywallpro/paywall-gallery",
       "url": "https://github.com/paywallpro/paywall-gallery",
-      "stars": 901,
+      "stars": 902,
       "language": "无",
       "score": 23,
       "grade": "C",
@@ -4182,7 +4346,7 @@
     {
       "fullName": "Wox-launcher/Wox",
       "url": "https://github.com/Wox-launcher/Wox",
-      "stars": 27629,
+      "stars": 27636,
       "language": "Go",
       "score": 22,
       "grade": "C",
@@ -4193,7 +4357,7 @@
     {
       "fullName": "torvalds/linux",
       "url": "https://github.com/torvalds/linux",
-      "stars": 255336,
+      "stars": 255543,
       "language": "C",
       "score": 21,
       "grade": "C",
@@ -4204,7 +4368,7 @@
     {
       "fullName": "firecrawl/firecrawl",
       "url": "https://github.com/firecrawl/firecrawl",
-      "stars": 200843,
+      "stars": 201360,
       "language": "TypeScript",
       "score": 21,
       "grade": "C",
@@ -4215,7 +4379,7 @@
     {
       "fullName": "proxifly/free-proxy-list",
       "url": "https://github.com/proxifly/free-proxy-list",
-      "stars": 7040,
+      "stars": 7047,
       "language": "无",
       "score": 20,
       "grade": "C",
@@ -4226,7 +4390,7 @@
     {
       "fullName": "clash-verge-rev/clash-verge-rev",
       "url": "https://github.com/clash-verge-rev/clash-verge-rev",
-      "stars": 157801,
+      "stars": 158127,
       "language": "Rust",
       "score": 19,
       "grade": "C",
@@ -4252,43 +4416,9 @@
       "summary": "纯清单合集"
     },
     {
-      "fullName": "toshare5/toshare5.github.io",
-      "url": "https://github.com/toshare5/toshare5.github.io",
-      "stars": 323,
-      "language": "无",
-      "score": null,
-      "grade": null,
-      "reason": "redline",
-      "redlines": [
-        {
-          "code": "crack",
-          "label": "破解 / 绕过",
-          "detail": "命中「破解」，做成商品买家和卖家一起出事"
-        }
-      ],
-      "summary": "破解 / 绕过"
-    },
-    {
-      "fullName": "mkshare3/mkshare3.github.io",
-      "url": "https://github.com/mkshare3/mkshare3.github.io",
-      "stars": 345,
-      "language": "无",
-      "score": null,
-      "grade": null,
-      "reason": "redline",
-      "redlines": [
-        {
-          "code": "crack",
-          "label": "破解 / 绕过",
-          "detail": "命中「破解」，做成商品买家和卖家一起出事"
-        }
-      ],
-      "summary": "破解 / 绕过"
-    },
-    {
       "fullName": "cbusifabcap/daily_free_vpn",
       "url": "https://github.com/cbusifabcap/daily_free_vpn",
-      "stars": 404,
+      "stars": 407,
       "language": "无",
       "score": null,
       "grade": null,
@@ -4305,7 +4435,7 @@
     {
       "fullName": "sqdshguy/wreq-js",
       "url": "https://github.com/sqdshguy/wreq-js",
-      "stars": 459,
+      "stars": 460,
       "language": "TypeScript",
       "score": null,
       "grade": null,
@@ -4339,7 +4469,7 @@
     {
       "fullName": "twf-nikhila/Awesome-Black-Friday-Cyber-Monday-deals",
       "url": "https://github.com/twf-nikhila/Awesome-Black-Friday-Cyber-Monday-deals",
-      "stars": 569,
+      "stars": 571,
       "language": "HTML",
       "score": null,
       "grade": null,
@@ -4352,23 +4482,6 @@
         }
       ],
       "summary": "纯清单合集"
-    },
-    {
-      "fullName": "xiaofu666/SwiftUI_Demos",
-      "url": "https://github.com/xiaofu666/SwiftUI_Demos",
-      "stars": 604,
-      "language": "Swift",
-      "score": null,
-      "grade": null,
-      "reason": "redline",
-      "redlines": [
-        {
-          "code": "stale",
-          "label": "一年多没提交",
-          "detail": "最后一次 push 在 451 天前（2025-08-17T15:14:19Z）"
-        }
-      ],
-      "summary": "一年多没提交"
     },
     {
       "fullName": "PennyJoly/linktre-tools",
@@ -4388,9 +4501,26 @@
       "summary": "纯清单合集"
     },
     {
+      "fullName": "codiume/orbit",
+      "url": "https://github.com/codiume/orbit",
+      "stars": 629,
+      "language": "TypeScript",
+      "score": null,
+      "grade": null,
+      "reason": "redline",
+      "redlines": [
+        {
+          "code": "list",
+          "label": "纯清单合集",
+          "detail": "名称/简介/标签命中「collection of」，形态是一堆谁都能下的文件"
+        }
+      ],
+      "summary": "纯清单合集"
+    },
+    {
       "fullName": "YagamiiLight/Cerberus",
       "url": "https://github.com/YagamiiLight/Cerberus",
-      "stars": 641,
+      "stars": 642,
       "language": "Python",
       "score": null,
       "grade": null,
@@ -4399,7 +4529,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 2501 天前（2020-01-05T21:46:25Z）"
+          "detail": "最后一次 push 在 2503 天前（2020-01-05T21:46:25Z）"
         },
         {
           "code": "crack",
@@ -4412,7 +4542,7 @@
     {
       "fullName": "AnonCatalyst/Ominis-OSINT",
       "url": "https://github.com/AnonCatalyst/Ominis-OSINT",
-      "stars": 648,
+      "stars": 649,
       "language": "Python",
       "score": null,
       "grade": null,
@@ -4438,7 +4568,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 1327 天前（2023-03-24T22:22:42Z）"
+          "detail": "最后一次 push 在 1329 天前（2023-03-24T22:22:42Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -4446,7 +4576,7 @@
     {
       "fullName": "johackim/awesome-indiehackers",
       "url": "https://github.com/johackim/awesome-indiehackers",
-      "stars": 668,
+      "stars": 670,
       "language": "无",
       "score": null,
       "grade": null,
@@ -4472,7 +4602,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 894 天前（2024-05-31T04:34:05Z）"
+          "detail": "最后一次 push 在 896 天前（2024-05-31T04:34:05Z）"
         },
         {
           "code": "list",
@@ -4494,7 +4624,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 1505 天前（2022-09-28T08:59:12Z）"
+          "detail": "最后一次 push 在 1506 天前（2022-09-28T08:59:12Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -4511,7 +4641,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 3388 天前（2017-08-02T08:58:37Z）"
+          "detail": "最后一次 push 在 3389 天前（2017-08-02T08:58:37Z）"
         },
         {
           "code": "list",
@@ -4533,7 +4663,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 636 天前（2025-02-13T09:17:41Z）"
+          "detail": "最后一次 push 在 637 天前（2025-02-13T09:17:41Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -4550,7 +4680,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 3359 天前（2017-08-31T09:08:07Z）"
+          "detail": "最后一次 push 在 3360 天前（2017-08-31T09:08:07Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -4558,7 +4688,7 @@
     {
       "fullName": "flaqai/backlink_skills",
       "url": "https://github.com/flaqai/backlink_skills",
-      "stars": 888,
+      "stars": 892,
       "language": "Python",
       "score": null,
       "grade": null,
@@ -4575,7 +4705,7 @@
     {
       "fullName": "teles/awesome-seo",
       "url": "https://github.com/teles/awesome-seo",
-      "stars": 891,
+      "stars": 892,
       "language": "TypeScript",
       "score": null,
       "grade": null,
@@ -4592,7 +4722,7 @@
     {
       "fullName": "Solr159/JavBoss",
       "url": "https://github.com/Solr159/JavBoss",
-      "stars": 917,
+      "stars": 921,
       "language": "Go",
       "score": null,
       "grade": null,
@@ -4609,7 +4739,7 @@
     {
       "fullName": "TideSec/Tide",
       "url": "https://github.com/TideSec/Tide",
-      "stars": 926,
+      "stars": 927,
       "language": "无",
       "score": null,
       "grade": null,
@@ -4618,7 +4748,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 2333 天前（2020-06-22T05:22:52Z）"
+          "detail": "最后一次 push 在 2335 天前（2020-06-22T05:22:52Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -4643,25 +4773,8 @@
     {
       "fullName": "scrapfly/scrapfly-scrapers",
       "url": "https://github.com/scrapfly/scrapfly-scrapers",
-      "stars": 1127,
+      "stars": 1129,
       "language": "Python",
-      "score": null,
-      "grade": null,
-      "reason": "redline",
-      "redlines": [
-        {
-          "code": "crack",
-          "label": "破解 / 绕过",
-          "detail": "命中「bypass」，做成商品买家和卖家一起出事"
-        }
-      ],
-      "summary": "破解 / 绕过"
-    },
-    {
-      "fullName": "germondai/trawl",
-      "url": "https://github.com/germondai/trawl",
-      "stars": 1130,
-      "language": "TypeScript",
       "score": null,
       "grade": null,
       "reason": "redline",
@@ -4677,7 +4790,7 @@
     {
       "fullName": "serpapi/awesome-seo-tools",
       "url": "https://github.com/serpapi/awesome-seo-tools",
-      "stars": 1150,
+      "stars": 1153,
       "language": "HTML",
       "score": null,
       "grade": null,
@@ -4692,6 +4805,23 @@
       "summary": "纯清单合集"
     },
     {
+      "fullName": "germondai/trawl",
+      "url": "https://github.com/germondai/trawl",
+      "stars": 1161,
+      "language": "TypeScript",
+      "score": null,
+      "grade": null,
+      "reason": "redline",
+      "redlines": [
+        {
+          "code": "crack",
+          "label": "破解 / 绕过",
+          "detail": "命中「bypass」，做成商品买家和卖家一起出事"
+        }
+      ],
+      "summary": "破解 / 绕过"
+    },
+    {
       "fullName": "creditease-sec/insight",
       "url": "https://github.com/creditease-sec/insight",
       "stars": 1181,
@@ -4703,7 +4833,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 2129 天前（2021-01-12T03:02:14Z）"
+          "detail": "最后一次 push 在 2131 天前（2021-01-12T03:02:14Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -4720,7 +4850,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 1181 天前（2023-08-18T02:52:51Z）"
+          "detail": "最后一次 push 在 1183 天前（2023-08-18T02:52:51Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -4754,7 +4884,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 960 天前（2024-03-26T06:00:10Z）"
+          "detail": "最后一次 push 在 962 天前（2024-03-26T06:00:10Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -4771,7 +4901,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 2327 天前（2020-06-28T07:13:07Z）"
+          "detail": "最后一次 push 在 2329 天前（2020-06-28T07:13:07Z）"
         },
         {
           "code": "list",
@@ -4784,7 +4914,7 @@
     {
       "fullName": "gege-circle/.github",
       "url": "https://github.com/gege-circle/.github",
-      "stars": 2092,
+      "stars": 2097,
       "language": "无",
       "score": null,
       "grade": null,
@@ -4793,7 +4923,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 403 天前（2025-10-04T07:56:18Z）"
+          "detail": "最后一次 push 在 404 天前（2025-10-04T07:56:18Z）"
         },
         {
           "code": "list",
@@ -4811,7 +4941,7 @@
     {
       "fullName": "0voice/ffmpeg_develop_doc",
       "url": "https://github.com/0voice/ffmpeg_develop_doc",
-      "stars": 2187,
+      "stars": 2188,
       "language": "C",
       "score": null,
       "grade": null,
@@ -4820,7 +4950,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 905 天前（2024-05-20T12:12:58Z）"
+          "detail": "最后一次 push 在 906 天前（2024-05-20T12:12:58Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -4828,7 +4958,7 @@
     {
       "fullName": "Jieyab89/OSINT-Cheat-sheet",
       "url": "https://github.com/Jieyab89/OSINT-Cheat-sheet",
-      "stars": 2320,
+      "stars": 2323,
       "language": "HTML",
       "score": null,
       "grade": null,
@@ -4843,9 +4973,9 @@
       "summary": "纯清单合集"
     },
     {
-      "fullName": "feder-cr/invisible_playwright",
-      "url": "https://github.com/feder-cr/invisible_playwright",
-      "stars": 2573,
+      "fullName": "oss-invisible/playwright",
+      "url": "https://github.com/oss-invisible/playwright",
+      "stars": 2582,
       "language": "Python",
       "score": null,
       "grade": null,
@@ -4871,7 +5001,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 1029 天前（2024-01-17T06:47:55Z）"
+          "detail": "最后一次 push 在 1031 天前（2024-01-17T06:47:55Z）"
         },
         {
           "code": "list",
@@ -4884,7 +5014,7 @@
     {
       "fullName": "yzhu798/CodingInterviewsNotes",
       "url": "https://github.com/yzhu798/CodingInterviewsNotes",
-      "stars": 2679,
+      "stars": 2680,
       "language": "HTML",
       "score": null,
       "grade": null,
@@ -4893,7 +5023,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 1760 天前（2022-01-16T11:34:30Z）"
+          "detail": "最后一次 push 在 1761 天前（2022-01-16T11:34:30Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -4901,7 +5031,7 @@
     {
       "fullName": "i365dev/awesome-seo",
       "url": "https://github.com/i365dev/awesome-seo",
-      "stars": 2852,
+      "stars": 2856,
       "language": "无",
       "score": null,
       "grade": null,
@@ -4927,7 +5057,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 966 天前（2024-03-20T02:09:01Z）"
+          "detail": "最后一次 push 在 968 天前（2024-03-20T02:09:01Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -4935,7 +5065,7 @@
     {
       "fullName": "cirosantilli/china-dictatorship",
       "url": "https://github.com/cirosantilli/china-dictatorship",
-      "stars": 3332,
+      "stars": 3343,
       "language": "HTML",
       "score": null,
       "grade": null,
@@ -4957,7 +5087,7 @@
     {
       "fullName": "ownthink/Jiagu",
       "url": "https://github.com/ownthink/Jiagu",
-      "stars": 3424,
+      "stars": 3423,
       "language": "Python",
       "score": null,
       "grade": null,
@@ -4966,7 +5096,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 1649 天前（2022-05-07T01:51:20Z）"
+          "detail": "最后一次 push 在 1651 天前（2022-05-07T01:51:20Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -4974,7 +5104,7 @@
     {
       "fullName": "Anil-matcha/awesome-open-source-saas-alternatives",
       "url": "https://github.com/Anil-matcha/awesome-open-source-saas-alternatives",
-      "stars": 3471,
+      "stars": 3476,
       "language": "JavaScript",
       "score": null,
       "grade": null,
@@ -5000,7 +5130,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 3353 天前（2017-09-06T00:23:05Z）"
+          "detail": "最后一次 push 在 3355 天前（2017-09-06T00:23:05Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -5008,7 +5138,7 @@
     {
       "fullName": "FastForwardTeam/FastForward",
       "url": "https://github.com/FastForwardTeam/FastForward",
-      "stars": 3770,
+      "stars": 3769,
       "language": "JavaScript",
       "score": null,
       "grade": null,
@@ -5018,23 +5148,6 @@
           "code": "crack",
           "label": "破解 / 绕过",
           "detail": "命中「bypass」，做成商品买家和卖家一起出事"
-        }
-      ],
-      "summary": "破解 / 绕过"
-    },
-    {
-      "fullName": "mmparko/dsh-purge",
-      "url": "https://github.com/mmparko/dsh-purge",
-      "stars": 4379,
-      "language": "JavaScript",
-      "score": null,
-      "grade": null,
-      "reason": "redline",
-      "redlines": [
-        {
-          "code": "crack",
-          "label": "破解 / 绕过",
-          "detail": "命中「jailbreak」，做成商品买家和卖家一起出事"
         }
       ],
       "summary": "破解 / 绕过"
@@ -5051,7 +5164,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 1213 天前（2023-07-17T12:45:42Z）"
+          "detail": "最后一次 push 在 1214 天前（2023-07-17T12:45:42Z）"
         }
       ],
       "summary": "一年多没提交"
@@ -5059,7 +5172,7 @@
     {
       "fullName": "cirosantilli/x86-bare-metal-examples",
       "url": "https://github.com/cirosantilli/x86-bare-metal-examples",
-      "stars": 5444,
+      "stars": 5446,
       "language": "Assembly",
       "score": null,
       "grade": null,
@@ -5068,7 +5181,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 1577 天前（2022-07-18T05:40:51Z）"
+          "detail": "最后一次 push 在 1579 天前（2022-07-18T05:40:51Z）"
         },
         {
           "code": "list",
@@ -5086,7 +5199,7 @@
     {
       "fullName": "zxlie/FeHelper",
       "url": "https://github.com/zxlie/FeHelper",
-      "stars": 5685,
+      "stars": 5686,
       "language": "JavaScript",
       "score": null,
       "grade": null,
@@ -5103,7 +5216,7 @@
     {
       "fullName": "free18/v2ray",
       "url": "https://github.com/free18/v2ray",
-      "stars": 5886,
+      "stars": 5891,
       "language": "无",
       "score": null,
       "grade": null,
@@ -5120,7 +5233,7 @@
     {
       "fullName": "heilcheng/awesome-agent-skills",
       "url": "https://github.com/heilcheng/awesome-agent-skills",
-      "stars": 6376,
+      "stars": 6385,
       "language": "TypeScript",
       "score": null,
       "grade": null,
@@ -5137,7 +5250,7 @@
     {
       "fullName": "kingcharleslzy-ai/dsh-purge",
       "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
-      "stars": 6960,
+      "stars": 7633,
       "language": "JavaScript",
       "score": null,
       "grade": null,
@@ -5154,7 +5267,7 @@
     {
       "fullName": "lorien/awesome-web-scraping",
       "url": "https://github.com/lorien/awesome-web-scraping",
-      "stars": 8222,
+      "stars": 8227,
       "language": "JavaScript",
       "score": null,
       "grade": null,
@@ -5176,7 +5289,7 @@
     {
       "fullName": "ever-co/ever-gauzy",
       "url": "https://github.com/ever-co/ever-gauzy",
-      "stars": 8775,
+      "stars": 8800,
       "language": "TypeScript",
       "score": null,
       "grade": null,
@@ -5193,7 +5306,7 @@
     {
       "fullName": "LAMDA-NeSy/Research-Starter-Kit",
       "url": "https://github.com/LAMDA-NeSy/Research-Starter-Kit",
-      "stars": 10047,
+      "stars": 10105,
       "language": "无",
       "score": null,
       "grade": null,
@@ -5210,7 +5323,7 @@
     {
       "fullName": "jo-inc/camofox-browser",
       "url": "https://github.com/jo-inc/camofox-browser",
-      "stars": 12243,
+      "stars": 12266,
       "language": "JavaScript",
       "score": null,
       "grade": null,
@@ -5244,25 +5357,8 @@
     {
       "fullName": "yihui-dev/awesome-opus5-5-videos",
       "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
-      "stars": 14871,
+      "stars": 15079,
       "language": "无",
-      "score": null,
-      "grade": null,
-      "reason": "redline",
-      "redlines": [
-        {
-          "code": "list",
-          "label": "纯清单合集",
-          "detail": "名称/简介/标签命中「awesome」，形态是一堆谁都能下的文件"
-        }
-      ],
-      "summary": "纯清单合集"
-    },
-    {
-      "fullName": "awesome-dsh-plugin/awesome-dsh-plugin",
-      "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
-      "stars": 24318,
-      "language": "JavaScript",
       "score": null,
       "grade": null,
       "reason": "redline",
@@ -5278,7 +5374,7 @@
     {
       "fullName": "Dujltqzv/Some-Many-Books",
       "url": "https://github.com/Dujltqzv/Some-Many-Books",
-      "stars": 25959,
+      "stars": 26017,
       "language": "无",
       "score": null,
       "grade": null,
@@ -5300,7 +5396,7 @@
     {
       "fullName": "lissy93/dashy",
       "url": "https://github.com/lissy93/dashy",
-      "stars": 26974,
+      "stars": 26987,
       "language": "Vue",
       "score": null,
       "grade": null,
@@ -5317,7 +5413,7 @@
     {
       "fullName": "jaywcjlove/linux-command",
       "url": "https://github.com/jaywcjlove/linux-command",
-      "stars": 37223,
+      "stars": 37225,
       "language": "Markdown",
       "score": null,
       "grade": null,
@@ -5334,7 +5430,7 @@
     {
       "fullName": "ashishpatel26/500-AI-Agents-Projects",
       "url": "https://github.com/ashishpatel26/500-AI-Agents-Projects",
-      "stars": 39712,
+      "stars": 39792,
       "language": "Python",
       "score": null,
       "grade": null,
@@ -5351,7 +5447,7 @@
     {
       "fullName": "CorentinTh/it-tools",
       "url": "https://github.com/CorentinTh/it-tools",
-      "stars": 41208,
+      "stars": 41244,
       "language": "Vue",
       "score": null,
       "grade": null,
@@ -5368,7 +5464,7 @@
     {
       "fullName": "sickn33/agentic-awesome-skills",
       "url": "https://github.com/sickn33/agentic-awesome-skills",
-      "stars": 49547,
+      "stars": 49624,
       "language": "Python",
       "score": null,
       "grade": null,
@@ -5385,7 +5481,7 @@
     {
       "fullName": "thedaviddias/Front-End-Checklist",
       "url": "https://github.com/thedaviddias/Front-End-Checklist",
-      "stars": 74708,
+      "stars": 74717,
       "language": "MDX",
       "score": null,
       "grade": null,
@@ -5402,7 +5498,7 @@
     {
       "fullName": "fighting41love/funNLP",
       "url": "https://github.com/fighting41love/funNLP",
-      "stars": 84528,
+      "stars": 84559,
       "language": "Python",
       "score": null,
       "grade": null,
@@ -5411,7 +5507,7 @@
         {
           "code": "stale",
           "label": "一年多没提交",
-          "detail": "最后一次 push 在 915 天前（2024-05-10T07:38:24Z）"
+          "detail": "最后一次 push 在 916 天前（2024-05-10T07:38:24Z）"
         },
         {
           "code": "list",
@@ -5424,7 +5520,7 @@
     {
       "fullName": "punkpeye/awesome-mcp-servers",
       "url": "https://github.com/punkpeye/awesome-mcp-servers",
-      "stars": 97612,
+      "stars": 97673,
       "language": "无",
       "score": null,
       "grade": null,
@@ -5439,9 +5535,26 @@
       "summary": "纯清单合集"
     },
     {
+      "fullName": "microsoft/PowerToys",
+      "url": "https://github.com/microsoft/PowerToys",
+      "stars": 140934,
+      "language": "C",
+      "score": null,
+      "grade": null,
+      "reason": "redline",
+      "redlines": [
+        {
+          "code": "list",
+          "label": "纯清单合集",
+          "detail": "名称/简介/标签命中「collection of」，形态是一堆谁都能下的文件"
+        }
+      ],
+      "summary": "纯清单合集"
+    },
+    {
       "fullName": "ripienaar/free-for-dev",
       "url": "https://github.com/ripienaar/free-for-dev",
-      "stars": 142594,
+      "stars": 142723,
       "language": "HTML",
       "score": null,
       "grade": null,
@@ -5458,7 +5571,7 @@
     {
       "fullName": "iptv-org/iptv",
       "url": "https://github.com/iptv-org/iptv",
-      "stars": 143797,
+      "stars": 143893,
       "language": "TypeScript",
       "score": null,
       "grade": null,
@@ -5475,7 +5588,7 @@
     {
       "fullName": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 144422,
+      "stars": 144535,
       "language": "Python",
       "score": null,
       "grade": null,
@@ -5492,7 +5605,7 @@
     {
       "fullName": "github/gitignore",
       "url": "https://github.com/github/gitignore",
-      "stars": 176319,
+      "stars": 176257,
       "language": "无",
       "score": null,
       "grade": null,
@@ -5509,7 +5622,7 @@
     {
       "fullName": "f/prompts.chat",
       "url": "https://github.com/f/prompts.chat",
-      "stars": 176910,
+      "stars": 177039,
       "language": "MDX",
       "score": null,
       "grade": null,
@@ -5526,7 +5639,7 @@
     {
       "fullName": "avelino/awesome-go",
       "url": "https://github.com/avelino/awesome-go",
-      "stars": 193299,
+      "stars": 193619,
       "language": "Go",
       "score": null,
       "grade": null,
@@ -5543,7 +5656,7 @@
     {
       "fullName": "ossu/computer-science",
       "url": "https://github.com/ossu/computer-science",
-      "stars": 211003,
+      "stars": 211047,
       "language": "HTML",
       "score": null,
       "grade": null,
@@ -5560,7 +5673,7 @@
     {
       "fullName": "practical-tutorials/project-based-learning",
       "url": "https://github.com/practical-tutorials/project-based-learning",
-      "stars": 289539,
+      "stars": 289638,
       "language": "Python",
       "score": null,
       "grade": null,
@@ -5577,7 +5690,7 @@
     {
       "fullName": "vinta/awesome-python",
       "url": "https://github.com/vinta/awesome-python",
-      "stars": 334037,
+      "stars": 334404,
       "language": "Python",
       "score": null,
       "grade": null,
@@ -5594,7 +5707,7 @@
     {
       "fullName": "awesome-selfhosted/awesome-selfhosted",
       "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
-      "stars": 336077,
+      "stars": 336551,
       "language": "无",
       "score": null,
       "grade": null,
@@ -5611,7 +5724,7 @@
     {
       "fullName": "public-apis/public-apis",
       "url": "https://github.com/public-apis/public-apis",
-      "stars": 498141,
+      "stars": 498597,
       "language": "Python",
       "score": null,
       "grade": null,
@@ -5628,7 +5741,7 @@
     {
       "fullName": "codecrafters-io/build-your-own-x",
       "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "stars": 561790,
+      "stars": 562205,
       "language": "Markdown",
       "score": null,
       "grade": null,
