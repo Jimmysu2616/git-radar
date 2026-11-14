@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-14",
+    "topScore": 83,
+    "avgScore": 77,
+    "picked": 8,
+    "rejected": 367,
+    "topName": "tsingyuai/growth-lab"
+  },
+  {
     "date": "2026-11-13",
     "topScore": 87,
     "avgScore": 83,
