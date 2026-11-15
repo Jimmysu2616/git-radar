@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-15",
+    "topScore": 96,
+    "avgScore": 78,
+    "picked": 8,
+    "rejected": 368,
+    "topName": "RoutineMiku/apkstart"
+  },
+  {
     "date": "2026-11-14",
     "topScore": 83,
     "avgScore": 77,
