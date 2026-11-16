@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-16",
+    "topScore": 96,
+    "avgScore": 81,
+    "picked": 8,
+    "rejected": 367,
+    "topName": "getwelink/weLink"
+  },
+  {
     "date": "2026-11-15",
     "topScore": 96,
     "avgScore": 78,
