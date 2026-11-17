@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-17",
+    "topScore": 73,
+    "avgScore": 73,
+    "picked": 8,
+    "rejected": 366,
+    "topName": "l0ng-ai/openidea"
+  },
+  {
     "date": "2026-11-16",
     "topScore": 96,
     "avgScore": 81,
