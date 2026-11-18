@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-18",
+    "topScore": 91,
+    "avgScore": 74,
+    "picked": 8,
+    "rejected": 364,
+    "topName": "zhangv/wechat-pay"
+  },
+  {
     "date": "2026-11-17",
     "topScore": 73,
     "avgScore": 73,
