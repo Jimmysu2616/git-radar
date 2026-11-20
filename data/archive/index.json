@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-20",
+    "topScore": 77,
+    "avgScore": 71,
+    "picked": 8,
+    "rejected": 367,
+    "topName": "msojocs/wechat-web-devtools-linux"
+  },
+  {
     "date": "2026-11-19",
     "topScore": 80,
     "avgScore": 73,
