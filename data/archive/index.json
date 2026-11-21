@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-21",
+    "topScore": 69,
+    "avgScore": 68,
+    "picked": 8,
+    "rejected": 368,
+    "topName": "adbar/trafilatura"
+  },
+  {
     "date": "2026-11-20",
     "topScore": 77,
     "avgScore": 71,
