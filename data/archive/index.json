@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-22",
+    "topScore": 67,
+    "avgScore": 67,
+    "picked": 8,
+    "rejected": 365,
+    "topName": "libracoder/kiri"
+  },
+  {
     "date": "2026-11-21",
     "topScore": 69,
     "avgScore": 68,
