@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-23",
+    "topScore": 88,
+    "avgScore": 71,
+    "picked": 8,
+    "rejected": 367,
+    "topName": "havenicec/google-qr-sms-helper"
+  },
+  {
     "date": "2026-11-22",
     "topScore": 67,
     "avgScore": 67,
