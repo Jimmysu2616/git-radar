@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-24",
+    "topScore": 66,
+    "avgScore": 65,
+    "picked": 8,
+    "rejected": 372,
+    "topName": "httpsok/httpsok"
+  },
+  {
     "date": "2026-11-23",
     "topScore": 88,
     "avgScore": 71,
