@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-25",
+    "topScore": 96,
+    "avgScore": 94,
+    "picked": 8,
+    "rejected": 371,
+    "topName": "pan17/dsh-wechat"
+  },
+  {
     "date": "2026-11-24",
     "topScore": 66,
     "avgScore": 65,
