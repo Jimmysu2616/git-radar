@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-27",
+    "topScore": 94,
+    "avgScore": 87,
+    "picked": 8,
+    "rejected": 377,
+    "topName": "KaelLee335/enterprise-support-agent-v2"
+  },
+  {
     "date": "2026-11-26",
     "topScore": 86,
     "avgScore": 82,
